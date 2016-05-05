@@ -9,7 +9,6 @@ call vundle#begin()
 
 " Plugins {{{1
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-scripts/AutoTag'
 Plugin 'spf13/PIV'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kien/ctrlp.vim'
@@ -52,6 +51,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'c9s/phpunit.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'ludovicchabant/vim-gutentags'
 
 " End Vundle {{{1
 call vundle#end()
