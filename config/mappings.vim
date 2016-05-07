@@ -12,8 +12,8 @@ let mapleader = "," " easier to use than \
 map <C-a> <Esc>ggVG
 " display the file system tree
 map <S-n> :NERDTreeTabsToggle<CR>
-" display the taglist tree
-map <C-l> :TlistToggle<CR>
+" display the tag bar
+map <C-l> :TagbarToggle<CR>
 
 " Mappings in normal mode {{{1
 " -----------------------------------------------------------------------------

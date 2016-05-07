@@ -36,7 +36,16 @@ source ~/.vim/config/plugins.vim
 " =============================================================================
 
 " GUI {{{1
-colorscheme Tomorrow-Night-Bright " dark theme
+set guioptions-=e " disable GUI options (like graphical tabs)
+set background=dark " dark background
+if has('gui_running')
+    " GVim
+    set guifont=Hack
+    colorscheme onedark " Atom.io-like theme
+else
+    " Terminal Vim
+    colorscheme Tomorrow-Night-Bright
+endif
 
 " =============================================================================
 

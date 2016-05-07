@@ -3,6 +3,7 @@
 " =============================================================================
 
 " Taboo {{{1
+let g:taboo_tabline=0
 set guioptions==e
 set sessionoptions+=tabpages,globals
 
@@ -28,6 +29,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>" " go the the previous fragment in the
 " Airline {{{1
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'term'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#bufferline#enable = 1
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
