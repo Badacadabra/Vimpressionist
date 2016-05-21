@@ -22,6 +22,9 @@ set lazyredraw " do not redraw while executing macros (performance issue)
 set hidden " better window management
 set backupdir=~/.vim/backup " keep backup files ('~') in a dedicated directory
 set directory=~/.vim/swap " keep swap files ('swp', 'swo', 'swn', ...) in a dedicated directory
+set clipboard=unnamedplus " allow full clipboard
+set path=.,/usr/include,,** " useful for advanced searching in a project
+set suffixesadd=.js,.php " useful to find interesting files with 'gf'
 
 " =============================================================================
 
@@ -66,6 +69,7 @@ filetype plugin on " activate filetype plugin
 filetype indent on " load filetype=specific indent files
 let g:vim_json_syntax_conceal = 0 " display quotes in JSON files
 highlight ColorColumn ctermbg=NONE ctermfg=red " highlight the first character that exceeds the line length limit
+autocmd BufEnter * :syntax sync fromstart " syntax highlighting for the whole file
 
 " =============================================================================
 
