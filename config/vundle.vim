@@ -11,8 +11,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " GUI {{{2
-Plugin 'joshdick/airline-onedark.vim'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'joshdick/airline-onedark.vim'
 
 " Search & Autocomplete {{{2
 Plugin 'scrooloose/nerdtree'
