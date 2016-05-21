@@ -1,3 +1,9 @@
+/backup/*~
 /bundle/*
 /extra/muttator/info/*
 /extra/vimperator/info/*
+/sessions/*.vim
+/swap/*.swp
+/tags
+/tags.temp
+/tags.lock
