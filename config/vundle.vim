@@ -9,50 +9,70 @@ call vundle#begin()
 
 " Plugins {{{1
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'spf13/PIV'
-Plugin 'pangloss/vim-javascript'
-Plugin 'kien/ctrlp.vim'
-Plugin 'danro/rename.vim'
-Plugin 'elzr/vim-json'
-Plugin 'vim-scripts/dbext.vim'
-Plugin 'juneedahamed/svnj.vim'
-Plugin 'tpope/vim-markdown'
-Plugin 'Raimondi/delimitMate'
-Plugin 'scrooloose/syntastic'
-Plugin 'edsono/vim-matchit'
-Plugin 'mattn/emmet-vim'
-Plugin 'gcmt/taboo.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'KabbAmine/gulp-vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'sjl/gundo.vim'
-Plugin 'tomtom/tlib_vim'
-Plugin 'tpope/vim-obsession'
-Plugin 'vim-scripts/HTML-AutoCloseTag'
-Plugin 'SirVer/ultisnips'
-Plugin 'vim-scripts/vim-php-namespace'
-Plugin 'Yggdroot/indentLine'
-Plugin 'vim-scripts/vim-addon-mw-utils'
-Plugin 'tpope/vim-surround'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'docteurklein/vim-symfony'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'vim-airline/vim-airline-themes'
+
+" GUI {{{2
 Plugin 'joshdick/airline-onedark.vim'
-Plugin 'qbbr/vim-twig'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Search & Autocomplete {{{2
 Plugin 'scrooloose/nerdtree'
-Plugin 'gorodinskiy/vim-coloresque'
-Plugin 'tobyS/vmustache'
-Plugin 'tyru/open-browser.vim'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'docteurklein/php-getter-setter.vim'
-Plugin 'tpope/vim-fugitive'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'edsono/vim-matchit'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'c9s/phpunit.vim'
-Plugin 'airblade/vim-gitgutter'
+Plugin 'SirVer/ultisnips'
+Plugin 'Raimondi/delimitMate'
+Plugin 'mattn/emmet-vim'
 Plugin 'ludovicchabant/vim-gutentags'
+
+" Editing & Formatting (core)
+Plugin 'scrooloose/syntastic'
+Plugin 'danro/rename.vim'
+Plugin 'gcmt/taboo.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'Yggdroot/indentLine'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'sjl/gundo.vim'
+
+" HTML/CSS {{{2
+Plugin 'vim-scripts/HTML-AutoCloseTag'
+Plugin 'gorodinskiy/vim-coloresque'
+
+" JavaScript {{{2
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'elzr/vim-json'
+Plugin 'tobyS/vmustache'
+Plugin 'KabbAmine/gulp-vim'
+
+" PHP {{{2
+Plugin 'spf13/PIV'
+Plugin 'qbbr/vim-symfony'
+Plugin 'voronkovich/ctrlp-symfony2.vim'
+Plugin 'c9s/phpunit.vim'
+Plugin 'docteurklein/php-getter-setter.vim'
+Plugin 'vim-scripts/vim-php-namespace'
+Plugin 'qbbr/vim-twig'
+
+" SQL {{{2 
+Plugin 'vim-scripts/dbext.vim'
+
+" Git {{{2
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-markdown'
+
+" Misc {{{2
+Plugin 'tpope/vim-obsession'
+Plugin 'vim-airline/vim-airline'
+Plugin 'tyru/open-browser.vim'
+
+" Utils {{{2
+Plugin 'vim-scripts/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
 
 " End Vundle {{{1
 call vundle#end()

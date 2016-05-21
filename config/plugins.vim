@@ -59,10 +59,6 @@ let g:airline_symbols.linenr = ''
 
 set laststatus=2
 
-" Symfony {{{1
-let g:symfony_app_console_caller= "php"
-let g:symfony_app_console_path= "bin/console"
-
 " PHP namespaces {{{1
 function! IPhpInsertUse()
     call PhpInsertUse()

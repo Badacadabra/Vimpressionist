@@ -11,9 +11,9 @@ let mapleader = "," " easier to use than \
 " select all
 map <C-a> <Esc>ggVG
 " display the file system tree
-map <S-n> :NERDTreeTabsToggle<CR>
+map <leader>nt :NERDTreeTabsToggle<CR>
 " display the tag bar
-map <C-l> :TagbarToggle<CR>
+map <leader>tb :TagbarToggle<CR>
 
 " Mappings in normal mode {{{1
 " -----------------------------------------------------------------------------
@@ -34,6 +34,8 @@ nnoremap <leader>tt :tabnew<CR>
 nnoremap <leader>si :SyntasticInfo<CR>
 " launch syntax checking
 nnoremap <leader>sc :SyntasticCheck<CR>
+" toggle Syntastic
+nnoremap <leader>st :SyntasticToggleMode<CR>
 " hide highlighted search results
 nnoremap <C-h> :nohl<CR><C-h>
 " display the undo tree
