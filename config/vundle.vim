@@ -10,15 +10,10 @@ call vundle#begin()
 " Plugins {{{1
 Plugin 'VundleVim/Vundle.vim'
 
-" GUI {{{2
-Plugin 'flazz/vim-colorschemes'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'joshdick/airline-onedark.vim'
-
 " Search & Autocomplete {{{2
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'edsono/vim-matchit'
 Plugin 'Valloric/YouCompleteMe'
@@ -55,6 +50,7 @@ Plugin 'qbbr/vim-symfony'
 Plugin 'voronkovich/ctrlp-symfony2.vim'
 Plugin 'c9s/phpunit.vim'
 Plugin 'docteurklein/php-getter-setter.vim'
+Plugin 'adoy/vim-php-refactoring-toolbox'
 Plugin 'vim-scripts/vim-php-namespace'
 Plugin 'qbbr/vim-twig'
 
@@ -63,13 +59,26 @@ Plugin 'vim-scripts/dbext.vim'
 
 " Git {{{2
 Plugin 'tpope/vim-fugitive'
+Plugin 'gregsexton/gitv'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-markdown'
 
 " Misc {{{2
-Plugin 'tpope/vim-obsession'
 Plugin 'vim-airline/vim-airline'
+Plugin 'tpope/vim-obsession'
+Plugin 'mhinz/vim-startify'
 Plugin 'tyru/open-browser.vim'
+Plugin 'joonty/vdebug'
+Plugin 'vim-scripts/bufkill.vim'
+Plugin 'vim-scripts/loremipsum'
+
+" GUI {{{2
+Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'joshdick/airline-onedark.vim'
+Plugin 'ryanoasis/nerd-fonts'
+Plugin 'ryanoasis/vim-devicons'
 
 " Utils {{{2
 Plugin 'vim-scripts/vim-addon-mw-utils'
