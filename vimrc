@@ -44,10 +44,10 @@ set background=dark " dark background
 if has('gui_running')
     " GVim
     set guifont=Hack
-    colorscheme onedark " Atom.io-like theme
+    colorscheme gotham
 else
     " Terminal Vim
-    colorscheme Tomorrow-Night-Bright
+    colorscheme Tomorrow-Night
 endif
 
 " =============================================================================

@@ -2,10 +2,26 @@
 " --------------------------- Plugins configuration ---------------------------
 " =============================================================================
 
-" Taboo {{{1
-let g:taboo_tabline=0
-set guioptions==e
-set sessionoptions+=tabpages,globals
+" Airline {{{1
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'tomorrow'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#bufferline#enable = 1
+set laststatus=2
+
+let g:nerdtree_tabs_open_on_console_startup=1
+
+" NERDTree {{{1
+let g:nerdtree_tabs_open_on_console_startup=0
+let g:nerdtree_tabs_open_on_gui_startup=0
+
+" PHP namespaces {{{1
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>u <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>u :call PhpInsertUse()<CR>
 
 " Syntastic {{{1
 set statusline+=%#warningmsg#
@@ -21,48 +37,13 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_wq = 0 " disable check on save/exit
 let g:ycm_show_diagnostics_ui = 0 " use Syntastic apart from YouCompleteMe
 
+" Taboo {{{1
+let g:taboo_tabline=0
+set guioptions==e
+set sessionoptions+=tabpages,globals
+
 " UltiSnips {{{1
 let g:UltiSnipsExpandTrigger="<c-j>" " expand the snippet under the cursor in a YouCompleteMe popup
 let g:UltiSnipsJumpForwardTrigger="<c-j>" " go to the next code fragment in the snippet
 let g:UltiSnipsJumpBackwardTrigger="<c-k>" " go the the previous fragment in the snippet
 
-" Airline {{{1
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'term'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#bufferline#enable = 1
-
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
-
-set laststatus=2
-
-" PHP namespaces {{{1
-function! IPhpInsertUse()
-    call PhpInsertUse()
-    call feedkeys('a',  'n')
-endfunction
-autocmd FileType php inoremap <Leader>u <Esc>:call IPhpInsertUse()<CR>
-autocmd FileType php noremap <Leader>u :call PhpInsertUse()<CR>
