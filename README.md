@@ -1,3 +1,3 @@
-# dotvim
+# Vimpressionist
 
-Vim as a powerful Web IDE!
+Vim on steroids for keyboard lovers

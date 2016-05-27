@@ -65,11 +65,11 @@ set foldmethod=marker " folding using markers
 set colorcolumn=121 " line length limit
 set pastetoggle=<F10> " toggle between 'paste' and 'nopaste'
 syntax on " syntax highlighting
+autocmd BufEnter * :syntax sync fromstart " syntax highlighting for the whole file
 filetype plugin on " activate filetype plugin
 filetype indent on " load filetype=specific indent files
 let g:vim_json_syntax_conceal = 0 " display quotes in JSON files
 highlight ColorColumn ctermbg=NONE ctermfg=red " highlight the first character that exceeds the line length limit
-autocmd BufEnter * :syntax sync fromstart " syntax highlighting for the whole file
 
 " =============================================================================
 

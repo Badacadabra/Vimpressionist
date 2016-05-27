@@ -3,13 +3,14 @@
 " =============================================================================
 
 " Airline {{{1
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'tomorrow'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#bufferline#enable = 1
-set laststatus=2
+let g:airline_powerline_fonts = 1 " use powerline symbols in airline
+let g:airline_theme = 'tomorrow' " dark theme
+let g:airline#extensions#tabline#enabled = 1 " automatically displays all buffers when there is only one tab open
+set laststatus=2 " display airline all the time
 
-let g:nerdtree_tabs_open_on_console_startup=1
+" Devicons
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
 
 " NERDTree {{{1
 let g:nerdtree_tabs_open_on_console_startup=0
@@ -46,4 +47,3 @@ set sessionoptions+=tabpages,globals
 let g:UltiSnipsExpandTrigger="<c-j>" " expand the snippet under the cursor in a YouCompleteMe popup
 let g:UltiSnipsJumpForwardTrigger="<c-j>" " go to the next code fragment in the snippet
 let g:UltiSnipsJumpBackwardTrigger="<c-k>" " go the the previous fragment in the snippet
-
