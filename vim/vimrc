@@ -83,6 +83,7 @@ set ruler " display the cursor position in the file
 set nostartofline " do not go systematically on the first character of the line
 set confirm " get a confirmation dialog instead of an error for a command
 set mouse=a " enable mouse for all modes
+set scrolloff=3 " allow scrolling 3 lines before a window limit
 
 " =============================================================================
 

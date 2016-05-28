@@ -1,8 +1,10 @@
+/muttator/info/*
+/vifm/Trash/*
+/vifm/vifminfo
 /vim/backup/*
 /vim/bundle/*
 /vim/sessions/*
 /vim/swap/*
-/muttator/info/*
 /vimperator/info/*
 tags
 tags.temp
