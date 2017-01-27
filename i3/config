@@ -7,7 +7,7 @@
 # =============================
 
 exec --no-startup-id sh ~/.fehbg 
-exec --no-startup-id terminator
+exec --no-startup-id termite
 
 # ==============================
 # WORKSPACES 
