@@ -1,0 +1,264 @@
+###############################
+########## i3 config ##########
+###############################
+
+# =============================
+# PROGRAMS AT STARTUP 
+# =============================
+
+exec --no-startup-id sh ~/.fehbg 
+exec --no-startup-id terminator
+
+# ==============================
+# WORKSPACES 
+# ==============================
+
+# ------------------------------
+# Available workspaces
+# ------------------------------
+
+set $WS1 1 
+set $WS2 2 
+set $WS3 3 
+set $WS4 4 
+set $WS5 5 
+set $WS6 6 
+set $WS7 7 
+set $WS8 8 
+set $WS9 9 
+set $WS10 10 
+
+# ------------------------------
+# Apps organization 
+# ------------------------------
+
+# Terminal
+assign [class="Termite"] $WS1
+assign [class="Terminator"] $WS1
+assign [class="Gnome-terminal"] $WS1
+assign [class="XTerm"] $WS1
+
+# Email & Chat
+assign [class="Mutt"] $WS2
+assign [class="Thunderbird"] $WS2
+assign [class="Pidgin"] $WS2
+assign [class="Empathy"] $WS2
+
+# Web
+assign [class="Lynx"] $WS3
+assign [class="Firefox"] $WS3
+assign [class="Chromium"] $WS3
+
+# Desktop
+assign [class="Lxappearance"] $WS4
+assign [class="Keepassx"] $WS4
+assign [class="VirtualBox"] $WS4
+
+# Files
+assign [class="Vifm"] $WS5
+assign [class="Nautilus"] $WS5
+assign [class="Filezilla"] $WS5
+
+# Code
+assign [class="Gvim"] $WS6
+assign [class="Atom"] $WS6
+assign [class="Gedit"] $WS6
+
+# Documents
+assign [class="libreoffice"] $WS7
+assign [class="Zathura"] $WS7
+assign [class="Evince"] $WS7
+
+# Images
+assign [class="feh"] $WS8
+assign [class="Eog"] $WS8
+assign [class="Gimp"] $WS8
+assign [class="Inkscape"] $WS8
+
+# Audio/Video
+assign [class="Cmus"] $WS9
+assign [class="Vlc"] $WS9
+assign [class="Rhythmbox"] $WS9
+
+# ==============================
+# KEY BINDINGS 
+# ==============================
+
+# The base key is "Alt"!
+set $mod Mod1
+
+# ------------------------------
+# i3-specific 
+# ------------------------------
+
+mode "i3" {
+    # Reload config, Restart i3
+    bindsym c reload
+    bindsym r restart
+
+    # Quit i3 mode 
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Shift+i mode "i3"
+
+# ------------------------------
+# System 
+# ------------------------------
+
+# New terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# Open GVim (see vim-anywhere)
+bindsym $mod+v exec ~/.vim-anywhere/bin/run
+
+# Display dmenu
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id dmenu_run
+
+# Lock screen (pause)
+bindsym $mod+Shift+p exec $HOME/.config/i3/scripts/lock
+
+# Exit mode
+mode "exit" {
+    # Log out, Reboot, Shutdown 
+    bindsym l exec i3-msg exit 
+    bindsym r exec reboot 
+    bindsym s exec poweroff 
+
+    # Quit exit mode 
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Shift+e mode "exit"
+
+# ------------------------------
+# Windows manipulation 
+# ------------------------------
+
+# Kill focused window
+bindsym $mod+q kill
+
+# Change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# Fullscreen 
+bindsym $mod+f fullscreen toggle
+
+# Toggle tiling/floating
+bindsym $mod+Shift+space floating toggle
+
+# Toggle focus between tiling/floating windows
+bindsym $mod+space focus mode_toggle
+
+# Focus the parent (top) container
+bindsym $mod+t focus parent
+
+# Focus the child container
+bindsym $mod+c focus child
+
+# Split mode 
+mode "split" {
+    # Horizontal, Vertical, Toggle 
+    bindsym h split horizontal 
+    bindsym v split vertical
+    bindsym t split toggle
+
+    # Quit split mode 
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+s mode "split"
+
+# Display mode 
+mode "display" {
+    # Default (split), Stack, Tabs 
+    bindsym d layout toggle split
+    bindsym s layout stacking
+    bindsym t layout tabbed
+
+    # Quit display mode 
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+d mode "display"
+
+# Resize window
+mode "resize" {
+    # Left, Bottom, Top, Right
+    bindsym h resize shrink width 10 px or 10 ppt
+    bindsym j resize grow height 10 px or 10 ppt
+    bindsym k resize shrink height 10 px or 10 ppt
+    bindsym l resize grow width 10 px or 10 ppt
+
+    # Quit resize mode 
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+r mode "resize"
+
+# ------------------------------
+# Workspaces 
+# ------------------------------
+
+# Switch between workspaces
+bindsym $mod+p workspace prev
+bindsym $mod+n workspace next
+
+# Go to workspace
+bindsym $mod+1 workspace $WS1
+bindsym $mod+2 workspace $WS2
+bindsym $mod+3 workspace $WS3
+bindsym $mod+4 workspace $WS4
+bindsym $mod+5 workspace $WS5
+bindsym $mod+6 workspace $WS6
+bindsym $mod+7 workspace $WS7
+bindsym $mod+8 workspace $WS8
+bindsym $mod+9 workspace $WS9
+bindsym $mod+0 workspace $WS10
+
+# Move container to workspace
+bindsym $mod+Shift+1 move container to workspace $WS1
+bindsym $mod+Shift+2 move container to workspace $WS2
+bindsym $mod+Shift+3 move container to workspace $WS3
+bindsym $mod+Shift+4 move container to workspace $WS4
+bindsym $mod+Shift+5 move container to workspace $WS5
+bindsym $mod+Shift+6 move container to workspace $WS6
+bindsym $mod+Shift+7 move container to workspace $WS7
+bindsym $mod+Shift+8 move container to workspace $WS8
+bindsym $mod+Shift+9 move container to workspace $WS9
+bindsym $mod+Shift+0 move container to workspace $WS10
+
+# ==============================
+# STYLE
+# ==============================
+
+# Main font
+font pango: NewRocker 12
+
+# Window colors 
+client.focused          #0088CC #0088CC #ffffff #dddddd
+client.focused_inactive #333333 #333333 #888888 #292d2e
+client.unfocused        #333333 #333333 #888888 #292d2e
+client.urgent           #2f343a #900000 #ffffff #900000
+
+# System bar displaying info from conky 
+bar {
+  # status_command i3status
+  status_command conky -c $HOME/.conkyrc 
+  colors {
+    separator #666666
+    background #222222
+    statusline #dddddd
+    focused_workspace #0088CC #0088CC #ffffff
+    active_workspace #333333 #333333 #ffffff
+    inactive_workspace #333333 #333333 #888888
+    urgent_workspace #2f343a #900000 #ffffff
+  }
+}

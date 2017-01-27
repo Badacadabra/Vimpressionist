@@ -1,0 +1,2 @@
+#!/bin/bash
+termite --name=Vifm --class=Vifm --exec vifm

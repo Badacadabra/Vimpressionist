@@ -1,0 +1,7 @@
+#!/bin/bash
+
+BG=/tmp/screenshot.png
+scrot $BG 
+convert $BG -scale 10% -scale 1000% $BG
+convert $BG -gravity center -composite -matte $BG
+i3lock -u -i $BG

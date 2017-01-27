@@ -1,0 +1,2 @@
+#!/bin/bash
+termite --name=Cmus --class=Cmus --exec cmus

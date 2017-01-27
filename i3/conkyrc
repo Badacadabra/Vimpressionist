@@ -1,0 +1,59 @@
+##############################
+######## Conky config ########
+##############################
+
+# ==============================
+# CORE SETTINGS 
+# ==============================
+
+# Output to console instead of X
+out_to_x no
+out_to_console yes
+own_window no
+
+# Update every two seconds, forever
+update_interval 2.0
+total_run_times 0
+
+# ==============================
+# OUTPUT FOR I3-BAR
+# ==============================
+
+TEXT
+
+#
+# CPU usage (%)
+#
+ ${cpu cpu1}%       \
+#
+# RAM usage (%)
+#
+ ${memperc}%       \
+#
+# Wireless network ESSID
+#
+ ${wireless_essid wlp2s0}       \
+#
+# Wireless bitrate (Mb/s)
+#
+ ${wireless_bitrate wlp2s0}       \
+#
+# IP address
+#
+ ${addr wlp2s0}       \
+#
+# Volume level
+#
+ ${exec pactl list sinks|grep Volume|awk -F'/' '{ print $2 }'|sed -n 1p|awk '{$1=$1};1'}       \
+#
+# Current date
+#
+ ${time %a %d %b}       \
+#
+# Current time
+#
+ ${time %H:%M}       \
+#
+# Battery level (%)
+#
+ ${battery_percent BAT0}%   
