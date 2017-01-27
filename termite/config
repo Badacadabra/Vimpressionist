@@ -1,0 +1,78 @@
+################################
+######## Termite config ########
+################################
+
+# ==============================
+# MAIN OPTIONS
+# ==============================
+
+[options]
+
+# Basic appearance
+font = Hack 11
+allow_bold = true
+
+cursor_blink = on
+cursor_shape = block
+
+mouse_autohide = false
+
+# Search & Explore
+search_wrap = true
+
+scrollback_lines = 10000
+scroll_on_output = false
+scroll_on_keystroke = true
+
+# URLs
+browser = firefox
+clickable_url = true
+
+# No warning
+audible_bell = false
+visible_bell = false
+
+# ==============================
+# COLOR SCHEME 
+# ==============================
+
+[colors]
+
+# Arch theme, based on Tomorrow-Night
+
+cursor = #0088CC
+foreground = #ffffff
+background = #25272C
+highlight = #0088CC
+
+# Black + Grey
+color0 = #1d1f21
+color8 = #969896
+
+# Red + Bright Red
+color1 = #912226
+color9 = #cc6666
+
+# Green + Bright Green
+color2 = #778900
+color10 = #b5bd68
+
+# Yellow (Orange) + Bright Yellow (Yellow)
+color3 = #ae7b00
+color11 = #f0c674
+
+# Blue + Bright Blue
+color4 = #0088CC
+color12 = #81a2be
+
+# Magenta (Purple) + Bright Magenta
+color5 = #682a9b
+color13 = #b294bb
+
+# Cyan (Aqua) + Bright Cyan
+color6 = #2b6651
+color14 = #8abeb7
+
+# Light Grey (Selection) + White (Current Line)
+color7 = #929593
+color15 = #ecebec
