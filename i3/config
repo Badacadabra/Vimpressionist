@@ -117,7 +117,7 @@ bindsym $mod+v exec ~/.vim-anywhere/bin/run
 bindsym $mod+d exec --no-startup-id dmenu_run
 
 # Lock screen (pause)
-bindsym $mod+Shift+p exec $HOME/.config/i3/scripts/lock
+bindsym $mod+Shift+p exec /usr/local/bin/lock 
 
 # Exit mode
 mode "exit" {
@@ -240,7 +240,7 @@ bindsym $mod+Shift+0 move container to workspace $WS10
 # ==============================
 
 # Main font
-font pango: NewRocker 12
+font pango: Hack 12
 
 # Window colors 
 client.focused          #0088CC #0088CC #ffffff #dddddd
