@@ -1,3 +1,139 @@
+################################
+########### READLINE ###########
+################################
+
+# ==============================
+# VIM-LIKE CONFIG
+# ==============================
+
+# Use Vi bindings
 set editing-mode vi
+
+# Keymaps in command mode
 set keymap vi-command
-set show-mode-in-prompt on
+
+# Keymaps in insert mode
+set keymap vi-insert
+
+# Display the current mode (cmd/ins)
+# set show-mode-in-prompt on
+# set vi-cmd-mode-string "NORMAL"
+# set vi-ins-mode-string "INSERT"
+
+# ==============================
+# AUTOCOMPLETE
+# ==============================
+
+# Use autocomplete because it is great
+set disable-completion off
+
+# Ignore case for smoother autocomplete
+set completion-ignore-case on
+
+# hyphens = underscores
+set completion-map-case on
+
+# Improve autocomplete using short prefixes
+set completion-prefix-display-length 1
+
+# Avoid annoying '(y/n)' prompt in autocomplete
+set completion-query-items 1000
+
+# Pressing tab once is more efficient!
+set show-all-if-ambiguous on
+
+# We use "show-all-if-ambiguous" instead
+set show-all-if-unmodified off
+
+# Use a pager to display completions
+set page-completions on
+
+# Sort matches horizontally and in alphabetical order
+set print-completions-horizontally on
+
+# Ignore number of columns to display completions 
+set completion-display-width -1
+
+# Append a slash to directories
+set mark-directories on
+
+# Append a slash to symlinked directories
+set mark-symlinked-directories on
+
+# Replace ~ with the appropriate value
+set expand-tilde on
+
+# Do not show hidden files (with leading ".") in autocomplete
+set match-hidden-files off
+
+# Avoid useless duplication in autocomplete
+set skip-completed-text on
+
+# Display filetype in completions
+set visible-stats on
+
+# Highlight stats with colors
+set colored-stats on
+
+# Highlight completion prefix using colors
+set colored-completion-prefix on
+
+# ==============================
+# HISTORY
+# ==============================
+
+# Do not change cursor position in history
+set history-preserve-point off
+
+# A good history should be large enough
+set history-size 1000
+
+# Undo changes to history lines
+set revert-all-at-newline on
+
+# Do not use asterisks in history
+set mark-modified-lines off
+
+# ==============================
+# META
+# ==============================
+
+# Do not convert 8-bit characters
+set convert-meta off
+
+# Allow 8-bit characters as input
+set input-meta on
+
+# Allow 8-bit characters as output
+set output-meta on
+
+# Allow meta commands
+set enable-meta-key on
+
+# ==============================
+# MISCELLANEOUS
+# ==============================
+
+# A bell is annoying, isn't it?
+set bell-style none
+
+# Keep default bindings with special chars
+set bind-tty-special-chars on
+
+# Insert "#" at the beginning of the line when 'insert-comment' is executed
+set comment-begin "#"
+
+# Do not output control characters
+set echo-control-characters off
+
+# Do not wrap lines
+set horizontal-scroll-mode on
+
+# Vim users do not use arrow keys :D
+set enable-keypad off
+
+# End incremental search with ESC and C-j
+# set isearch-terminators ...
+
+# Highlight opening parenthesis when a closing one is inserted
+set blink-matching-paren on
