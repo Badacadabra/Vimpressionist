@@ -69,10 +69,42 @@ for mgr in "${pkg_managers[@]}"; do
     test_pkg "$mgr"
 done
 
+pkg_update() {
+    # Arch & Co. 
+    if [ "$pkg_manager" = "pacman" ] && [ -f /etc/arch-release ]; then
+        sudo pacman -Syu --noconfirm
+    # Debian & Co. 
+    elif [ "$pkg_manager" = "apt" ] && [ -f /etc/debian_version ]; then
+        sudo apt-get update 
+        sudo apt-get --assume-yes upgrade 
+    elif [ "$pkg_manager" = "aptitude" ] && [ -f /etc/debian_version ]; then
+        sudo aptitude update
+        sudo aptitude --assume-yes upgrade
+    # Red Hat & Co. 
+    elif [ "$pkg_manager" = "yum" ] && [ -f /etc/redhat-release ]; then
+        sudo yum update
+    elif [ "$pkg_manager" = "dnf" ] && [ -f /etc/redhat-release ]; then
+        sudo dnf update 
+    # SuSE & Co.
+    elif [ "$pkg_manager" = "zypper" ] && [ -f /etc/SuSE-release ]; then
+        sudo zypper update
+    # Gentoo & Co.
+    # elif [ "$pkg_manager" = "emerge" ] && [ -f /etc/gentoo-release ]; then
+    #   sudo emerge install "$@"
+    # elif [ "$pkg_manager" = "equo" ] && [ -f /etc/gentoo-release ]; then
+    #   sudo equo install "$@"
+    else
+        log err "Your package manager has not been recognized."
+        exit 2
+    fi
+}
+
 pkg_install() {
     # Arch & Co. 
     if [ "$pkg_manager" = "pacman" ] && [ -f /etc/arch-release ]; then
         if [ "$#" -eq 0 ]; then
+            # vte3-ng is a dependency of the Termite package (conflict with vte3) 
+            sudo pacman -Rdd --noconfirm vte3
             sudo pacman -S --noconfirm i3 dmenu gvim vifm zathura zathura-pdf-mupdf termite mutt cmus lynx conky
         else
             sudo pacman -S --noconfirm "$@"
@@ -177,16 +209,33 @@ fi
 # CORE 
 # =============================
 
+# Main packages
 pkg_install
 
-git clone https://github.com/cknadler/vim-anywhere.git
-bash vim-anywhere/install
-rm -rf vim-anywhere
+# log warn "vim-anywhere requires GNOME desktop environment (DE)"
+# log warn "Do you want to install GNOME? (y/n)"
+# log warn "(If you answer 'no', you will keep your DE and vim-anywhere will not be installed.)"
 
-log info "So far so good! Now you have to install Vimperator and Vimium manually."
+# ask "optional"
+
+# if [ "$choice" = "y" ]; then
+#    git clone https://github.com/cknadler/vim-anywhere.git
+#    pkg_install xclip
+#    bash vim-anywhere/install
+#    rm -rf vim-anywhere
+# fi
+
+log info "So far so good! Now you have to install Vimperator manually."
+log info "Firefox will open a new window at the right URL."
+log info "Please close it after the installation of Vimperator to continue with the wizard."
 read -n1 -rsp $'Press any key to continue or Ctrl+C to exit...\n'
 
 firefox https://addons.mozilla.org/fr/firefox/addon/vimperator/
+
+log info "Alright! Now you need to do the same thing for Vimium."
+log info "Chromium will open a new window at the right URL."
+log info "Please close it after the installation of Vimium to continue with the wizard."
+read -n1 -rsp $'Press any key to continue or Ctrl+C to exit...\n'
 
 if [ "$pkg_manager" = "apt" ]; then
     chromium-browser https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb
@@ -197,47 +246,68 @@ fi
 cp readline/inputrc ~/.inputrc
 
 # -----------------------------
+# Handle simple directories 
+# -----------------------------
+
+# Simple means that there is only one possible config directory
+# So basically it exists or not...
+
+handle_simple_dir() {
+    dir="$1"
+    if [ -d "$dir" ]; then
+        rm -rf "${dir:?}/*"
+    else
+        mkdir "$dir" 
+    fi
+}
+
+# -----------------------------
 # i3
 # -----------------------------
 
-if [ -f ~/.config/i3/config ]; then
+# i3 comes with a config directory
+# It can be ~/.config/i3 or ~/.i3
+
+if [ -d ~/.config/i3 ]; then
     rm -rf ~/.config/i3/*
     cp -r i3/* ~/.config/i3
     mv ~/.config/i3/conkyrc ~/.conkyrc
+    mv ~/.config/i3/scripts/* /usr/local/bin
 else
-    if [ -f ~/.i3/config ]; then
-        rm -rf ~/.i3
-    fi
-    mkdir ~/.i3
+    rm -rf ~/.i3/*
     cp -r i3/* ~/.i3
     mv ~/.i3/conkyrc ~/.conkyrc
+    mv ~/.i3/scripts/* /usr/local/bin
 fi
 
 # -----------------------------
 # (G)Vim
 # -----------------------------
 
-if [ -f ~/.vimrc ] || [ -f ~/.gvimrc ]; then
-    if [ -d ~/.vim ]; then
-        rm -rf ~/.vim
-    fi
-    mkdir ~/.vim
-    cp -r vim/* ~/.vim
-    mv ~/.vim/vimrc ~/.vimrc
-fi
+# vimrc & gvimrc files are generally created by the user
+# They are not created automatically after an install
+
+handle_simple_dir ~/.vim
+cp -r vim/* ~/.vim
+mv ~/.vim/vimrc ~/.vimrc
+
+# Patched fonts
+git clone https://github.com/powerline/fonts.git
+bash fonts/install.sh
+rm -rf fonts
 
 # -----------------------------
 # Vifm
 # -----------------------------
 
-if [ -f ~/.config/vifm/vifmrc ]; then
+# Vifm comes with a config directory
+# It can be ~/.config/vifm or ~/.vifm
+
+if [ -d ~/.config/vifm ]; then
     rm -rf ~/.config/vifm/*
     cp -r vifm/* ~/.config/vifm
 else
-    if [ -f ~/.vifm/vifmrc ]; then
-        rm -rf ~/.vifm
-    fi
-    mkdir ~/.vifm
+    rm -rf ~/.vifm/*
     cp -r vifm/* ~/.vifm
 fi
 
@@ -245,49 +315,43 @@ fi
 # Zathura 
 # -----------------------------
 
-if [ -f ~/.config/zathura/zathurarc ]; then
-    rm -rf ~/.config/zathura/*
-    cp -r zathura/* ~/.config/zathura
-fi
+# Zathura normally comes with an empty config directory
+# Here is the path: ~/.config/zathura
+
+handle_simple_dir ~/.config/zathura
+cp -r zathura/* ~/.config/zathura
 
 # -----------------------------
 # Termite 
 # -----------------------------
 
-if [ -f ~/.config/termite/config ]; then
-    mv termite/config ~/.config/termite/config
-fi
+# There is usually no Termite directory after install
+
+handle_simple_dir ~/.config/termite
+cp -r termite/* ~/.config/termite
+echo -e "\n# Termite hack" >> ~/.bashrc
+echo "source /etc/profile.d/vte.sh" >> ~/.bashrc
 
 # -----------------------------
 # Mutt 
 # -----------------------------
 
-if [ -f ~/.muttrc ]; then
-    if [ -d ~/.mutt ]; then
-        rm -rf ~/.mutt
-    fi
-    mkdir ~/.mutt
-    cp -r mutt/* ~/.mutt
-    mv ~/.mutt/muttrc ~/.muttrc
-else
-    if [ -f ~/.mutt/muttrc ]; then
-        rm -rf ~/.mutt/*
-        cp -r mutt/* ~/.mutt
-    fi
-fi
+# Mutt does not create directories or files in $HOME after install
+# The user is responsible for its entire configuration (through ~/.muttrc and ~/.mutt)
+
+handle_simple_dir ~/.mutt
+cp -r mutt/* ~/.mutt
+mv ~/.mutt/muttrc ~/.muttrc
 
 # -----------------------------
 # Vimperator 
 # -----------------------------
 
-if [ -f ~/.vimperatorrc ]; then
-    if [ -d ~/.vimperator ]; then
-        rm -rf ~/.vimperator
-    fi
-    mkdir ~/.vimperator
-    cp -r vimperator/* ~/.vimperator
-    mv ~/.vimperator/vimperatorrc ~/.vimperatorrc
-fi
+# Vimperator should create its config directory (~/.vimperator) automatically
+
+handle_simple_dir ~/.vimperator
+cp -r vimperator/* ~/.vimperator
+mv ~/.vimperator/vimperatorrc ~/.vimperatorrc
 
 # -----------------------------
 # Vimium
@@ -295,9 +359,6 @@ fi
 
 log info "Almost done! Now you have to configure Vimium manually."
 log info "Check the vimiumrc in the repo and copy/paste every part of the config.\n"
-log info "Do you want to open the Vimium configuration page in Chromium? (y/n)"
-
-ask
 
 if [ "$pkg_manager" = "apt" ]; then
     chromium-browser chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html
