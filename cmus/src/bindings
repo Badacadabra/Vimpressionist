@@ -1,0 +1,162 @@
+# ============================
+# KEY BINDINGS
+# ============================
+
+# ----------------------------
+# Main
+# ----------------------------
+
+# Do action (play music, change settings, ...)
+bind -f common enter win-activate
+
+# Redraw the terminal window
+bind -f common ^R refresh
+
+# Exit
+bind -f common Z quit -i
+
+# ----------------------------
+# Views 
+# ----------------------------
+
+bind -f common 1 view tree
+bind -f common 2 view sorted
+bind -f common 3 view playlist
+bind -f common 4 view queue
+bind -f common 5 view browser
+bind -f common 6 view filters
+bind -f common 7 view settings
+
+# ----------------------------
+# Movements
+# ----------------------------
+
+# Go down
+bind -f common j win-down
+bind -f common J win-scroll-down
+bind -f common ^F win-page-down
+
+# Go up
+bind -f common k win-up
+bind -f common K win-scroll-up
+bind -f common ^B win-page-up
+
+# Top/Bottom
+bind -f common g win-top
+bind -f common G win-bottom
+
+# Search with "/" --> previous/next
+bind -f common N search-prev
+bind -f common n search-next
+
+# Focus next window (view 1)
+bind -f common tab win-next
+
+# Back to the selected track 
+bind -f common b win-sel-cur
+
+# Select the playing track on track change
+bind -f common f toggle follow
+
+# Universal toggle
+bind -f common T win-toggle
+
+# ----------------------------
+# Playback control
+# ----------------------------
+
+# Play/Pause/Stop/Next/Prev
+bind -f common > player-play
+bind -f common space player-pause
+bind -f common x player-stop
+bind -f common ^N player-next
+bind -f common ^P player-prev
+
+# Forward (1 minute or 10 seconds)
+bind -f common L seek +1m
+bind -f common l seek +10
+
+# Backward (1 minute or 10 seconds)
+bind -f common H seek -1m
+bind -f common h seek -10
+
+# Volume level
+bind -f common + vol +10%
+bind -f common - vol -10%
+bind -f common ( vol +1% +0
+bind -f common ) vol +0 +1%
+bind -f common { vol -1% -0
+bind -f common } vol -0 -1%
+
+# Display remaining time instead of elapsed time
+bind -f common t toggle show_remaining_time
+
+# Continue playing after current track finishes
+bind -f common c toggle continue
+
+# Repeat (after all tracks played or forever)
+bind -f common r toggle repeat
+bind -f common R toggle repeat_current
+
+# Play in random order 
+bind -f common s toggle shuffle
+
+# Play all tracks from all albums by all artists in library
+bind -f common ^A toggle aaa_mode
+
+# Play tracks from library (sorted or not)
+bind -f common ^L toggle play_library
+bind -f common ^S toggle play_sorted
+
+# ----------------------------
+# Tracks organization
+# ----------------------------
+
+# Add to library (view 2)
+bind -f common a win-add-l
+
+# Add to queue (view 3) --> append/prepend
+bind -f common q win-add-q
+bind -f common Q win-add-Q
+
+# Add to playlist (view 4)
+bind -f common p win-add-p
+
+# Move tracks up/down (in playlist or queue)
+bind -f common M win-mv-before
+bind -f common m win-mv-after
+
+# Delete track
+bind -f common D win-remove
+
+# Display info (path) for the selected track
+bind -f common i echo {}
+
+# Update track metadata cache
+bind -f common u update-cache
+bind -f common U win-update-cache
+
+# ----------------------------
+# Browser (view 5)
+# ----------------------------
+
+# Go to parent folder (..)
+bind -f browser backspace browser-up
+
+# Play music or enter directory
+bind -f browser enter win-activate
+
+# Toggle hidden files in current directory
+bind -f browser h toggle show_hidden
+
+# Update window (to show new files or directories)
+bind -f browser u win-update
+
+# ----------------------------
+# Commands shortcuts 
+# ----------------------------
+
+# Enter command mode with the given word (the one after "push")
+bind -f common ! push shell
+bind -f common F push filter
+bind -f common L push live-filter

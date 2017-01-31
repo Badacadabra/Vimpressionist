@@ -1,0 +1,48 @@
+# ============================
+# FILTERS
+# ============================
+
+# Modern periods
+fset 50s=date>=1950&date<1960
+fset 60s=date>=1960&date<1970
+fset 70s=date>=1970&date<1980
+fset 80s=date>=1980&date<1990
+fset 90s=date>=1990&date<2000
+fset 00s=date>=2000
+
+# Main genres
+fset alternative=genre="Alternative"
+fset ambient=genre="Ambient"
+fset avant-garde=genre="Avant-Garde"
+fset blues=genre="Blues"
+fset classical=genre="Classical"
+fset country=genre="Country"
+fset electronic=genre="Electronic"
+fset folk=genre="Folk"
+fset hip-hop=genre="Hip Hop"
+fset jazz=genre="Jazz"
+fset metal=genre="Metal"
+fset new-age=genre="New Age"
+fset pop=genre="Pop"
+fset punk=genre="Punk"
+fset r&b=genre="R&B"
+fset rap=genre="Rap"
+fset reggae=genre="Reggae"
+fset rock=genre="Rock"
+fset soul=genre="Soul"
+fset world=genre="World"
+
+# Filetype
+fset ogg=filename="*.ogg"|"*.oga"
+fset mp3=filename="*.mp3"
+fset m4a=filename="*.m4a"
+fset wav=filename="*.wav"
+fset flac=filename="*.flac"
+fset wma=filename="*.wma"
+fset ape=filename="*.ape"
+fset ac3=filename="*.ac3"
+fset opus=filename="*.opus"
+
+# Misc
+fset unheard=play_count=0
+fset missing-tag=!stream&(artist=""|album=""|title=""|tracknumber=-1|date=-1)

@@ -1,0 +1,132 @@
+# ============================
+# DEFAULT OPTIONS
+# ============================
+
+# ----------------------------
+# Playback 
+# ----------------------------
+
+# Play tracks from the library in the tree view (1)
+set play_library=true
+set play_sorted=false
+
+# Do not play tracks in random order but use autoshuffle in playlist if shuffle option is enabled 
+set shuffle=false
+set auto_reshuffle=true
+
+# Continue playing after current track finishes
+set continue=true
+
+# Do not select the currently playing track on track change
+set follow=false
+
+# Do not repeat
+set repeat=false
+set repeat_current=false
+
+# Try to keep the perceived volume level constant between track changes
+set replaygain=track
+set replaygain_limit=true
+set replaygain_preamp=0.000000
+
+# In fact, volume level is defined by the user...
+set softvol=false
+set softvol_state=0 0
+
+# Do not resume playback on startup
+set resume=false
+
+# Show elapsed time 
+set show_playback_position=true
+set show_remaining_time=false
+
+# Jump to the previous track if the position of the current track is smaller than 10
+set rewind_offset=10
+
+# Do not show current bitrate in status line
+set show_current_bitrate=false
+
+# ----------------------------
+# Library organization 
+# ----------------------------
+
+# Allow all tracks from all albums by all artists in library
+set aaa_mode=all
+
+# Show all tracks of the selected artist (view 1)
+set show_all_tracks=true
+
+# Do not expand albums (all tracks are already shown)
+set auto_expand_albums_follow=false
+set auto_expand_albums_search=false
+set auto_expand_albums_selcur=false
+
+# Sort library, but not the playlist
+set lib_sort=albumartist date album discnumber tracknumber title filename play_count
+set pl_sort=
+
+# Do not load metadata when adding tracks
+set skip_track_info=false
+
+# Ignore "The" in front of artist names (view 1)
+set smart_artist_sort=true
+set display_artist_sort_name=true
+
+# ----------------------------
+# Formatting 
+# ----------------------------
+
+# Base formats
+set format_current= %a - %l -%3n. %t%= %y
+set format_playlist= %-21%a 3n. %t%= %y %d %{?X!=0?%3X ?    }
+set format_playlist_va= %-21%A %3n. %t (%a)%= %y %d %{?X!=0?%3X ?    }
+set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }}- %{total} %{?volume>=0?vol: %{?lvolume!=rvolume?%{lvolume},%{rvolume} ?%{volume} }}%{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%=%{?repeat_current?repeat current?%{?play_library?%{playlist_mode} from %{?play_sorted?sorted }library?playlist}} | %1{continue}%1{follow}%1{repeat}%1{shuffle}
+set format_title=%a - %l - %t (%y)
+set format_trackwin=%3n. %t%= %y %d
+set format_trackwin_album= %l
+set format_trackwin_va= %3n. %t (%a)%= %y %d
+set format_treewin= %l
+set format_treewin_artist=%a
+
+# Alternative formats
+set altformat_current= %F%= %d
+set altformat_playlist= %f%= %d
+set altformat_title=cmus
+set altformat_trackwin= %f%= %d
+
+# ----------------------------
+# Miscellaneous
+# ----------------------------
+
+# Do not display hidden files in browser (view 5)
+set show_hidden=false
+
+# Wrap search when too long
+set wrap_search=true
+
+# Size of player buffer in seconds
+set buffer_seconds=10
+
+# Encoding
+set icecast_default_charset=UTF-8
+set id3_default_charset=UTF-8
+
+# Ask for confirmation before executing :run
+set confirm_run=true
+
+# Minimal number of lines to keep above and below the cursor
+set scroll_offset=2
+
+# Use PulseAudio
+set output_plugin=pulse
+
+# No mouse in cmus, please! 
+set mouse=false
+
+# Send notifications when cmus state changes
+set status_display_program=notify-send
+
+# CDDA device file
+set device=/dev/cdrom
+
+# set set_term_title=true

@@ -1,0 +1,15 @@
+##############################
+############ CMUS ############
+##############################
+
+# Color scheme 
+source ~/.config/cmus/colors/archery
+
+# Options
+source ~/.config/cmus/src/options
+
+# Bindings
+source ~/.config/cmus/src/bindings
+
+# Filters
+source ~/.config/cmus/src/filters
