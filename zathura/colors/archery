@@ -1,0 +1,75 @@
+# =============================
+# ARCHERY THEME FOR GIRARA
+# =============================
+
+# -----------------------------
+# Main
+# -----------------------------
+
+# Display status bar
+set guioptions "s"
+
+# Font name and size 
+set font "Hack 11"
+
+# Paddings 
+statusbar-h-padding 8
+statusbar-v-padding 2
+
+# Max number of entries for autocomplete 
+n-completion-items 10
+
+# Window options (N/A with i3)
+# window-icon ""
+# window-height 600
+# window-width 800
+
+# -----------------------------
+# Colors 
+# -----------------------------
+
+set default-bg                "#25272C"
+set default-fg                "#FFFFFF"
+
+set statusbar-bg              "#333333"
+set statusbar-fg              "#888888"
+
+set inputbar-bg               "#0088CC"
+set inputbar-fg               "#FFFFFF"
+
+set index-bg                  "#25272C"
+set index-fg                  "#F6F9FC"
+set index-active-bg           "#0088CC"
+set index-active-fg           "#FFFFFF"
+
+set completion-bg             "#333333"
+set completion-fg             "#F6F9FC"
+set completion-group-bg       "#0088CC"
+set completion-group-fg       "#FFFFFF"
+set completion-highlight-bg   "#333333"
+set completion-highlight-fg   "#0088CC"
+
+set tabbar-bg                 "#25272C"
+set tabbar-fg                 "#F6F9FC"
+set tabbar-focus-bg           "#0088CC"
+set tabbar-focus-fg           "#FFFFFF"
+
+set notification-bg           "#0088CC"
+set notification-fg           "#FFFFFF"
+set notification-warning-bg   "#FF6600"
+set notification-warning-fg   "#FFFFFF"
+set notification-error-bg     "#900000"
+set notification-error-fg     "#FFFFFF"
+
+set highlight-color           "#333333"
+set highlight-active-color    "#0088CC"
+set highlight-transparency    "0.5"
+
+set render-loading-bg         "#333333"
+set render-loading-fg         "#FFFFFF"
+
+set recolor                   "true"
+set recolor-lightcolor        "#F6F9FC"
+set recolor-darkcolor         "#333333"
+set recolor-keephue           "true"
+set recolor-reverse-video     "true"

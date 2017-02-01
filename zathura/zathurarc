@@ -1,1 +1,12 @@
-include colors/base16-dark
+###############################
+########### ZATHURA ###########
+###############################
+
+# Color scheme
+include colors/archery
+
+# Settings 
+include src/settings
+
+# Key mappings 
+include src/mappings

@@ -1,0 +1,132 @@
+# =============================
+# SETTINGS 
+# =============================
+
+# -----------------------------
+# App & performance 
+# -----------------------------
+
+# Unload invisible pages every minute
+set page-store-threshold 60
+set page-store-interval 60
+
+# Cache management 
+set page-cache-size 20
+set page-thumbnail-size 4194304
+
+# Use default clipboard for selections
+set selection-clipboard primary
+
+# Show notification when some text has been selected 
+set selection-notification true
+
+# Use plain database, not sqlite
+set database plain
+
+# Enable D-Bus
+set dbus-service true
+
+# -----------------------------
+# Window & status bar
+# -----------------------------
+
+# Show the basename of a file in window title but the complete path in status bar
+set window-title-basename true
+set statusbar-basename false
+
+# Replace $HOME by ~ in titles
+set window-title-home-tilde true
+set statusbar-home-tilde true
+
+# Display the page number in window title
+set window-title-page true
+
+# Align internal links to the left (e.g. index)
+set link-hadjust true
+
+# -----------------------------
+# Page layout 
+# -----------------------------
+
+# Optimal adjustment of the document when it is loaded 
+set adjust-open best-fit
+
+# Column in which the first page will be displayed 
+set first-page-column 1:2
+
+# Space (in pixels) between pages
+set page-padding 1
+
+# Only one page per row
+set pages-per-row 1
+set advance-pages-per-row false
+
+# Show text loader when a document is loading 
+set render-loading true
+
+# -----------------------------
+# Search 
+# -----------------------------
+
+# Show visible/relevant files and directories in autocomplete
+set show-directories true
+set show-hidden false
+set show-recent 10
+
+# Incremental search is a great feature
+set incremental-search true
+
+# Clear search results on abort
+set abort-clear-search true
+
+# Center search results horizontally
+set search-hadjust true
+
+# -----------------------------
+# Scroll 
+# -----------------------------
+
+# Scroll offset
+set scroll-hstep -1
+set scroll-step 30
+set scroll-full-overlap 0
+
+# Consider page boundaries while scrolling 
+set scroll-page-aware true 
+
+# Avoid wrapping for the first/last page
+set scroll-wrap false
+
+# Disable smooth scroll for touchpad
+set smooth-scroll false
+
+# -----------------------------
+# Zoom 
+# -----------------------------
+
+# Maximum percentage
+set zoom-max 1000
+
+# Minimum percentage
+set zoom-min 10
+
+# Amount of percent added or subtracted on each zoom operation (in/out)
+set zoom-step 10
+
+# Disable horizontally centered zooming
+set zoom-center false
+
+# Allow zoom change when following links 
+set link-zoom true
+
+# -----------------------------
+# SyncTex 
+# -----------------------------
+
+# Useful for synchronization between TeX files and PDF output...
+
+# Enable SyncTex
+set synctex true
+
+# Command used for synchronization 
+set synctex-editor-command pdflatex

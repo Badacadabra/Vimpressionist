@@ -1,0 +1,23 @@
+# =============================
+# KEY MAPPINGS 
+# =============================
+
+# -----------------------------
+# Unmap noob keys
+# -----------------------------
+
+unmap <Up>
+unmap <Right>
+unmap <Down>
+unmap <Left>
+
+unmap <PageUp>
+unmap <PageDown> 
+
+# -----------------------------
+# Additional mappings 
+# -----------------------------
+
+# By default, Zathura mappings are REALLY Vim-like!
+
+map ZZ quit
