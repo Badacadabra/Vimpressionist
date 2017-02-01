@@ -1,0 +1,51 @@
+# ============================
+# APP-WIDE
+# ============================
+
+# ----------------------------
+# Main
+# ----------------------------
+
+text-width 0
+show-keymap-hint no
+swap-title-and-hints yes
+confirm-exit yes
+
+browser lynx
+user-agent ""
+
+html-renderer internal
+http-auth-method any
+pager internal 
+external-url-viewer ""
+
+# ----------------------------
+# Useful files
+# ----------------------------
+
+# urls-source "~/.newsbeuter/urls"
+cookie-cache "~/.newsbeuter/cookies.txt"
+cache-file "~/.newsbeuter/cache.db"
+error-log "~/.newsbeuter/error.log"
+
+# ----------------------------
+# Notifications
+# ----------------------------
+
+notify-format "RSS: %f unread feeds (%n unread articles total)"
+notify-program notify-send
+notify-always no
+notify-screen no
+notify-xterm yes
+notify-beep no
+
+# ----------------------------
+# Proxy
+# ----------------------------
+
+use-proxy no
+
+proxy n/a
+proxy-auth n/a
+proxy-auth-method any
+proxy-type http

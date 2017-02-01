@@ -1,0 +1,75 @@
+# ============================
+# RSS CONTENT
+# ============================
+
+# ----------------------------
+# Feeds
+# ----------------------------
+
+opml-url ""
+
+always-download n/a
+download-retries 1
+download-full-page no
+download-timeout 30
+max-download-speed 0
+
+show-read-feeds yes
+feed-sort-order none
+feedlist-format "%4i %n %11u %t"
+always-display-description false
+goto-next-feed yes
+
+auto-reload yes
+suppress-first-reload no
+reload-time 30
+reload-only-visible-feeds no
+reload-threads 2
+
+refresh-on-startup yes
+prepopulate-query-feeds yes
+cleanup-on-quit yes
+
+# ----------------------------
+# Articles
+# ----------------------------
+
+save-path "~/Articles"
+
+ignore-article "*" "title =~ \"Windows\""
+ignore-article "*" "title =~ \"Mac\""
+ignore-mode download
+
+show-read-articles yes
+keep-articles-days 0
+reset-unread-on-update n/a
+datetime-format "%b %d"
+goto-first-unread no
+mark-as-read-on-hover no
+display-article-progress yes
+article-sort-order date
+articlelist-format "%4i %f %D %6L %?T?;%-17T; ?%t"
+delete-read-articles-on-quit no
+
+max-items 0
+# highlight-article n/a
+history-limit 100
+
+podcast-auto-enqueue no
+
+# ----------------------------
+# BOOKMARKS
+# ----------------------------
+
+bookmark-cmd ""
+bookmark-interactive no
+bookmark-autopilot no
+
+# ----------------------------
+# FILTERS
+# ----------------------------
+
+define-filter "Feeds about GNU/Linux" "tags # \"linux\""
+define-filter "Feeds about Arch" "tags # \"arch\""
+define-filter "Feeds about Debian" "tags # \"debian\""
+define-filter "Feeds about Red Hat" "tags # \"redhat\""

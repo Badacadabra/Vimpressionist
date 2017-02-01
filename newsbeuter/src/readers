@@ -1,0 +1,39 @@
+# ============================
+# THIRD-PARTY RSS FEED READERS
+# ============================
+
+# ----------------------------
+# FEEDHQ
+# ----------------------------
+
+feedhq-flag-share ""
+feedhq-flag-star ""
+feedhq-login ""
+feedhq-min-items 30
+feedhq-password ""
+feedhq-passwordfile ""
+feedhq-show-special-feeds yes
+
+# ----------------------------
+# THE OLD READER
+# ----------------------------
+
+oldreader-flag-share ""
+oldreader-flag-star ""
+oldreader-login ""
+oldreader-min-items 30
+oldreader-password ""
+oldreader-passwordfile ""
+oldreader-show-special-feeds yes
+
+# ----------------------------
+# TINY TINY RSS
+# ----------------------------
+
+ttrss-flag-publish ""
+ttrss-flag-star ""
+ttrss-login ""
+ttrss-mode multi
+ttrss-password ""
+ttrss-passwordfile ""
+ttrss-url ""

@@ -1,0 +1,15 @@
+# ============================
+# STYLE 
+# ============================
+
+# highlight
+search-highlight-colors white black bold
+
+color background        white black
+color listnormal        white black 
+color listfocus         white blue bold
+color listnormal_unread white default bold
+color listfocus_unread  white default bold 
+color info              white blue bold
+color article           white default
+

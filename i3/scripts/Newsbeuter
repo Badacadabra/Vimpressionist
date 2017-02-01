@@ -1,0 +1,2 @@
+#!/bin/bash
+termite --name=Newsbeuter --class=Newsbeuter --exec newsbeuter

@@ -1,0 +1,15 @@
+##############################
+######### NEWSBEUTER #########
+##############################
+
+# Color scheme
+include "~/.newsbeuter/colors/archery"
+
+# App-wide config
+include "~/.newsbeuter/src/app"
+
+# RSS config
+include "~/.newsbeuter/src/rss"
+
+# Third-party readers config
+include "~/.newsbeuter/src/readers"
