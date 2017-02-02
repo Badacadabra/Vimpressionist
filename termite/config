@@ -1,10 +1,13 @@
-################################
-######## Termite config ########
-################################
+###############################
+########### TERMITE ###########
+###############################
 
-# ==============================
+# Syntax coloring in Vim
+# vim: ft=dosini cms=#%s
+
+# =============================
 # MAIN OPTIONS
-# ==============================
+# =============================
 
 [options]
 
@@ -15,7 +18,9 @@ allow_bold = true
 cursor_blink = on
 cursor_shape = block
 
-mouse_autohide = false
+fullscreen = false
+size_hints = false
+mouse_autohide = true 
 
 # Search & Explore
 search_wrap = true
@@ -26,53 +31,75 @@ scroll_on_keystroke = true
 
 # URLs
 browser = firefox
-clickable_url = true
+clickable_url = false 
+filter_unmatched_urls = true
 
 # No warning
 audible_bell = false
 visible_bell = false
+urgent_on_bell = false
 
-# ==============================
-# COLOR SCHEME 
-# ==============================
+# Misc
+dynamic_title = true
+modify_other_keys = false
+icon_name = terminal
+
+# =============================
+# ARCHERY COLORSCHEME 
+# =============================
 
 [colors]
 
-# Arch theme, based on Tomorrow-Night
-
 cursor = #0088CC
-foreground = #ffffff
+foreground = #FFFFFF
 background = #25272C
 highlight = #0088CC
 
-# Black + Grey
-color0 = #1d1f21
-color8 = #969896
+# Gray
+color0 = #25272C
+color8 = #888888
 
-# Red + Bright Red
-color1 = #912226
-color9 = #cc6666
+# Red
+color1 = #900000
+color9 = #C95F5F
 
-# Green + Bright Green
-color2 = #778900
-color10 = #b5bd68
+# Green
+color2 = #11543D
+color10 = #73BA25
 
-# Yellow (Orange) + Bright Yellow (Yellow)
-color3 = #ae7b00
-color11 = #f0c674
+# Yellow
+color3 = #FF6600
+color11 = #EAC06E
 
-# Blue + Bright Blue
+# Blue
 color4 = #0088CC
-color12 = #81a2be
+color12 = #81A3CF
 
-# Magenta (Purple) + Bright Magenta
-color5 = #682a9b
-color13 = #b294bb
+# Purple 
+color5 = ##622C84
+color13 = #B589C2
 
-# Cyan (Aqua) + Bright Cyan
-color6 = #2b6651
-color14 = #8abeb7
+# Kaki/Cyan 
+color6 = #2B6651
+color14 = #8ABEB7
 
-# Light Grey (Selection) + White (Current Line)
-color7 = #929593
-color15 = #ecebec
+# White 
+color7 = #BBBBBB
+color15 = #F6F9FC
+
+# =============================
+# URL HINTS 
+# =============================
+
+[hints]
+
+font = Hack 11 
+
+border = #FFFFFF
+border_width = 1.5
+
+padding = 3
+roundness = 1.5
+
+foreground = #FFFFFF
+background = #0088CC
