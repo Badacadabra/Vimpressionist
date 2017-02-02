@@ -20,8 +20,8 @@ menu_close Escape
 action_0 Return
 
 reload_image r
-# reload_plus +
-# reload_minus -
+reload_plus
+reload_minus
 
 next_img n
 prev_img p
@@ -54,8 +54,8 @@ mirror bar
 orient_1 greater
 orient_3 less
 
-size_to_image s
 render R
+size_to_image s
 
 # ----------------------------
 # Toggle options
@@ -77,15 +77,18 @@ toggle_fullscreen f
 # Scroll 
 # ----------------------------
 
-scroll_left H
-scroll_down J
-scroll_up K
-scroll_right L
+# By default, scroll is a bit counterintuitive...
+# It is reasonable to reverse every binding.
 
-scroll_left_page C-h
-scroll_down_page C-j
-scroll_up_page C-k
-scroll_right_page C-l
+scroll_left L
+scroll_down K
+scroll_up J
+scroll_right H
+
+scroll_left_page C-l
+scroll_down_page C-k
+scroll_up_page C-j
+scroll_right_page C-h
 
 # ----------------------------
 # Zoom 

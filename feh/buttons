@@ -1,0 +1,17 @@
+# ============================
+# MOUSE BINDINGS
+# ============================
+
+# If you like Vim, why would you use a mouse?
+# Here we unbind everything!
+
+reload
+pan
+zoom
+toggle_menu
+prev_img
+next_img
+blur
+rotate
+zoom_in
+zoom_out
