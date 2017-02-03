@@ -3,6 +3,52 @@
 # ============================
 
 # ----------------------------
+# Unbind useless keys and mouse
+# ----------------------------
+
+# Browser
+unbind -f browser i
+unbind -f browser space
+unbind -f browser backspace
+
+# Common
+unbind -f common up
+unbind -f common right
+unbind -f common down
+unbind -f common left
+
+unbind -f common page_up
+unbind -f common page_down
+
+unbind -f common home
+unbind -f common end
+
+unbind -f common delete
+
+unbind -f common .
+unbind -f common ,
+unbind -f common =
+
+unbind -f common [
+unbind -f common ]
+
+unbind -f common ^K
+unbind -f common ^Y
+unbind -f common ^E
+
+unbind -f common P
+
+unbind -f common e
+unbind -f common o
+unbind -f common v
+unbind -f common y
+unbind -f common z
+
+unbind -f common mouse_scroll_up
+unbind -f common mouse_scroll_down
+unbind -f common mlb_click_selected
+
+# ----------------------------
 # Main
 # ----------------------------
 
@@ -83,10 +129,10 @@ bind -f common h seek -10
 # Volume level
 bind -f common + vol +10%
 bind -f common - vol -10%
-bind -f common ( vol +1% +0
-bind -f common ) vol +0 +1%
-bind -f common { vol -1% -0
-bind -f common } vol -0 -1%
+bind -f common ) vol +1% +0
+bind -f common } vol +0 +1%
+bind -f common ( vol -1% -0
+bind -f common { vol -0 -1%
 
 # Display remaining time instead of elapsed time
 bind -f common t toggle show_remaining_time
@@ -141,13 +187,13 @@ bind -f common U win-update-cache
 # ----------------------------
 
 # Go to parent folder (..)
-bind -f browser backspace browser-up
+bind -f browser h browser-up
 
-# Play music or enter directory
-bind -f browser enter win-activate
+# Enter directory
+bind -f browser l win-activate
 
 # Toggle hidden files in current directory
-bind -f browser h toggle show_hidden
+bind -f browser t toggle show_hidden
 
 # Update window (to show new files or directories)
 bind -f browser u win-update
@@ -159,4 +205,4 @@ bind -f browser u win-update
 # Enter command mode with the given word (the one after "push")
 bind -f common ! push shell
 bind -f common F push filter
-bind -f common L push live-filter
+bind -f common V push live-filter

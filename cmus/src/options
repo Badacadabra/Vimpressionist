@@ -124,7 +124,7 @@ set output_plugin=pulse
 set mouse=false
 
 # Send notifications when cmus state changes
-set status_display_program=notify-send
+# set status_display_program=notify-send
 
 # CDDA device file
 set device=/dev/cdrom
