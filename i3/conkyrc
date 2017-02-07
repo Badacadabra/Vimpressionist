@@ -1,10 +1,10 @@
-##############################
-######## Conky config ########
-##############################
+###############################
+############ CONKY ############
+###############################
 
-# ==============================
+# =============================
 # CORE SETTINGS 
-# ==============================
+# =============================
 
 # Output to console instead of X
 out_to_x no
@@ -15,16 +15,16 @@ own_window no
 update_interval 2.0
 total_run_times 0
 
-# ==============================
+# =============================
 # OUTPUT FOR I3-BAR
-# ==============================
+# =============================
 
 TEXT
 
 #
 # CPU usage (%)
 #
- ${cpu cpu1}%       \
+ ${cpu cpu0}%       \
 #
 # RAM usage (%)
 #
@@ -32,19 +32,19 @@ TEXT
 #
 # Wireless network ESSID
 #
- ${wireless_essid wlp2s0}       \
+${if_up wlp2s0} ${wireless_essid wlp2s0}${else} N/A${endif}       \
 #
 # Wireless bitrate (Mb/s)
 #
- ${wireless_bitrate wlp2s0}       \
+${if_up wlp2s0} ${wireless_bitrate wlp2s0}${else} N/A${endif}       \
 #
 # IP address
 #
- ${addr wlp2s0}       \
+${if_up wlp2s0} ${addr wlp2s0}${else} N/A${endif}       \
 #
 # Volume level
 #
- ${exec pactl list sinks|grep Volume|awk -F'/' '{ print $2 }'|sed -n 1p|awk '{$1=$1};1'}       \
+ ${exec pactl list sinks | grep Volume | awk -F'/' '{ print $2 }' | sed -n 1p | awk '{$1=$1};1'}       \
 #
 # Current date
 #
@@ -56,4 +56,8 @@ TEXT
 #
 # Battery level (%)
 #
- ${battery_percent BAT0}%   
+${if_match ${battery_percent BAT0} <= 100}${if_match ${battery_percent BAT0} >= 75} ${battery_percent BAT0}% ${endif}${endif}\
+${if_match ${battery_percent BAT0} < 75}${if_match ${battery_percent BAT0} >= 50} ${battery_percent BAT0}% ${endif}${endif}\
+${if_match ${battery_percent BAT0} < 50}${if_match ${battery_percent BAT0} >= 25} ${battery_percent BAT0}% ${endif}${endif}\
+${if_match ${battery_percent BAT0} < 25}${if_match ${battery_percent BAT0} >= 5} ${battery_percent BAT0}% ${endif}${endif}\
+${if_match ${battery_percent BAT0} < 5} ${battery_percent BAT0}%${endif}

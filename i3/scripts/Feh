@@ -1,0 +1,2 @@
+#!/bin/bash
+feh --hide-pointer --theme black "$@"
