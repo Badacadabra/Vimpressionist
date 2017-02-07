@@ -1,0 +1,19 @@
+" =============================
+" MARKS 
+" =============================
+
+" Root directory
+mark r /
+
+" Configuration
+mark c /etc
+
+" Home directory
+mark h ~
+mark H ~
+
+" XDG
+mark x ~/.config
+
+" Vim
+mark v ~/.vim

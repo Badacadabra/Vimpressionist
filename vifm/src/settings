@@ -1,0 +1,88 @@
+" =============================
+" SETTINGS
+" =============================
+
+" -----------------------------
+" Main 
+" -----------------------------
+
+" Use Vim as default
+set vicmd=vim
+
+" Do not run executable files
+set norunexec
+
+" Enable short commands (e.g. :!Te instead of :!Terminal or :!Te<tab>)
+set fastrun
+
+" Maximum number of changes that can be undone
+set undolevels=100
+
+" Use binary prefixes (e.g. MiB instead of MB)
+set noiec
+
+" Natural sort of (version) numbers within text
+set sortnumbers
+
+" Leave some space from cursor to upper/lower border in lists
+set scrolloff=4
+
+" No help
+set novimhelp
+
+" -----------------------------
+" Search & autocomplete
+" -----------------------------
+
+" Ignore case in search patterns
+set ignorecase
+
+" Do not ignore case if a search pattern contains an uppercase letter
+set smartcase
+
+" Highlight search results
+set hlsearch
+
+" Use incremental search (search while typing)
+set incsearch
+
+" Show list of matches on tab completion in command-line mode
+set wildmenu
+
+" Display completions in a form of popup with descriptions of the matches
+set wildstyle=popup
+
+" Display suggestions in every mode, if possible
+set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
+
+" -----------------------------
+" Files management 
+" -----------------------------
+
+" Trash location
+set trash
+
+" Automatically resolve symbolic links on l or Enter
+set nofollowlinks
+
+" Max number of directories in the history
+set history=100
+
+" Avoid too many requests on slow file systems
+if !has('win')
+    set slowfs=curlftpfs
+endif
+
+" What should be saved automatically between vifm runs
+set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
+    \phistory,fhistory,dirstack,registers,bookmarks,bmarks
+
+" -----------------------------
+" Formatting 
+" -----------------------------
+
+" Datetime format
+set timefmt=%m/%d\ %H:%M
+
+" Set custom status line look
+set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "

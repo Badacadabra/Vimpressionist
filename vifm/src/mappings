@@ -1,0 +1,60 @@
+" =============================
+" KEY MAPPINGS
+" =============================
+
+" Vifm default mappings are entirely based on Vim. This is great!
+" Here are some additional mappings...
+
+" Basic mappings
+nnoremap e :edit<cr>
+nnoremap d :delete<cr>
+
+" Two-panel mappings
+nnoremap s :sync<cr>
+nnoremap y :copy<cr>
+nnoremap m :move<cr>
+
+" Toggle visibility of preview window
+nnoremap w :view<cr>
+vnoremap w :view<cr>gv
+
+" Open file in new instance of gvim
+nnoremap o :!gvim %f<cr>
+
+" Open file in the background using its default program
+nnoremap gb :file &<cr>l
+
+" Start terminal in current directory
+nnoremap t :shell<cr>
+
+" Display sorting dialog
+nnoremap S :sort<cr>
+
+" Yank current directory path into the clipboard
+nnoremap yd :!echo %d | xclip %i<cr>
+
+" Yank current file path into the clipboard
+nnoremap yf :!echo %c:p | xclip %i<cr>
+
+" Mappings for faster renaming
+nnoremap I cw<c-a>
+nnoremap R cw<c-u>
+nnoremap A cw
+
+" Open vim to edit vifmrc and apply settings after returning to vifm
+nnoremap ,v :write | edit $MYVIFMRC | restart<cr>
+
+" Open gvim to edit vifmrc
+nnoremap ,V :!gvim --remote-tab-silent $MYVIFMRC &<cr>
+
+" Toggle wrap setting on ,w key
+nnoremap ,w :set wrap!<cr>
+
+" Hide search highlights
+nnoremap <c-h> :nohl<cr>
+
+" A wise Vim user should not use arrow keys...
+nnoremap <up> <nop>
+nnoremap <right> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
