@@ -3,14 +3,110 @@
 # ============================
 
 # ----------------------------
+# Unbind useless keys 
+# ----------------------------
+
+unbind-key UP
+unbind-key RIGHT
+unbind-key DOWN
+unbind-key LEFT
+
+unbind-key PPAGE
+unbind-key NPAGE
+
+unbind-key HOME
+unbind-key END
+
+unbind-key g
+unbind-key A
+unbind-key C
+unbind-key G
+unbind-key ^G
+unbind-key ^K
+unbind-key ^L
+unbind-key ^V
+
+# ----------------------------
 # Simple bindings
 # ----------------------------
 
-# ubind-key
-# bind-key
+# Main options
+bind-key ? help
+bind-key / open-search
+bind-key : cmdline
+
+bind-key l open
+bind-key w save
+bind-key Z quit
+
+# Navigation
+bind-key k up
+bind-key j down
+bind-key ^B pageup
+bind-key ^F pagedown
+
+bind-key J next
+bind-key K prev
+bind-key z random-unread
+bind-key n next-unread
+bind-key p prev-unread
+bind-key N next-feed
+bind-key P prev-feed
+bind-key ^N next-unread-feed
+bind-key ^P prev-unread-feed
+
+bind-key v view-dialogs
+bind-key ^I next-dialog
+bind-key ^O prev-dialog
+bind-key x close-dialog
+
+bind-key 0 home
+bind-key $ end
+bind-key r reload
+bind-key R reload-all
+
+bind-key o open-in-browser
+bind-key O open-in-browser-and-mark-read
+
+# URLs
+bind-key "#" goto-url
+bind-key u show-urls
+bind-key e edit-urls
+bind-key ^R reload-urls
+
+# Marks, filters and tags
+bind-key b bookmark
+
+bind-key m mark-feed-read
+bind-key M mark-all-feeds-read
+
+bind-key f select-filter
+bind-key F set-filter
+bind-key ^C clear-filter
+
+bind-key t set-tag
+bind-key T clear-tag
+
+# Toggle
+bind-key ^U toggle-source-view
+bind-key ^A toggle-article-read
+bind-key ^S toggle-show-read-feeds
+
+# Misc.
+bind-key s sort
+bind-key S rev-sort
+
+bind-key D delete-article
+bind-key ^D purge-deleted
+
+bind-key E enqueue
+bind-key ^E edit-flags
+
+bind-key F5 redraw
+bind-key | pipe-to
 
 # ----------------------------
 # Macros 
 # ----------------------------
 
-# macro
+# macro <macro key> <command list>

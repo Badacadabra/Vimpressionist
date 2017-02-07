@@ -3,7 +3,7 @@
 # ============================
 
 # ----------------------------
-# FEEDHQ
+# FeedHQ
 # ----------------------------
 
 feedhq-flag-share ""
@@ -15,7 +15,7 @@ feedhq-passwordfile ""
 feedhq-show-special-feeds yes
 
 # ----------------------------
-# THE OLD READER
+# The Old Reader
 # ----------------------------
 
 oldreader-flag-share ""
@@ -27,7 +27,7 @@ oldreader-passwordfile ""
 oldreader-show-special-feeds yes
 
 # ----------------------------
-# TINY TINY RSS
+# Tiny Tiny RSS
 # ----------------------------
 
 ttrss-flag-publish ""

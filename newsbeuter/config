@@ -5,6 +5,9 @@
 # Color scheme
 include "~/.newsbeuter/colors/archery"
 
+# Key bindings
+include "~/.newsbeuter/src/bindings"
+
 # App-wide config
 include "~/.newsbeuter/src/app"
 
