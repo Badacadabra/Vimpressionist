@@ -1,0 +1,24 @@
+# ==============================
+# OWN MAIL ACCOUNT 
+# ==============================
+
+# ------------------------------
+# IMAP 
+# ------------------------------
+
+set imap_user = ""
+set hostname = ""
+set folder = ""
+set spoolfile = ""
+set postponed = ""
+set trash = ""
+
+# ------------------------------
+# SMTP 
+# ------------------------------
+
+set realname = ""
+set from = ""
+set smtp_url = ""
+set record = ""
+# set signature = ~/.signature

@@ -1,0 +1,544 @@
+# ==============================
+# KEY BINDINGS 
+# ==============================
+
+# ------------------------------
+# Unbind some default keys 
+# ------------------------------
+
+bind generic,index,pager,alias,query,attach,compose,postpone,browser <up> noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser <right> noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser <down> noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser <left> noop
+
+bind generic,index,pager,alias,query,attach,compose,postpone,browser <pageup> noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser <pagedown> noop
+
+bind generic,index,pager,alias,query,attach,compose,postpone,browser <home> noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser <end> noop
+
+bind generic,index,pager,alias,query,attach,compose,postpone,browser \e<tab> noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser <space> noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser \ee noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser $ noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser = noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser - noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser < noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser > noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser [ noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser ] noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser * noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser \Cf noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser \CK noop
+
+bind generic,index,pager,alias,query,attach,compose,postpone,browser Z noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser z noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser o noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser O noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser y noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser N noop
+bind generic,index,pager,alias,query,attach,compose,postpone,browser m noop
+
+# ------------------------------
+# Sidebar 
+# ------------------------------
+
+bind index,pager \Ct sidebar-toggle-visible
+bind index,pager <space> sidebar-open
+
+bind index,pager \Cn sidebar-next
+bind index,pager \Cp sidebar-prev
+bind index,pager \en sidebar-next-new
+bind index,pager \ep sidebar-prev-new
+
+bind index,pager \ef sidebar-page-down
+bind index,pager \eb sidebar-page-up
+
+# ------------------------------
+# Generic menu (fallback)
+# ------------------------------
+
+# Main options
+bind generic ? help
+bind generic : enter-command
+bind generic ! shell-escape
+bind generic \Cl refresh
+bind generic x exit
+
+# Search
+bind generic / search
+bind generic \e/ search-reverse
+bind generic n search-next
+bind generic N search-opposite
+
+# Movements 
+bind generic H top-page
+bind generic M middle-page
+bind generic L bottom-page
+
+bind generic \Cy previous-line
+bind generic \Ce next-line
+
+bind generic \Cu half-up
+bind generic \Cd half-down
+
+bind generic \Cb previous-page
+bind generic \Cf next-page
+
+bind generic <Enter> select-entry
+bind generic gg first-entry
+bind generic G last-entry
+bind generic j next-entry
+bind generic k previous-entry
+
+# Tags
+bind generic t tag-entry
+bind generic , tag-prefix
+
+# Not assigned
+# bind generic ... tag-prefix-cond
+# bind generic ... end-cond
+# bind generic ... what-key
+# bind generic ... jump
+# bind generic ... current-top
+# bind generic ... current-middle
+# bind generic ... current-bottom
+
+# ------------------------------
+# Index menu
+# ------------------------------
+
+# Force some generic bindings
+bind index L bottom-page
+bind index gg first-entry
+bind index G last-entry
+bind index \Cy previous-line
+bind index \Ce next-line
+bind index \Cu half-up
+bind index \Cd half-down
+bind index \Cb previous-page
+bind index \Cf next-page
+bind index N search-opposite
+
+# Basic options
+bind index Q query
+bind index A create-alias
+bind index Z quit
+
+# Navigation 
+bind index c change-folder
+bind index k previous-undeleted
+bind index j next-undeleted
+bind index K previous-entry
+bind index J next-entry
+bind index \ek previous-new-then-unread
+bind index \ej next-new-then-unread
+
+# Mailbox
+bind index W sync-mailbox
+bind index % toggle-write
+bind index . buffy-list
+bind index @ display-address
+bind index < sort-mailbox
+bind index > sort-reverse
+
+# Messages
+bind index <Return> display-message
+bind index m mail
+bind index e edit
+bind index y copy-message
+bind index w save-message
+bind index d delete-message
+bind index u undelete-message
+bind index D purge-message
+bind index R resend-message
+bind index h display-toggle-weed
+bind index r reply
+bind index l list-reply
+bind index a group-reply # reply all
+bind index f forward-message
+bind index b bounce-message
+bind index p print-message
+bind index P parent-message
+bind index \Cr recall-message
+bind index | pipe-message
+
+# Attachments
+bind index v view-attachments
+bind index E edit-type
+
+# Patterns
+bind index \ex delete-pattern
+bind index \eX undelete-pattern
+bind index \el limit
+bind index \eL show-limit
+
+# Threads
+bind index \er read-thread
+bind index \eR read-subthread
+
+bind index & link-threads
+bind index \Cc collapse-thread
+bind index \ec collapse-all
+bind index "#" break-thread
+
+bind index \ed delete-thread
+bind index \eu undelete-thread
+bind index \eD delete-subthread
+bind index \eU undelete-subthread
+
+bind index { previous-thread
+bind index } next-thread
+bind index ) next-subthread
+bind index ( previous-subthread
+
+# Tags & flags
+bind index t tag-pattern
+bind index T tag-thread
+bind index \tt tag-subthread
+bind index \tT untag-pattern
+
+bind index F flag-message
+bind index \tf set-flag
+bind index \tF clear-flag
+
+# Misc.
+bind index V show-version
+bind index \Cm fetch-mail
+bind index \eC decode-copy
+bind index \eS decode-save
+bind index \eN toggle-new
+
+# Encryption
+bind index \eP check-traditional-pgp
+bind index \eM mail-key
+bind index \eK extract-keys
+bind index \eF forget-passphrase
+bind index \eC decrypt-copy
+bind index \eS decrypt-save
+
+# Not assigned
+# bind index ... change-folder-readonly
+# bind index ... next-unread-mailbox
+# bind index ... next-unread
+# bind index ... next-new
+# bind index ... previous-unread
+# bind index ... previous-new
+# bind index ... imap-fetch-mail
+# bind index ... imap-logout-all
+
+# ------------------------------
+# Pager menu
+# ------------------------------
+
+# Main options
+bind pager ? help
+bind pager : enter-command
+bind pager ! shell-escape
+bind pager \Cl redraw-screen
+bind pager x exit
+bind pager q quit
+
+# Search
+bind pager / search
+bind pager \e/ search-reverse
+bind pager \\ search-toggle
+bind pager n search-next
+bind pager N search-opposite
+
+# Basic movements
+bind pager g top
+bind pager G bottom
+
+bind pager \Cy previous-line
+bind pager \Ce next-line
+
+bind pager \Cu half-up
+bind pager \Cd half-down
+
+bind pager \Cb previous-page
+bind pager \Cf next-page
+
+# Navigation
+bind pager c change-folder
+bind pager C change-folder-readonly
+
+bind pager k previous-undeleted
+bind pager K previous-entry 
+
+bind pager j next-undeleted
+bind pager J next-entry
+
+# Mailbox
+bind pager W sync-mailbox
+bind pager . buffy-list
+bind pager @ display-address
+bind pager < sort-mailbox
+bind pager > sort-reverse
+
+# Messages
+bind pager m mail
+bind pager e edit
+bind pager w save-message
+bind pager d delete-message
+bind pager u undelete-message
+bind pager D purge-message
+bind pager r reply
+bind pager a group-reply # reply all
+bind pager l list-reply
+bind pager y copy-message
+bind pager f forward-message
+bind pager b bounce-message
+bind pager p print-message
+bind pager P parent-message
+bind pager R resend-message
+bind pager \Cr recall-message
+bind pager | pipe-message
+
+# Threads
+bind pager & link-threads
+bind pager "#" break-thread
+bind pager \er read-thread
+bind pager \eR read-subthread
+bind pager { previous-thread
+bind pager } next-thread
+bind pager ( previous-subthread
+bind pager ) next-subthread
+
+# Flags
+bind pager t tag-message
+bind pager F flag-message
+bind pager \tn mark-as-new
+bind pager \tf set-flag
+bind pager \tF clear-flag
+
+# Attachments
+bind pager v view-attachments
+bind pager E edit-type
+
+# Encryption
+bind pager \eP check-traditional-pgp
+bind pager \eM mail-key
+bind pager \eK extract-keys
+bind pager \eF forget-passphrase
+bind pager \eC decrypt-copy
+bind pager \eS decrypt-save
+
+# Misc.
+bind pager V show-version
+bind pager A create-alias
+bind pager h display-toggle-weed
+
+bind pager S skip-quoted
+bind pager T toggle-quoted
+
+bind pager \eC decode-copy
+bind pager \eS decode-save
+
+# Not assigned
+# bind pager ... next-unread-mailbox
+# bind pager ... next-new
+# bind pager ... next-unread
+# bind pager ... previous-new
+# bind pager ... previous-unread
+# bind pager ... delete-thread
+# bind pager ... undelete-thread
+# bind pager ... delete-subthread
+# bind pager ... undelete-subthread
+# bind pager ... imap-fetch-mail
+# bind pager ... imap-logout-all
+# bind pager ... what-key
+# bind pager ... jump
+
+# ------------------------------
+# Alias menu
+# ------------------------------
+
+bind alias d delete-entry
+bind alias u undelete-entry
+
+# ------------------------------
+# Query menu
+# ------------------------------
+
+bind query m mail
+bind query a query-append
+bind query Q query
+bind query A create-alias
+
+# ------------------------------
+# Attachment menu 
+# ------------------------------
+
+# Attachments
+bind attach t view-text
+bind attach v view-mailcap
+bind attach V view-attach
+bind attach E edit-type
+ 
+# Replies
+bind attach r reply
+bind attach a group-reply # reply all
+bind attach l list-reply
+
+# Entries
+bind attach p print-entry
+bind attach w save-entry
+bind attach d delete-entry
+bind attach u undelete-entry
+bind attach | pipe-entry
+
+# Messages
+bind attach f forward-message
+bind attach b bounce-message
+bind attach R resend-message
+
+# Encryption
+bind attach \eP check-traditional-pgp
+bind attach \eK extract-keys
+bind attach \eF forget-passphrase
+
+# Misc.
+bind attach h display-toggle-weed
+bind attach \eC collapse-parts
+
+# ------------------------------
+# Compose menu
+# ------------------------------
+
+# Mail header
+bind compose f edit-from
+bind compose t edit-to
+bind compose r edit-reply-to
+bind compose s edit-subject
+
+bind compose c edit-cc
+bind compose b edit-bcc
+bind compose F edit-fcc
+bind compose w write-fcc
+
+# Message
+bind compose e edit-message
+bind compose m send-message
+bind compose P postpone-message
+bind compose \Ce edit-headers
+
+# Attachments
+bind compose a attach-file
+bind compose A attach-message
+bind compose x detach-file
+bind compose v view-attach
+bind compose y copy-file
+bind compose d edit-description
+bind compose R rename-file
+bind compose E edit-type
+bind compose u toggle-unlink
+bind compose U update-encoding
+bind compose \Cd toggle-disposition
+bind compose \ea get-attachment
+bind compose \em new-mime
+bind compose \eM edit-mime
+bind compose \ee edit-file
+bind compose \eE edit-encoding
+bind compose \ef filter-entry
+bind compose | pipe-entry
+
+# Encryption
+bind compose \eK attach-key
+bind compose \eP pgp-menu
+bind compose \eF forget-passphrase
+bind compose \eS smime-menu
+
+# Misc.
+bind compose h display-toggle-weed
+bind compose i ispell
+bind compose p print-entry
+
+# Not assigned
+# bind compose ... mix
+# bind compose ... toggle-recode
+
+# ------------------------------
+# Postpone menu
+# ------------------------------
+
+bind postpone d delete-entry
+bind postpone u undelete-entry
+
+# ------------------------------
+# Browser menu
+# ------------------------------
+
+# Generic mailboxes
+bind browser . buffy-list
+bind browser <tab> toggle-mailboxes
+bind browser n check-new
+bind browser N select-new
+
+# Directories & files
+bind browser c change-dir
+bind browser f display-filename
+bind browser v view-file
+bind browser m enter-mask
+
+# Sort messages
+bind browser < sort
+bind browser > sort-reverse
+
+# IMAP mailbox 
+bind browser C create-mailbox
+bind browser d delete-mailbox
+bind browser r rename-mailbox
+bind browser s subscribe
+bind browser u unsubscribe
+bind browser T toggle-subscribed
+
+# ------------------------------
+# PGP menu
+# ------------------------------
+
+# View key's user id
+bind pgp v view-name
+
+# Verify PGP public key
+bind pgp V verify-key
+
+# ------------------------------
+# S/MIME menu
+# ------------------------------
+
+# View key's user id
+bind smime v view-name
+
+# Verify PGP public key
+bind smime V verify-key
+
+# ------------------------------
+# Mixmaster menu
+# ------------------------------
+
+# If Mutt is compiled with Mixmaster support... 
+
+# Accept the chain constructed
+# bind mix MUTT_ENTER_S accept
+
+# Append a remailer to the chain
+# bind mix a append
+
+# Insert a remailer into the chain
+# bind mix i insert
+
+# Delete a remailer from the chain
+# bind mix d delete
+
+# Select the previous element of the chain
+# bind mix h chain-prev
+
+# Select the next element of the chain
+# bind mix l chain-next
+
+# ------------------------------
+# Editor menu
+# ------------------------------
+
+# Here we use Vim, not the default editor!

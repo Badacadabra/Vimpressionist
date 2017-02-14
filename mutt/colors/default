@@ -1,0 +1,24 @@
+color attachment magenta default            # attachments
+color body brightred default "(ftp|http)://[^ ]+"       # point out URLs
+color body brightcyan default [-a-z_0-9.]+@[-a-z_0-9.]+ # e-mail addresses
+color bold brightblue default               # boldface text
+color error brightwhite red                 # error messages
+color hdrdefault magenta default            # default color of message header
+color header brightmagenta default ^(From): # From and Subject header
+color header brightwhite default ^(Subject): # From and Subject header
+color header brightwhite default ^(Date): # Date header
+color header white default ^(In-Reply-To):
+color indicator brightred default                   # indicator bar
+color markers brightblue default            # wrapped line markers (+)
+color message brightblack green             # status messages
+color normal default default                # default
+color quoted yellow default                 # quoted text, 1st quote level
+color quoted1 green default                 # quoted text, 2nd quote level
+color quoted2 brightblue default            # quoted text, 3rd quote level
+color quoted3 blue default                  # quoted text, 4th quoet level
+color search black yellow                   # matched search patterns in pager
+color signature red default                 # the signature (after sigdashes)
+color status default blue                   # status lines
+color tilde brightblue default              # ``~'' used to pad blank lines
+color tree green default                    # thread tree in the index menu
+color underline brightgreen default         # underlined text

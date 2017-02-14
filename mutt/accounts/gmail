@@ -1,0 +1,24 @@
+# ==============================
+# GMAIL ACCOUNT 
+# ==============================
+
+# ------------------------------
+# IMAP 
+# ------------------------------
+
+set imap_user = "{USER}"
+set hostname = "gmail.com"
+set folder = "imaps://imap.gmail.com:993/"
+set spoolfile = "+INBOX"
+set postponed = "+[Gmail]/{DRAFTS}"
+set trash = "+[Gmail]/{TRASH}"
+
+# ------------------------------
+# SMTP 
+# ------------------------------
+
+set realname = ""
+set from = "$realname <{EMAIL_ADDRESS}>"
+set smtp_url = "smtps://$imap_user@smtp.gmail.com:465"
+set record = "+[Gmail]/{SENT}"
+# set signature = ~/.signature

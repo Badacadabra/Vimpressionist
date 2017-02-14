@@ -1,0 +1,24 @@
+# ==============================
+# OUTLOOK ACCOUNT 
+# ==============================
+
+# ------------------------------
+# IMAP 
+# ------------------------------
+
+set hostname = "hotmail.com"
+set imap_user = "{USER}@$hostname"
+set folder = "imaps://imap-mail.outlook.com:993/"
+set spoolfile = "+INBOX"
+set postponed = "+Drafts"
+set trash = "+Deleted"
+
+# ------------------------------
+# SMTP 
+# ------------------------------
+
+set realname = ""
+set from = "$realname <{EMAIL_ADDRESS}>"
+set smtp_url = "smtps://{EMAIL_ADDRESS}@smtp-mail.outlook.com:465"
+set record = "+Sent"
+# set signature = ~/.signature

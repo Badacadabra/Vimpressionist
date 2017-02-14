@@ -1,0 +1,18 @@
+################################
+############# MUTT #############
+################################
+
+# Color scheme
+source ~/.mutt/colors/archery
+
+# Key bindings
+source ~/.mutt/src/bindings
+
+# Macros & hooks
+source ~/.mutt/src/macros
+
+# Settings
+source ~/.mutt/src/settings
+
+# Default account
+source ~/.mutt/accounts/own

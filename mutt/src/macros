@@ -1,0 +1,19 @@
+# ==============================
+# MACROS & HOOKS
+# ==============================
+
+# ------------------------------
+# Macros 
+# ------------------------------
+
+macro index <f1> '<sync-mailbox><enter-command>source ~/.mutt/accounts/own<enter><change-folder>!<enter>'
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/accounts/gmail<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/accounts/outlook<enter><change-folder>!<enter>'
+
+# ------------------------------
+# Hooks 
+# ------------------------------
+
+folder-hook 'badacadabra.net' 'source ~/.mutt/accounts/own'
+folder-hook 'gmail.com' 'source ~/.mutt/accounts/gmail'
+folder-hook 'outlook.com' 'source ~/.mutt/accounts/outlook'

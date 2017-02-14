@@ -1,0 +1,432 @@
+# ==============================
+# SETTINGS
+# ==============================
+
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+
+# ------------------------------
+# Mutt files & folders 
+# ------------------------------
+
+set alias_file = ~/.mutt/aliases
+set header_cache = ~/.mutt/cache/headers
+set message_cachedir = ~/.mutt/cache/bodies
+set certificate_file = ~/.mutt/certificates
+set mailcap_path = ~/.mutt/mailcap
+set record = ~/.mutt/sent 
+set history_file = ~/.mutt/history
+set entropy_file = ~/.mutt/entropy
+set postponed = ~/.mutt/postponed
+set folder = ~/Mail
+set mbox = ~/Mail/mbox
+set tmpdir = /tmp
+set trash
+# set ssl_ca_certificates_file
+
+# ------------------------------
+# User eXperience (UX) 
+# ------------------------------
+
+# Global 
+set quit = yes
+set help = no
+set status_on_top = no
+set arrow_cursor = no
+set braille_friendly = no
+set beep = no
+set beep_new = no
+set menu_context = 0
+set menu_move_off = yes
+set menu_scroll = no
+set attach_split = yes
+set pipe_split = no
+set collapse_unread = yes
+set confirmappend = yes
+set confirmcreate = yes
+set escape = ~
+set spam_separator = ,
+set narrow_tree = no
+set post_indent_string
+set honor_disposition = no
+set ispell = "ispell"
+set autoedit = no
+set digest_collapse = yes
+set meta_key = no
+set sleep_time = 1
+set uncollapse_jump = no
+set read_only = no
+set ts_enabled = no
+set wait_key = yes
+set timeout = 300
+set suspend = yes
+set forward_quote
+set resolve = yes
+
+# Editor
+set editor = "vim -c 'set tw=72' -c 'set wrap'"
+set visual
+set text_flowed = no
+
+# Pager
+set pager = "builtin"
+set pager_index_lines = 7
+set pager_stop = yes
+set pager_context = 0
+set markers = yes
+set prompt_after = yes
+set tilde = yes
+set search_context = 0
+
+# Sorting
+set sort = reverse-date
+set sort_alias = alias
+set sort_aux = date
+set sort_browser = alpha
+set sort_re = yes
+
+# Visibility 
+set hidden_host = no
+set hide_limited = no
+set hide_missing = yes
+set hide_top_limited = no
+
+# Reflow & Wrapping
+set reflow_space_quotes = yes
+set reflow_text = yes
+set reflow_wrap = 78
+set wrap = -1
+set wrap_search = yes
+set smart_wrap = yes
+
+# Sidebar
+set sidebar_visible = yes
+set sidebar_delim_chars = /.
+set sidebar_divider_char = |
+set sidebar_folder_indent = yes
+set sidebar_new_mail_only = no
+set sidebar_next_new_wrap = no
+set sidebar_short_path = yes
+set sidebar_sort_method = unsorted
+set sidebar_width = 30
+
+# Formatting
+set locale = "C"
+set to_chars = "+TCFL" 
+set attach_sep = "\n"
+set pipe_sep = "\n"
+set indent_string = "> "
+set sidebar_indent_string = "  "
+set default_hook = "~f %s !~P | (~P ~C %s)""
+set simple_search = "~f %s | ~s %s"
+set attribution = "Le %d, %n a écrit :"
+set status_chars = "-*%A"
+set message_format = "%s"
+set forward_format = "[Fwd: %s]"
+set sidebar_format = "%B%* %n"
+set alias_format = "%4n %2f %t %-10a   %r"
+set index_format = "%4C %Z %{%b %d} %-15.15L (%?l?%4l&%4c?) %s"
+set attach_format = "%u%D%I %t%4n %T%.40d%> [%.7m/%.10M, %.6e%?C?, %C?, %s]"
+set compose_format = "-- Mutt: Compose  [Approx. msg size: %l   Atts: %a]%>-"
+set folder_format = "%2C %t %N %F %2l %-8.8u %-8.8g %8s %d %f"
+set pager_format = "-%Z- %C/%m: %-20.20n   %s%*  -- (%P)"
+set date_format = "%A %d %b %Y à %H:%M:%S (%Z)"
+set query_format = "%4c %t %-25.25a %-25.25n %?e?(%e)?"
+set ts_icon_format = "M%?n?AIL&ail?" 
+set ts_status_format = "Mutt with %?m?%m messages&no messages?%?n? [%n NEW]?"
+set pgp_entry_format = "%4n %t%f %4l/0x%k %-4a %2c %u"
+set status_format = "-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---"
+# set mix_entry_format = "%4n %c %-16s %a"
+
+# RegExp
+set smileys = "(>From )|(:[-^]?[][)(><}{|/DP])"
+set quote_regexp = "^([ \t]*[|>:}#])+"
+set reply_regexp = "^(re([\[0-9\]+])*|aw):[ \t]*"
+set gecos_mask = "^[^,]*"
+set mask = "!^\\.[^.]"
+
+# ------------------------------
+# Mailbox formats
+# ------------------------------
+
+# mbox
+set mbox_type = mbox
+set check_mbox_size = no
+
+# MH
+set mh_purge = no
+set mh_seq_flagged = "flagged"
+set mh_seq_replied = "replied"
+set mh_seq_unseen = "unseen"
+
+# Maildir
+set maildir_trash = no 
+set maildir_check_cur = no
+set maildir_header_cache_verify = yes
+
+# ------------------------------
+# Encoding/Decoding
+# ------------------------------
+
+set charset
+set config_charset
+set assumed_charset = utf-8
+set attach_charset = utf-8
+set send_charset = "us-ascii:iso-8859-1:utf-8"
+set allow_8bit = yes
+set allow_ansi = no
+set ascii_chars = no
+set content_type = text/plain
+set encode_from = no
+set forward_decode = yes
+set idn_encode = yes
+set idn_decode = yes
+set mime_forward_decode = no
+set pipe_decode = no
+set print_decode = yes
+set thorough_search = yes
+set rfc2047_parameters = no
+
+# ------------------------------
+# Mail management 
+# ------------------------------
+
+# Network
+set preconnect
+set connect_timeout = 30
+set use_ipv6 = yes
+set hostname
+
+# Core functions
+set from
+set envelope_from_address
+set use_envelope_from = no
+set copy = yes
+set move = no
+set delete = ask-yes
+set delete_untag = yes
+set history = 20
+set postpone = ask-yes
+set bounce = ask-yes
+set bounce_delivered = yes
+set reply_to = ask-yes
+set reply_self = no
+set fast_reply = no
+set ignore_list_reply_to = no
+set check_new = yes
+set mail_check = 30
+set mail_check_recent = yes
+set mail_check_stats_interval = 60
+set sendmail = "/usr/sbin/sendmail -oem -oi"
+set sendmail_wait = 0
+set use_from = yes
+set abort_nosubject = ask-yes
+set abort_unmodified = yes
+set fcc_attach = yes
+set fcc_clear = no
+set include = ask-yes
+set include_onlyfirst = no
+set display_filter
+set metoo = no
+set forward_edit = yes 
+set forward_quote = no
+set followup_to = yes
+set honor_followup_to = yes
+set use_domain = yes
+set use_from = yes
+set mark_old = no
+set keep_flagged = no
+set reverse_alias = no
+set reverse_name = no
+set reverse_realname = yes
+set mime_forward = no
+set mime_forward_rest = yes
+
+# Signature
+set sig_dashes = yes
+set sig_on_top = no
+
+# Headers
+set askbcc = no
+set write_bcc = yes
+set edit_headers = no
+set hdrs = yes
+set header = no
+set header_cache
+set header_cache_pagesize = 16384
+set wrap_headers = 78
+set user_agent = yes
+set weed = yes
+# set header_cache_compress = yes
+
+# Threads
+set duplicate_threads = yes
+set hide_thread_subject = yes
+set strict_threads = no
+set thread_received = no
+
+# Performance 
+set net_inc = 10
+set time_inc = 0
+set read_inc = 10
+set write_inc = 10
+set message_cache_clean = no
+
+# Save
+set save_address = no
+set save_empty = yes
+set save_history = 0
+set save_name = no
+set force_name = no
+set recall = ask-yes
+
+# Scoring
+set score = yes
+set score_threshold_delete = -1
+set score_threshold_flag = 9999
+set score_threshold_read = -1
+
+# Print
+set print = ask-no
+set print_command = lpr
+set print_split = no
+
+# Notifications
+set dsn_notify
+set dsn_return
+
+# Misc.
+set shell
+set auto_tag = no
+set mailcap_sanitize = yes
+set resume_draft_files = no
+set resume_edited_draft_files = yes
+set use_8bitmime = no
+set implicit_autoview = no
+set smtp_authenticators
+set ignore_linear_white_space = no
+set query_command = "abook --mutt-query '%s'"
+# set mixmaster = "mixmaster"
+
+# N/A
+# set dotlock_program "/usr/local/bin/mutt_dotlock"
+
+# ------------------------------
+# Email protocols 
+# ------------------------------
+
+# POP
+set pop_auth_try_all = yes
+set pop_authenticators = "login"
+set pop_checkinterval = 60
+set pop_delete = ask-no
+set pop_last = no
+set pop_reconnect = ask-yes
+
+# IMAP
+set imap_keepalive = 300
+set imap_check_subscribed = yes
+set imap_list_subscribed = yes
+set imap_authenticators = "login"
+set imap_delim_chars = /.
+set imap_headers
+set imap_idle = no
+set imap_peek = yes
+set imap_pipeline_depth = 15
+set imap_servernoise = yes
+unset imap_passive
+
+# ------------------------------
+# Encryption 
+# ------------------------------
+
+# Crypt
+set crypt_autoencrypt = no
+set crypt_autopgp = yes
+set crypt_autosign = no
+set crypt_autosmime = yes
+set crypt_confirmhook = yes
+set crypt_opportunistic_encrypt = no
+set crypt_replyencrypt = yes
+set crypt_replysign = no
+set crypt_replysignencrypted = no
+set crypt_timestamp = yes
+set crypt_use_gpgme = no
+set crypt_use_pka = no
+set crypt_verify_sig = yes
+
+# PGP
+set pgp_auto_decode = no
+set pgp_autoinline = no
+set pgp_check_exit = yes
+set pgp_clearsign_command
+set pgp_decode_command
+set pgp_decrypt_command
+set pgp_decryption_okay
+set pgp_encrypt_only_command
+set pgp_encrypt_sign_command
+set pgp_export_command
+set pgp_getkeys_command
+set pgp_good_sign
+set pgp_ignore_subkeys = yes
+set pgp_import_command
+set pgp_list_pubring_command
+set pgp_list_secring_command
+set pgp_long_ids = yes
+set pgp_mime_auto = ask-yes
+set pgp_replyinline = no
+set pgp_retainable_sigs = no
+set pgp_show_unusable = yes
+set pgp_sign_as
+set pgp_sign_command
+set pgp_sort_keys = address
+set pgp_strict_enc = yes
+set pgp_timeout = 300
+set pgp_use_gpg_agent = no
+set pgp_verify_command
+set pgp_verify_key_command
+
+# S/MIME
+set smime_ask_cert_label = yes
+set smime_ca_location
+set smime_certificates
+set smime_decrypt_command
+set smime_decrypt_use_default_key = yes
+set smime_default_key
+set smime_encrypt_command
+set smime_encrypt_with = "aes256"
+set smime_get_cert_command
+set smime_get_cert_email_command
+set smime_get_signer_cert_command
+set smime_import_cert_command
+set smime_is_default = no
+set smime_keys
+set smime_pk7out_command
+set smime_sign_command
+set smime_sign_digest_alg = "sha256"
+set smime_sign_opaque_command
+set smime_timeout = 300
+set smime_verify_command
+set smime_verify_opaque_command
+
+# SSL/TLS
+set ssl_starttls = yes
+set ssl_force_tls = yes
+set ssl_client_cert
+set ssl_force_tls = no
+set ssl_use_sslv2 = no 
+set ssl_use_sslv3 = no
+set ssl_use_tlsv1 = yes
+set ssl_use_tlsv1_1 = yes
+set ssl_use_tlsv1_2 = yes
+set ssl_usesystemcerts = yes
+set ssl_verify_dates = yes
+set ssl_verify_host = yes
+set ssl_ciphers
+# set ssl_min_dh_prime_bits = 0
+
+# Misc.
+set tunnel
+set postpone_encrypt = no
+set postpone_encrypt_as
+set forward_decrypt = yes

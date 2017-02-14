@@ -1,0 +1,13 @@
+# HTML
+text/html; firefox %s
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+
+# Documents
+text/plain; vim %s
+application/pdf; zathura %s
+application/postscript; zathura %s
+
+# Multimedia
+image/*; feh %s
+audio/*; ffplay %s
+video/*; ffplay %s
