@@ -6,19 +6,21 @@
 # IMAP 
 # ------------------------------
 
-set imap_user = "{USER}"
 set hostname = "gmail.com"
+set imap_user = "{GOOGLE_USER}" # e.g. "john.doe"
 set folder = "imaps://imap.gmail.com:993/"
 set spoolfile = "+INBOX"
-set postponed = "+[Gmail]/{DRAFTS}"
-set trash = "+[Gmail]/{TRASH}"
+set postponed = "+[Gmail]/{DRAFTS}" # e.g. "+[Gmail]/Drafts"
+set trash = "+[Gmail]/{TRASH}" # e.g. "+[Gmail]/Trash"
+
+mailboxes "#-----------GMAIL--------------" =INBOX
 
 # ------------------------------
 # SMTP 
 # ------------------------------
 
-set realname = ""
-set from = "$realname <{EMAIL_ADDRESS}>"
+set realname = "{FIRSTNAME} {LASTNAME}" # e.g. "John Doe"
+set from = "$realname <$imap_user@gmail.com>"
 set smtp_url = "smtps://$imap_user@smtp.gmail.com:465"
-set record = "+[Gmail]/{SENT}"
-# set signature = ~/.signature
+set record = "+[Gmail]/{SENT}" # e.g. "+[Gmail]/Sent"
+set signature = ~/.mutt/signature

@@ -1,13 +1,39 @@
+# ==============================
+# MIME TYPES & APPLICATIONS 
+# ==============================
+
+# ------------------------------
+# Text 
+# ------------------------------
+
 # HTML
-text/html; firefox %s
+text/html; firefox %s;
 text/html; w3m -I %{charset} -T text/html; copiousoutput;
 
-# Documents
-text/plain; vim %s
-application/pdf; zathura %s
-application/postscript; zathura %s
+# PDF
+application/pdf; zathura %s;
+application/pdf; pdftotext -nopgbrk %s; copiousoutput;
 
-# Multimedia
-image/*; feh %s
-audio/*; ffplay %s
-video/*; ffplay %s
+# Office
+application/odt; libreoffice %s;
+application/ods; libreoffice %s;
+application/odp; libreoffice %s;
+
+# The fallback app for text attachments must be Vim!
+text/*; vim %s
+
+# ------------------------------
+# Multimedia 
+# ------------------------------
+
+# Images 
+image/*; feh %s;
+image/*; img2txt %s; copiousoutput;
+
+# Audio
+audio/*; ffplay %s;
+audio/*; ffprobe -pretty %s; copiousoutput;
+
+# Video
+video/*; ffplay %s;
+video/*; ffprobe -pretty %s; copiousoutput;

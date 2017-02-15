@@ -14,6 +14,10 @@ macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/accounts/outlook<e
 # Hooks 
 # ------------------------------
 
-folder-hook 'badacadabra.net' 'source ~/.mutt/accounts/own'
-folder-hook 'gmail.com' 'source ~/.mutt/accounts/gmail'
-folder-hook 'outlook.com' 'source ~/.mutt/accounts/outlook'
+folder-hook badacadabra.net 'source ~/.mutt/accounts/own'
+folder-hook gmail.com 'source ~/.mutt/accounts/gmail'
+folder-hook outlook.com 'source ~/.mutt/accounts/outlook'
+
+account-hook badacadabra.net 'set imap_user={USER} imap_pass={PASSWORD}'
+account-hook gmail.com 'set imap_user={USER} imap_pass={PASSWORD}'
+account-hook outlook.com 'set imap_user={USER} imap_pass={PASSWORD}' 

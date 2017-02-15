@@ -16,3 +16,7 @@ source ~/.mutt/src/settings
 
 # Default account
 source ~/.mutt/accounts/own
+
+# Additional accounts to source at startup
+# push '<enter-command>source ~/.mutt/accounts/gmail<enter><change-folder>!<enter>'
+# push '<enter-command>source ~/.mutt/accounts/outlook<enter><change-folder>!<enter>'

@@ -7,18 +7,20 @@
 # ------------------------------
 
 set hostname = "hotmail.com"
-set imap_user = "{USER}@$hostname"
+set imap_user = "{USER}@$hostname" # e.g. "john_doe@hotmail.com"
 set folder = "imaps://imap-mail.outlook.com:993/"
 set spoolfile = "+INBOX"
 set postponed = "+Drafts"
 set trash = "+Deleted"
 
+mailboxes "#----------OUTLOOK---------------"
+
 # ------------------------------
 # SMTP 
 # ------------------------------
 
-set realname = ""
-set from = "$realname <{EMAIL_ADDRESS}>"
-set smtp_url = "smtps://{EMAIL_ADDRESS}@smtp-mail.outlook.com:465"
+set realname = "{FIRSTNAME} {LASTNAME}" # e.g. "John Doe"
+set from = "$realname <$imap_user>"
+set smtp_url = "smtps://$imap_user@smtp-mail.outlook.com:465"
 set record = "+Sent"
-# set signature = ~/.signature
+set signature = ~/.mutt/signature

@@ -10,11 +10,11 @@ color attachment     white          default
 color bold           white          blue 
 color error          brightred      default
 color hdrdefault     brightwhite    default 
-color indicator      color12        default
+color indicator      brightwhite    blue 
 color markers        white          default
 color message        default        default
 color normal         blue           default
-color prompt         blue           default   
+color prompt         brightblue     default   
 color quoted         default        default
 color search         brightwhite    blue
 color signature      brightwhite    default
@@ -47,6 +47,6 @@ mono underline  underline
 color sidebar_divider      blue            default 
 color sidebar_flagged      default         default
 color sidebar_highlight    brightwhite     blue
-color sidebar_indicator    white           default
-color sidebar_new          color12         default
-color sidebar_spoolfile    brightblue      default 
+color sidebar_indicator    brightwhite     default
+color sidebar_new          brightblue      default
+color sidebar_spoolfile    brightwhite     brightblue 
