@@ -1,0 +1,2 @@
+#!/bin/bash
+termite --name=W3M --class=W3M --exec "w3m -no-mouse https://duckduckgo.com/"

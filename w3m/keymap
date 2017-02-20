@@ -1,0 +1,647 @@
+# =============================
+# KEY MAPPINGS 
+# =============================
+
+# Ctrl  : C-, ^
+# Escape: ESC-, M-, ^[
+# Space : SPC, ' '
+# Tab   : TAB, ^i, ^I
+# Delete: DEL, ^?
+# Up    : UP, ^[[A
+# Right : RIGHT, ^[[C
+# Down  : DOWN, ^[[B
+# Left  : LEFT, ^[[D
+
+# -----------------------------
+# Unmap default keys 
+# -----------------------------
+
+keymap UP NULL
+keymap RIGHT NULL
+keymap DOWN NULL
+keymap LEFT NULL
+keymap DEL NULL
+keymap SPC NULL
+keymap TAB NULL
+keymap RET NULL
+
+keymap a NULL
+keymap b NULL
+keymap c NULL
+keymap d NULL
+keymap f NULL
+keymap g NULL
+keymap h NULL
+keymap i NULL
+keymap j NULL
+keymap k NULL
+keymap l NULL
+keymap m NULL
+keymap n NULL
+keymap o NULL
+keymap q NULL
+keymap r NULL
+keymap s NULL
+keymap t NULL
+keymap u NULL
+keymap v NULL
+keymap w NULL
+keymap y NULL
+keymap z NULL
+
+keymap B NULL
+keymap D NULL
+keymap E NULL
+keymap F NULL
+keymap G NULL
+keymap H NULL
+keymap I NULL
+keymap J NULL
+keymap K NULL
+keymap L NULL
+keymap M NULL
+keymap N NULL
+keymap 0 NULL
+keymap Q NULL
+keymap R NULL
+keymap S NULL
+keymap T NULL
+keymap U NULL
+keymap V NULL
+keymap W NULL
+keymap Z NULL
+
+keymap gg NULL
+keymap gf NULL
+keymap gt NULL
+keymap gT NULL
+
+keymap ZZ NULL
+keymap ZQ NULL
+
+keymap = NULL
+keymap - NULL
+keymap + NULL
+keymap < NULL
+keymap > NULL
+keymap . NULL
+keymap : NULL
+keymap , NULL
+keymap ^ NULL
+keymap ( NULL
+keymap ) NULL
+keymap } NULL
+keymap { NULL
+keymap [ NULL
+keymap ] NULL
+keymap | NULL
+keymap $ NULL
+keymap @ NULL
+keymap / NULL
+keymap ! NULL
+keymap ? NULL
+keymap ";" NULL
+keymap "#" NULL
+keymap \" NULL
+keymap \\ NULL
+
+keymap C-a NULL
+keymap C-b NULL
+keymap C-d NULL
+keymap C-e NULL
+keymap C-f NULL
+keymap C-g NULL
+keymap C-h NULL
+keymap C-j NULL
+keymap C-k NULL
+keymap C-l NULL
+keymap C-m NULL
+keymap C-n NULL
+keymap C-o NULL
+keymap C-p NULL
+keymap C-q NULL
+keymap C-r NULL
+keymap C-s NULL
+keymap C-t NULL
+keymap C-u NULL
+keymap C-v NULL
+keymap C-w NULL
+keymap C-y NULL
+keymap C-z NULL
+keymap C-wL NULL
+keymap C-wH NULL
+keymap C-] NULL
+keymap C-@ NULL
+keymap gC-g NULL
+
+keymap ESC-TAB NULL
+keymap ESC-a NULL
+keymap ESC-b NULL
+keymap ESC-c NULL
+keymap ESC-e NULL
+keymap ESC-g NULL
+keymap ESC-k NULL
+keymap ESC-l NULL
+keymap ESC-m NULL
+keymap ESC-n NULL
+keymap ESC-o NULL
+keymap ESC-p NULL
+keymap ESC-s NULL
+keymap ESC-t NULL
+keymap ESC-u NULL
+keymap ESC-v NULL
+keymap ESC-w NULL
+keymap ESC-I NULL
+keymap ESC-M NULL
+keymap ESC-W NULL
+keymap ESC-: NULL
+keymap ESC-< NULL
+keymap ESC-> NULL
+keymap ESC-C-j NULL
+keymap ESC-C-m NULL
+keymap ESC-C-j NULL
+
+keymap ^[[1~ NULL
+keymap ^[[2~ NULL
+keymap ^[[4~ NULL
+keymap ^[[5~ NULL
+keymap ^[[6~ NULL
+keymap ^[[28~ NULL
+keymap ^[[E NULL
+keymap ^[[L NULL
+keymap ^[[Z NULL
+
+# -----------------------------
+# In-page Navigation 
+# -----------------------------
+
+# Move to next page
+keymap C-f NEXT_PAGE
+
+# Move to previous page
+keymap C-b PREV_PAGE
+
+# Move cursor right (a half screen shift at the right edge)
+keymap L MOVE_RIGHT
+
+# Move cursor left (a half screen shift at the left edge)
+keymap H MOVE_LEFT
+
+# Move cursor down (a half screen scroll at the end of screen)
+keymap J MOVE_DOWN
+
+# Move cursor up (a half screen scroll at the top of screen)
+keymap K MOVE_UP
+
+# Move cursor right (1 columns shift at the right edge)
+keymap l MOVE_RIGHT1
+
+# Move cursor left (1 columns shift at the left edge)
+keymap h MOVE_LEFT1
+
+# Move cursor down (1 line scroll at the end of screen)
+keymap j MOVE_DOWN1
+
+# Move cursor up (1 line scroll at the top of screen)
+keymap k MOVE_UP1
+
+# Scroll down one line
+keymap C-y DOWN
+
+# Scroll up one line
+keymap C-e UP
+
+# Shift screen left
+keymap <% SHIFT_LEFT
+
+# Shift screen right
+keymap >% SHIFT_RIGHT
+
+# Shift screen one column left
+keymap << LEFT
+
+# Shift screen one column right
+keymap >> RIGHT
+
+# Go to the beginning of line
+keymap 0 LINE_BEGIN
+
+# Go to the end of line
+keymap $ LINE_END
+
+# Move to the center line
+keymap M CENTER_H
+
+# Move to the center column
+keymap _ CENTER_V
+
+# Go to specified line
+# keymap GOTO_LINE
+
+# Go to the first line
+keymap gg BEGIN
+
+# Go to the last line
+keymap G END
+
+# Move to next word
+keymap w NEXT_WORD
+
+# Move to previous word
+keymap b PREV_WORD
+
+# Go to the first link
+keymap g0 LINK_BEGIN
+
+# Go to the last link
+keymap g$ LINK_END
+
+# Move to next link
+keymap C-n NEXT_LINK
+
+# Move to previous link
+keymap C-p PREV_LINK
+
+# Popup link list menu and move cursor to selected link
+keymap ESC-m MOVE_LIST_MENU
+
+# Move to next right link 
+keymap ) NEXT_RIGHT
+
+# Move to next left link 
+keymap ( NEXT_LEFT
+
+# Move to next downward link 
+keymap } NEXT_DOWN
+
+# Move to next upward link 
+keymap { NEXT_UP
+
+# Move to next right (or downward) link 
+keymap ]] NEXT_RIGHT_DOWN
+
+# Move to next left (or upward) link 
+keymap [[ NEXT_LEFT_UP
+
+# Cancel the last cursor movement
+keymap u UNDO
+
+# Cancel the last undo
+keymap C-r REDO
+
+# -----------------------------
+# Hyperlink Operations 
+# -----------------------------
+
+# Go to current link
+keymap f GOTO_LINK
+
+# Open current link on new tab
+keymap T TAB_LINK
+
+# Save link to file
+keymap W SAVE_LINK
+
+# View image
+keymap i VIEW_IMAGE
+
+# Save image to file
+keymap :W SAVE_IMAGE
+
+# Submit form
+keymap s SUBMIT
+
+# Peek current URL
+keymap p PEEK
+
+# Peek link URL
+keymap P PEEK_LINK
+
+# Peek image URL 
+keymap I PEEK_IMG
+
+# View info of current document
+keymap :i INFO
+
+# Show current line number
+keymap C-g LINE_INFO
+
+# Mark URL-like strings as anchors
+keymap mu MARK_URL
+
+# Mark current word as anchor
+keymap mw MARK_WORD
+
+# Mark Message-ID-like strings as anchors
+keymap mm MARK_MID
+
+# Render frame
+keymap F FRAME
+
+# Execute external browser
+keymap ESC-B EXTERN
+
+# View current link using external browser
+keymap B EXTERN_LINK
+
+# Show all links and images
+keymap :L LIST
+
+# Popup link list menu and go to selected link
+keymap ESC-l LIST_MENU
+
+# Popup acceskey menu
+keymap ESC-a ACCESSKEY
+
+# -----------------------------
+# File/Stream Operations 
+# -----------------------------
+
+# Go to URL
+keymap :o GOTO
+keymap gh GOTO https://duckduckgo.com/lite/
+
+# Go to relative URL
+keymap :O GOTO_RELATIVE
+
+# Open URL on new tab
+keymap t TAB_GOTO
+
+# Open relative URL on new tab
+keymap C-t TAB_GOTO_RELATIVE
+
+# Load local file
+keymap :r LOAD
+
+# Execute shell command and load
+keymap !r READ_SHELL
+
+# Execute shell command and browse
+keymap !| PIPE_SHELL
+
+# Send rendered document to pipe
+keymap | PIPE_BUF
+
+# -----------------------------
+# Buffer Operations 
+# -----------------------------
+
+# Back to previous buffer
+# keymap BACK
+
+# Move to next buffer
+keymap C-i NEXT
+
+# Move to previous buffer
+keymap C-o PREV
+
+# Popup buffer selection menu
+keymap ESC-b SELECT_MENU
+
+# Go to buffer selection panel
+keymap :ls SELECT
+
+# View HTML source
+keymap :v SOURCE
+
+# Save document source to file
+keymap :w SAVE
+
+# Save buffer to file
+keymap :p PRINT
+
+# Edit current document
+keymap :e EDIT
+
+# Edit currently rendered document
+keymap :E EDIT_SCREEN
+
+# Reload buffer
+keymap r RELOAD
+
+# Re-render buffer
+keymap R RESHAPE
+
+# Redraw screen
+keymap C-l REDRAW
+
+# Restart loading and drawing of images
+keymap ESC-i DISPLAY_IMAGE
+
+# Stop loading and drawing of images
+keymap X STOP_IMAGE
+
+# -----------------------------
+# Tab Operations 
+# -----------------------------
+
+# Open new tab
+keymap :t NEW_TAB
+
+# Close current tab
+keymap d CLOSE_TAB
+
+# Close current tab
+keymap x CLOSE_TAB
+
+# Move to next tab
+keymap gt NEXT_TAB
+
+# Move to previous tab
+keymap gT PREV_TAB
+
+# Popup tab selection menu
+keymap ESC-t TAB_MENU
+
+# Move current tab right
+keymap C-wl TAB_RIGHT
+
+# Move current tab left
+keymap C-wh TAB_LEFT
+
+# -----------------------------
+# Bookmark Management 
+# -----------------------------
+
+# Read bookmark
+keymap :b BOOKMARK
+
+# Add current page to bookmark
+keymap a ADD_BOOKMARK
+
+# -----------------------------
+# Searches 
+# -----------------------------
+
+# Search forward
+keymap ESC-/ WHEREIS
+
+# Search backward
+keymap ESC-? SEARCH_BACK 
+
+# Search next regexp
+keymap n SEARCH_NEXT
+
+# Search previous regexp
+keymap N SEARCH_PREV
+
+# Incremental search forward
+keymap / ISEARCH
+
+# Incremental search backward
+keymap ? ISEARCH_BACK
+
+# -----------------------------
+# Dictionary Lookup 
+# -----------------------------
+
+# Execute dictionary command (see README.dict)
+keymap ESC-w DICT_WORD
+
+# Execute dictionary command for word at cursor
+keymap ESC-W DICT_WORD_AT
+
+# -----------------------------
+# Mark Operations 
+# -----------------------------
+
+# Set/unset mark
+keymap :m MARK
+
+# Move to next mark
+keymap \" NEXT_MARK
+
+# Move to previous mark
+keymap \' PREV_MARK
+
+# Set mark using regexp
+keymap C-m REG_MARK
+
+# -----------------------------
+# Miscellaneous 
+# -----------------------------
+
+# Popup menu
+keymap SPC MENU
+
+# View help
+keymap :h HELP 
+
+# Option setting panel
+keymap ESC-o OPTIONS
+
+# Display version of w3m
+keymap :V VERSION
+
+# View cookie list
+keymap :c COOKIE
+
+# View history of URL
+keymap :H HISTORY
+
+# Display download list panel
+keymap :d DOWNLOAD_LIST
+
+# Change the current document charset
+keymap ESC-c CHARSET
+
+# Change the default document charset
+keymap ESC-C DEFAULT_CHARSET
+
+# Display error messages
+keymap ESC-M MSGS
+
+# Toggle activity of mouse
+# keymap MOUSE_TOGGLE
+
+# Toggle wrap search mode
+keymap C-h WRAP_TOGGLE
+
+# Execute w3m command(s)
+keymap :: COMMAND 
+
+# Set alarm
+keymap ESC-A ALARM
+
+# Set option
+keymap ESC-O SET_OPTION
+
+# Set environment variable
+keymap ESC-E SETENV
+
+# Define a binding between a key stroke and a user command
+# keymap DEFINE_KEY
+
+# Reload configuration files
+keymap :R REINIT
+
+# Execute shell command
+keymap :! SHELL	        
+
+# Stop loading document
+keymap C-c SUSPEND
+
+# Quit w3m
+keymap :q QUIT
+
+# Quit w3m without confirmation
+keymap :x EXIT
+keymap ZZ EXIT
+
+# -----------------------------
+# N/A 
+# -----------------------------
+
+# Popup menu at mouse cursor (for mouse action)
+# keymap MENU_MOUSE
+
+# Move cursor to mouse cursor (for mouse action)
+# keymap MOVE_MOUSE
+
+# Move to tab on mouse cursor (for mouse action)
+# keymap TAB_MOUSE
+
+# Close tab on mouse cursor (for mouse action)
+# keymap CLOSE_TAB_MOUSE
+
+# View HTML source
+# keymap VIEW
+
+# Quit w3m without confirmation
+# keymap ABORT
+
+# Stop loading document
+# keymap INTERRUPT
+
+# Execute shell command
+# keymap EXEC_SHELL
+
+# Delete previous buffer (mainly for local-CGI)
+# keymap DELETE_PREVBUF
+
+# Save document source to file
+# keymap DOWNLOAD
+
+# Save rendered document to file
+# keymap SAVE_SCREEN
+
+# Move to previous visited link
+# keymap PREV_VISITED
+
+# Move to next visited link
+# keymap NEXT_VISITED
+
+# Search forward
+# keymap SEARCH
+
+# Search forward
+# keymap SEARCH_FORE
+
+# View bookmark
+# keymap VIEW_BOOKMARK
+
+# Popup menu
+# keymap MAIN_MENU
+
+# Popup link element menu
+# keymap LINK_MENU

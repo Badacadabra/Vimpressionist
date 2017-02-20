@@ -1,0 +1,26 @@
+# ==============================
+# MIME TYPES & APPLICATIONS 
+# ==============================
+
+# PDF-like
+application/pdf; zathura %s;
+application/postscript; zathura %s;
+image/vnd.djvu; zathura %s;
+
+# Office
+application/vnd.oasis.opendocument.text; libreoffice %s;
+application/vnd.oasis.opendocument.spreadsheet; libreoffice %s;
+application/vnd.oasis.opendocument.presentation; libreoffice %s;
+application/vnd.oasis.opendocument.graphics; libreoffice %s;
+application/vnd.oasis.opendocument.chart; libreoffice %s;
+application/vnd.oasis.opendocument.formula; libreoffice %s;
+application/vnd.oasis.opendocument.image; libreoffice %s;
+application/vnd.oasis.opendocument.text-master; libreoffice %s;
+application/vnd.sun.xml.base; libreoffice %s;
+application/vnd.oasis.opendocument.base; libreoffice %s;
+application/vnd.oasis.opendocument.database; libreoffice %s;
+
+# Multimedia
+image/*; feh %s;
+audio/*; ffplay %s;
+video/*; ffplay %s;

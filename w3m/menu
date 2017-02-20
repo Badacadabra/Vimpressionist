@@ -1,0 +1,27 @@
+# =============================
+# MAIN MENU 
+# =============================
+
+menu Main
+  func   " Back         (b) "  BACK		  "b"
+  popup  " Select Buffer(s) "  Select	  "s"
+  popup  " Select Tab   (S) "  SelectTab  "S"
+  func   " View Source  (v) "  VIEW		  "v"
+  func   " Edit Source  (e) "  EDIT		  "e"
+  func   " Save Source  (w) "  SAVE		  "w"
+  func   " Reload       (r) "  RELOAD     "r"
+  nop    " -----------------"  
+
+  func   " Go Link      (o) "  GOTO_LINK  "o"
+  func   "   on New Tab (t) "  TAB_LINK	  "t"
+  func   " Save Link    (W) "  SAVE_LINK  "W"
+  func   " View Image   (i) "  VIEW_IMAGE "i"
+  func   " Save Image   (I) "  SAVE_IMAGE "I"
+  func   " View Frame   (F) "  FRAME	  "F"
+  nop    " ---------------- "
+  func   " Bookmark     (B) "  BOOKMARK   "B"  
+  func   " Help         (h) "  HELP		  "h"
+  func   " Option       (O) "  OPTIONS    "O"
+  nop    " ---------------- "
+  func   " Quit         (q) "  QUIT		  "q"
+end

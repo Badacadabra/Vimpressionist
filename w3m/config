@@ -1,0 +1,505 @@
+############################### 
+############# W3M #############
+###############################
+
+# ============================= 
+# DISPLAY SETTINGS 
+# =============================
+
+# Tab width in characters 
+tabstop 8
+
+# Indent for HTML rendering 
+indent_incr 4
+
+# Number of pixels per character (4.0...32.0) 
+pixel_per_char 32
+
+# Number of pixels per line (4.0...64.0)
+pixel_per_line 64
+
+# Render frames automatically
+frame 0
+
+# Use _self as default target
+target_self 1
+
+# Open link on new tab if target is _blank or _new 
+open_tab_blank 1
+
+# Open download list panel on new tab
+open_tab_dl_list 1
+
+# Display link URL automatically
+display_link 1
+
+# Display link numbers
+display_link_number 0
+
+# Display decoded URL
+decode_url 1
+
+# Display current line number
+display_lineinfo 0
+
+# Use external program for directory listing
+ext_dirlist 1
+
+# URL of directory listing command 
+dirlist_cmd file:///$LIB/dirlist.cgi
+
+# Enable dictionary lookup through CGI
+use_dictcommand 1
+
+# URL of dictionary lookup command
+dictcommand file:///$LIB/w3mdict.cgi
+
+# Display file names in multi-column format 
+multicol 1
+
+# Use ASCII equivalents to display entities
+alt_entity 0
+
+# Character type for border of table and menu
+graphic_char 0
+
+# Display table borders, ignore value of BORDER
+display_borders 0
+
+# Fold lines in TEXTAREA
+fold_textarea 1
+
+# Display INS, DEL, S and STRIKE element
+display_ins_del 1
+
+# Display link name for images lacking ALT
+ignore_null_img_alt 1
+
+# Display unseen objects (e.g. bgimage tag)
+view_unseenobject 0
+
+# Display inline images
+display_image 1
+
+# Display pseudo-ALTs for inline images with no ALT or TITLE string
+pseudo_inlines 1
+
+# Load inline images automatically
+auto_image 1
+
+# Maximum processes for parallel image loading
+max_load_image 4
+
+# Use external image viewer
+ext_image_viewer 1
+
+# Scale of image (%)
+image_scale 100
+
+# External command to display image
+imgdisplay w3mimgdisplay
+
+# Use link list of image map
+image_map_list 1
+
+# Fold lines of plain text file
+fold_line 1
+
+# Show line numbers
+show_lnum 0
+
+# Show search string
+show_srch_str 1
+
+# Move cursor to top line when going to label
+label_topline 1
+
+# Move cursor to top line when moving to next page
+nextpage_topline 1
+
+# ============================= 
+# COLOR SETTINGS
+# =============================
+
+# Display with color
+color 1
+
+# Color of normal character
+basic_color terminal
+
+# Color of anchor
+anchor_color blue
+
+# Color of image link
+image_color blue
+
+# Color of form
+form_color blue
+
+# Color of mark
+mark_color red
+
+# Color of background
+bg_color terminal
+
+# Enable coloring of active link
+active_style 1
+
+# Color of currently active link
+active_color cyan
+
+# Use visited link color
+visited_anchor 0
+
+# Color of visited link
+visited_color magenta
+
+# ============================= 
+# MISCELLANEOUS SETTINGS
+# =============================
+
+# Number of remembered lines when used as a pager
+pagerline 10000
+
+# Use URL history
+use_history 1
+
+# Number of remembered URL
+history 100
+
+# Save URL history
+save_hist 1
+
+# Confirm when quitting with q
+confirm_qq 1
+
+# Close tab if buffer is last when back
+close_tab_back 0
+
+# Enable mark operations
+mark 1
+
+# Enable Emacs-style line editing
+emacs_like_lineedit 0
+
+# Enable vi-like numeric prefix
+vi_prec_num 1
+
+# Treat URL-like strings as links in all pages
+mark_all_pages 1
+
+# Wrap search
+wrap_search 0
+
+# Search case-insensitively
+ignorecase_search 1
+
+# Enable mouse
+use_mouse 0
+
+# Scroll in reverse direction of mouse drag
+reverse_mouse 0
+
+# Behavior of wheel scroll speed
+relative_wheel_scroll 0
+
+# (A only)Scroll by # (%) of screen
+relative_wheel_scroll_ratio 30
+
+# (B only)Scroll by # lines
+fixed_wheel_scroll_count 5
+
+# Free memory of undisplayed buffers
+clear_buffer 1
+
+# Decode Content-Transfer-Encoding when saving
+decode_cte 0
+
+# Uncompress compressed data automatically when downloading
+auto_uncompress 0
+
+# Preserve timestamp when saving
+preserve_timestamp 1
+
+# keymap file
+keymap_file keymap
+
+# ============================= 
+# DIRECTORY SETTINGS
+# =============================
+
+# Directory corresponding to / (document root)
+document_root /
+
+# Directory corresponding to /~user
+personal_document_root ~
+
+# Directory corresponding to /cgi-bin
+cgi_bin /usr/lib/w3m/cgi-bin
+
+# Index file for directories
+index_file
+
+# ============================= 
+# EXTERNAL PROGRAM SETTINGS
+# =============================
+
+# List of mime.types files
+mime_types ~/.mime.types, /etc/mime.types
+
+# List of mailcap files
+mailcap ~/.w3m/mailcap
+
+# List of urimethodmap files
+urimethodmap ~/.w3m/urimethodmap
+
+# Editor
+editor /usr/bin/vim
+
+# How to call Mailer for mailto URLs with options
+mailto_options 1
+
+# Mailer
+mailer /usr/bin/mail
+
+# External browser
+extbrowser /usr/bin/firefox
+
+# 2nd external browser
+extbrowser2 /usr/bin/chromium
+
+# 3rd external browser
+extbrowser3
+
+# 4th external browser
+extbrowser4
+
+# 5th external browser
+extbrowser5
+
+# 6th external browser  
+extbrowser6
+
+# 7th external browser
+extbrowser7
+
+# 8th external browser
+extbrowser8
+
+# 9th external browser
+extbrowser9
+
+# Run external viewer in the background
+bgextviewer 1
+
+# Use LESSOPEN
+use_lessopen 0
+
+# ============================= 
+# NETWORK SETTINGS
+# =============================
+
+# Password file 
+passwd_file ~/.w3m/passwd
+
+# Disable secret file security check
+disable_secret_security_check 0
+
+# Password for anonymous FTP (your mail address)
+ftppasswd
+
+# Generate domain part of password for FTP
+ftppass_hostnamegen 1
+
+# File for setting form on loading
+pre_form_file ~/.w3m/pre_form
+
+# File for preferences for each site
+siteconf_file ~/.w3m/siteconf
+
+# User-Agent identification string
+user_agent w3m
+
+# Suppress `Referer:' header
+no_referer 0
+
+# Accept-Language header
+accept_language en;q=1.0
+
+# Accept-Encoding header
+accept_encoding gzip, compress, bzip, bzip2, deflate
+
+# Accept header
+accept_media text/html, text/*;q=0.5, image/*
+
+# Treat argument without scheme as URL
+argv_is_url 1
+
+# Prepend http:// to URL automatically
+retry_http 1
+
+# Default value for open-URL command
+default_url 1
+
+# Number of redirections to follow 
+follow_redirection 10
+
+# Enable processing of meta-refresh tag
+meta_refresh 0
+
+# Order of name resolution
+dns_order 0
+
+# News server
+nntpserver
+
+# Mode of news server
+nntpmode
+
+# Number of news messages 
+max_news 50
+
+# ============================= 
+# PROXY SETTINGS
+# =============================
+
+# Use proxy
+use_proxy 0
+
+# URL of HTTP proxy host 
+http_proxy
+
+# URL of HTTPS proxy host 
+https_proxy
+
+# URL of FTP proxy host
+ftp_proxy
+
+# Domains to be accessed directly (no proxy)
+no_proxy
+
+# Check noproxy by network address
+noproxy_netaddr 0
+
+# Disable cache
+no_cache 0
+
+# ============================= 
+# SSL SETTINGS
+# =============================
+
+# List of forbidden SSL methods (2: SSLv2, 3: SSLv3, t:TLSv1)
+ssl_forbid_method 2, 3
+
+# Perform SSL server verification
+ssl_verify_server 1
+
+# PEM encoded certificate file of client
+ssl_cert_file
+
+# PEM encoded private key file of client
+ssl_key_file
+
+# Path to directory for PEM encoded certificates of CAs
+ssl_ca_path
+
+# File consisting of PEM encoded certificates of CAs
+ssl_ca_file
+
+# ============================= 
+# COOKIE SETTINGS
+# =============================
+
+# Enable cookie processing
+use_cookie 1
+
+# Print a message when receiving a cookie 
+show_cookie 0
+
+# Accept cookies
+accept_cookie 1
+
+# Action to be taken on invalid cookie
+accept_bad_cookie 0
+
+# Domains to reject cookies from
+cookie_reject_domains
+
+# Domains to accept cookies from
+cookie_accept_domains
+
+# Domains to avoid [wrong number of dots]
+cookie_avoid_wrong_number_of_dots
+
+# ============================= 
+# CHARSET SETTINGS
+# =============================
+
+# Display charset
+display_charset UTF-8
+
+# Default document charset
+document_charset UTF-8
+
+# Automatic charset detect when loading
+auto_detect 2           
+
+# System charset
+system_charset UTF-8
+
+# System charset follows locale(LC_CTYPE)
+follow_locale 1
+
+# Output halfdump with display charset
+ext_halfdump 0
+
+# Use multi column characters
+use_wide 1
+
+# Use combining characters
+use_combining 1
+
+# Use double width for some Unicode characters
+east_asian_width 0
+
+# Use Unicode language tags
+use_language_tag 1
+
+# Charset conversion using Unicode map
+ucs_conv 1
+
+# Charset conversion when loading
+pre_conv 0
+
+# Adjust search string for document charset
+search_conv 1
+
+# Fix character width when conversion
+fix_width_conv 1
+
+# Use GB 12345 Unicode map instead of GB 2312's 
+use_gb12345_map 0
+
+# Use JIS X 0201 Roman for ISO-2022-JP
+use_jisx0201 0
+
+# Use JIS C 6226:1978 for ISO-2022-JP
+use_jisc6226 0
+
+# Use JIS X 0201 Katakana
+use_jisx0201k 0
+
+# Use JIS X 0212:1990 (Supplemental Kanji)
+use_jisx0212 0
+
+# Use JIS X 0213:2000 (2000JIS)
+use_jisx0213 0
+
+# Strict ISO-2022-JP/KR/CN
+strict_iso2022 1
+
+# Treat 4 bytes char. of GB18030 as Unicode
+gb18030_as_ucs 0
+
+# Simple Preserve space
+simple_preserve_space 0
