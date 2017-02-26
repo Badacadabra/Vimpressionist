@@ -12,7 +12,7 @@
 [options]
 
 # Basic appearance
-font = Hack 11
+font = Larabiefont 13
 allow_bold = true
 
 cursor_blink = on
@@ -55,35 +55,35 @@ foreground = #FFFFFF
 background = #25272C
 highlight = #0088CC
 
-# Gray
+# Default | Dark Gray
 color0 = #25272C
 color8 = #888888
 
-# Red
-color1 = #900000
+# Red | Light Red
+color1 = #DF0E0E
 color9 = #C95F5F
 
-# Green
-color2 = #11543D
+# Green | Light Green
+color2 = #008542
 color10 = #73BA25
 
-# Yellow
+# Brown | Yellow
 color3 = #FF6600
 color11 = #EAC06E
 
-# Blue
+# Blue | Light Blue
 color4 = #0088CC
 color12 = #81A3CF
 
-# Purple 
-color5 = ##622C84
+# Magenta | Light Magenta
+color5 = #8D48B8
 color13 = #B589C2
 
-# Kaki/Cyan 
-color6 = #2B6651
+# Cyan | Light Cyan
+color6 = #25B8A5
 color14 = #8ABEB7
 
-# White 
+# Gray | White
 color7 = #BBBBBB
 color15 = #F6F9FC
 
