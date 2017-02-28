@@ -28,6 +28,10 @@
 
 ![termite](_screenshots/termite.png)
 
+## tig
+
+![tig](_screenshots/tig.png)
+
 ## vifm
 
 ![vifm](_screenshots/vifm.png)

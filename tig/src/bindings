@@ -1,0 +1,338 @@
+# =============================
+# KEY BINDINGS 
+# =============================
+
+# -----------------------------
+# Unbind some default keys 
+# -----------------------------
+
+# Generic bindings ............
+
+# View switching
+bind generic m none
+bind generic d none
+bind generic l none
+bind generic t none
+bind generic f none
+bind generic b none
+bind generic r none
+bind generic s none
+bind generic S none
+bind generic c none
+bind generic y none
+bind generic g none
+
+# View manipulation
+bind generic <C-N> none
+bind generic <C-P> none
+bind generic <Down> none
+bind generic <Up> none
+bind generic , none
+bind generic <F5> none
+bind generic O none
+bind generic Q none
+
+# Cursor navigation
+bind generic <PageDown> none
+bind generic <PageUp> none
+bind generic - none
+bind generic <Home> none
+bind generic <End> none
+
+# Scrolling
+bind generic <Insert> none
+bind generic <Delete> none
+bind generic <ScrollBack> none
+bind generic <ScrollFwd> none
+bind generic <Left> none
+bind generic <Right> none
+bind generic | none
+
+# Option toggling 
+bind generic I none
+bind generic i none
+
+# Search bindings .............
+
+bind search <Down> none
+bind search <Up> none
+bind search <C-J> none
+bind search <C-K> none
+
+# Main bindings ...............
+
+bind main G none 
+bind main G move-last-line
+bind main F none
+
+# Diff bindings ...............
+
+bind diff [ none
+bind diff ] none
+
+# Status bindings .............
+
+bind status u none
+bind status ! none
+
+# Stage bindings ..............
+
+bind stage u none
+bind stage 1 none
+bind stage ! none
+bind stage \ none
+bind stage [ none
+bind stage ] none
+
+# -----------------------------
+# Macros 
+# -----------------------------
+
+# These commands allow to run shell commands directly from within Tig.
+# Unless otherwise specified, commands are run in the foreground with
+# their console output shown (as if '!' was specified). When multiple
+# command options are specified their behavior are combined, e.g. "?<git
+# commit" will prompt the user whether to execute the command and will
+# exit Tig after completion.
+#
+#   !   Run the command in the foreground with output shown.
+#   @   Run the command in the background with no output.
+#   ?   Prompt the user before executing the command.
+#   <   Exit Tig after executing the command.
+#
+# User-defined commands can optionally refer to Tig's internal state
+# using the following variable names, which are substituted before
+# commands are run:
+#
+#   %(head)        The current ref ID. Defaults to HEAD
+#   %(commit)      The current commit ID.
+#   %(blob)        The current blob ID.
+#   %(branch)      The current branch name.
+#   %(remote)      The current remote name.
+#   %(tag)         The current tag name.
+#   %(stash)       The current stash name.
+#   %(directory)   The current directory path in the tree view (empty for root).
+#   %(file)        The currently selected file.
+#   %(ref)         The reference given to blame or HEAD if undefined.
+#   %(revargs)     The revision arguments passed on the command line.
+#   %(fileargs)    The file arguments passed on the command line.
+#   %(cmdlineargs) All other options passed on the command line.
+#   %(diffargs)    The diff options from `diff-options` or `TIG_DIFF_OPTS`
+#   %(prompt)      Prompt for the argument value.
+
+bind main    C  ?git cherry-pick %(commit)
+bind status  C  !git commit
+bind stash   A  ?git stash apply %(stash)
+bind stash   P  ?git stash pop %(stash)
+bind stash   !  ?git stash drop %(stash)
+bind refs    C  ?git checkout %(branch)
+bind refs    !  ?git branch -D %(branch)
+
+# -----------------------------
+# View switching 
+# -----------------------------
+
+# Home
+bind generic h view-main
+bind generic H view-help
+bind generic p view-pager
+
+# Views
+bind generic 0 view-grep
+bind generic 1 view-status
+bind generic 2 view-stage
+bind generic 3 view-diff
+bind generic 4 view-tree
+bind generic 5 view-log
+bind generic 6 view-blob
+bind generic 7 view-refs
+bind generic 8 view-stash
+bind generic 9 view-blame
+
+# -----------------------------
+# View manipulation 
+# -----------------------------
+
+# Enter and open selected entry
+bind generic <Enter> enter
+bind generic l enter
+
+# Go back to the previous view state
+bind generic <C-O> back
+
+# Move 
+bind generic J next
+bind generic K previous
+bind generic gh parent
+
+# Focus the next view
+bind generic <Tab> view-next
+bind generic <C-W>w view-next
+
+# Reload and refresh view
+bind generic r refresh
+bind generic R refresh
+
+# Maximize the current view
+bind generic <C-W>_ maximize
+bind generic <C-W>| maximize
+
+# Close the current view
+bind generic q view-close
+bind generic x view-close
+
+# Close all views and quit
+bind generic ZZ quit
+
+# -----------------------------
+# View specific 
+# -----------------------------
+
+# Status ......................
+
+# Stage/unstage changes in file
+bind status <Enter> status-update
+
+# Revert changes in file
+bind status u status-revert
+
+# Open git-mergetool(1)
+bind status m status-merge
+
+# Show short or long status labels
+bind status s :toggle status
+
+# Stage .......................
+
+# Stage/unstage current diff (c)hunk
+bind stage <Enter> status-update
+
+# Stage/unstage current line
+bind stage <Space> stage-update-line
+
+# Revert current diff (c)hunk
+bind stage u status-revert
+
+# Split current diff (c)hunk
+bind stage | stage-split-chunk
+
+# Jump to next (c)hunk
+bind stage @ :/^@@
+
+# Decrease the diff context
+bind stage <C-X> :toggle diff-context -1
+
+# Increase the diff context
+bind stage <C-A> :toggle diff-context +1 
+
+# Diff ........................
+
+# Jump to next (c)hunk
+bind diff @ :/^@@
+
+# Decrease the diff context
+bind diff <C-X> :toggle diff-context -1
+
+# Increase the diff context
+bind diff <C-A> :toggle diff-context +1
+
+# Main ........................
+
+# Toggle revision graph visualization
+bind main <C-G> :toggle commit-title-graph
+
+# Toggle reference display (tags/branches)
+bind main <C-R> :toggle commit-title-refs
+
+# -----------------------------
+# Cursor navigation 
+# -----------------------------
+
+bind generic j move-down
+bind generic k move-up
+
+bind generic gg move-first-line
+bind generic G move-last-line
+
+bind generic <C-U> move-half-page-up
+bind generic <C-D> move-half-page-down
+
+bind generic [[ move-page-up
+bind generic ]] move-page-down
+
+# -----------------------------
+# Scrolling 
+# -----------------------------
+
+# Horizontal
+bind generic z0 scroll-first-col
+bind generic zh scroll-left
+bind generic zl scroll-right
+
+# Vertical
+bind generic <C-Y> scroll-line-up
+bind generic <C-E> scroll-line-down
+bind generic <C-B> scroll-page-up
+bind generic <C-F> scroll-page-down
+
+# -----------------------------
+# Searching 
+# -----------------------------
+
+bind generic / search
+bind generic ? search-back
+
+bind generic n find-next
+bind generic N find-prev
+
+bind search <C-N> find-next
+bind search <C-P> find-prev
+
+# -----------------------------
+# Option manipulation 
+# -----------------------------
+
+bind generic s :toggle sort-order
+bind generic S :toggle sort-field
+
+bind generic <Hash> :toggle line-number
+bind generic ~ :toggle line-graphics
+
+bind generic i :toggle id
+bind generic d :toggle date
+bind generic a :toggle author
+
+bind generic f :toggle file-name
+bind generic F :toggle file-size
+bind generic % :toggle file-filter
+
+bind generic I :toggle status
+bind generic U :toggle status-untracked-dirs
+
+bind generic W :toggle ignore-space
+bind generic | :toggle vertical-split
+bind generic c :toggle show-changes
+bind generic O :toggle commit-order
+bind generic T :toggle commit-title-overflow
+
+# -----------------------------
+# Miscellaneous 
+# -----------------------------
+
+# Open in editor
+bind generic e edit
+
+# Open the prompt
+bind generic : prompt
+
+# Open the options menu
+bind generic o options
+
+# Redraw the screen
+bind generic <C-L> screen-redraw
+
+# Stop all loading views
+bind generic z stop-loading
+
+# Show Tig version
+bind generic v show-version

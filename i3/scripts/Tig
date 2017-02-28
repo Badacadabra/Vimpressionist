@@ -1,0 +1,2 @@
+#!/bin/bash
+termite --name=Tig --class=Tig --exec tig

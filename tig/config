@@ -1,0 +1,12 @@
+###############################
+############# TIG #############
+###############################
+
+# Color scheme
+source ~/.config/tig/colors/archery
+
+# Settings
+source ~/.config/tig/src/settings
+
+# Key bindings
+source ~/.config/tig/src/bindings
