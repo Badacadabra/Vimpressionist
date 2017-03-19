@@ -1,0 +1,57 @@
+" =============================
+" ARCHERY COLORSCHEME
+" =============================
+
+" 0 - Black
+" 1 - Red
+" 2 - Green
+" 3 - Orange
+" 4 - Blue
+" 5 - Magenta
+" 6 - Dark cyan
+" 7 - Gray
+" 8 - Dark gray
+" 9 - Light red
+" 10 - Light green
+" 11 - Yellow
+" 12 - Light blue
+" 13 - Light magenta
+" 14 - Cyan
+" 15 - White
+
+" -----------------------------
+" Window decoration
+" -----------------------------
+
+highlight Win        cterm=none ctermfg=12 ctermbg=0
+highlight TopLine    cterm=none ctermfg=7  ctermbg=8
+highlight TopLineSel cterm=none ctermfg=7  ctermbg=8
+highlight StatusLine cterm=bold ctermfg=15 ctermbg=4
+highlight Border     cterm=none ctermfg=0  ctermbg=8
+
+" -----------------------------
+" Selection
+" -----------------------------
+
+highlight Selected   cterm=none ctermfg=2  ctermbg=0
+highlight CurrLine   cterm=bold ctermfg=15 ctermbg=4
+
+" -----------------------------
+" Files & Directories
+" -----------------------------
+
+highlight Directory  cterm=bold ctermfg=4  ctermbg=0
+highlight Link       cterm=none ctermfg=14 ctermbg=0
+highlight BrokenLink cterm=none ctermfg=9  ctermbg=0
+highlight Socket     cterm=none ctermfg=3  ctermbg=0
+highlight Device     cterm=none ctermfg=11 ctermbg=0
+highlight Fifo       cterm=none ctermfg=13 ctermbg=0
+highlight Executable cterm=none ctermfg=10 ctermbg=0
+
+" -----------------------------
+" Bottom
+" -----------------------------
+
+highlight WildMenu   cterm=bold ctermfg=0  ctermbg=15
+highlight CmdLine    cterm=none ctermfg=4  ctermbg=0
+highlight ErrorMsg   cterm=none ctermfg=9  ctermbg=0

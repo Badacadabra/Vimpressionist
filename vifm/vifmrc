@@ -2,8 +2,8 @@
 "########### VIFM ############
 "#############################
 
-" Theme 
-colorscheme ph.vifm 
+" Theme
+colorscheme archery.vifm
 
 " Settings
 source $VIFM/src/settings
