@@ -1,9 +1,9 @@
 # =============================
-# SETTINGS 
+# SETTINGS
 # =============================
 
 # -----------------------------
-# Main views 
+# Main views
 # -----------------------------
 
 set blame-view  = date:default author:full file-name:auto id:yes,color line-number:no,interval=5 text
@@ -15,7 +15,7 @@ set status-view = line-number:no,interval=5 status:short file-name
 set tree-view   = line-number:no,interval=5 mode author:full file-size date:default id:no file-name
 
 # -----------------------------
-# Pager-based views 
+# Pager-based views
 # -----------------------------
 
 set pager-view = line-number:no,interval=5 text
@@ -25,7 +25,7 @@ set blob-view  = line-number:no,interval=5 text
 set diff-view  = line-number:no,interval=5 text:yes,commit-title-overflow=no
 
 # -----------------------------
-# UI display settings 
+# UI display settings
 # -----------------------------
 
 set show-changes = yes    # Show changes commits in the main view
@@ -48,7 +48,7 @@ set line-graphics = utf-8 # Enum: ascii, default, utf-8
 set reference-format = [branch] <tag> {remote} ~replace~
 
 # -----------------------------
-# Read content from Git 
+# Read content from Git
 # -----------------------------
 
 set commit-order = auto          # Enum: auto, default, topo, date, reverse (main)
@@ -64,7 +64,7 @@ set diff-context = 3             # Number of lines to show around diff changes (
 # set mailmap = yes              # Use .mailmap to show canonical name and email address
 
 # -----------------------------
-# Miscellaneous 
+# Miscellaneous
 # -----------------------------
 
 set refresh-mode = auto      # Enum: manual, auto, after-command, periodic

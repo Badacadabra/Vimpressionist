@@ -3,7 +3,7 @@
 # ==============================
 
 # ------------------------------
-# Macros 
+# Macros
 # ------------------------------
 
 macro index <f1> '<sync-mailbox><enter-command>source ~/.mutt/accounts/own<enter><change-folder>!<enter>'
@@ -11,13 +11,13 @@ macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/accounts/gmail<ent
 macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/accounts/outlook<enter><change-folder>!<enter>'
 
 # ------------------------------
-# Hooks 
+# Hooks
 # ------------------------------
 
 folder-hook badacadabra.net 'source ~/.mutt/accounts/own'
 folder-hook gmail.com 'source ~/.mutt/accounts/gmail'
 folder-hook outlook.com 'source ~/.mutt/accounts/outlook'
 
-account-hook badacadabra.net 'set imap_user={USER} imap_pass={PASSWORD}'
-account-hook gmail.com 'set imap_user={USER} imap_pass={PASSWORD}'
-account-hook outlook.com 'set imap_user={USER} imap_pass={PASSWORD}' 
+account-hook badacadabra.net 'set imap_user=badacadabr17 imap_pass=mDTcd+HKk'
+account-hook gmail.com 'set imap_user=baptiste.vannesson imap_pass=bicyxrvydndlnqfs'
+account-hook outlook.com 'set imap_user=the_badaboum@hotmail.com imap_pass=chfecqhkghewwfrg'

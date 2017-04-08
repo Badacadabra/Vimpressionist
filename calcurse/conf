@@ -16,14 +16,14 @@ appearance.theme=blue on default
 appearance.todoview=show-completed
 
 # ==============================
-# DAEMON 
+# DAEMON
 # ==============================
 
 daemon.enable=no
 daemon.log=no
 
 # ==============================
-# FORMAT 
+# FORMAT
 # ==============================
 
 format.inputdate=1
@@ -32,7 +32,7 @@ format.notifytime=%T
 format.outputdate=%D
 
 # ==============================
-# GENERAL 
+# GENERAL
 # ==============================
 
 general.autogc=no
@@ -45,7 +45,7 @@ general.progressbar=yes
 general.systemdialogs=yes
 
 # ==============================
-# NOTIFICATION 
+# NOTIFICATION
 # ==============================
 
 notification.command=printf '\a'

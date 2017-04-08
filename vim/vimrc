@@ -3,18 +3,18 @@
 " -------------------            _                         --------------------
 " -------------------      _   _(_)_ __ ___  _ __ ___      --------------------
 " -------------------     \ \ / / | '_ ` _ \| '__/ __|     --------------------
-" -------------------      \ V /| | | | | | | | | (__      --------------------                    
+" -------------------      \ V /| | | | | | | | | (__      --------------------
 " -------------------     (_)_/ |_|_| |_| |_|_|  \___|     --------------------
-" -------------------                                      -------------------- 
+" -------------------                                      --------------------
 " =============================================================================
 " =============================================================================
 
 " =============================================================================
-" URL: https://github.com/Badacadabra/dotvim.git
+" URL: https://github.com/Badacadabra/Vimpressionist.git
 " Author: Baptiste Vannesson
-" Description: Vim as a powerful Web IDE! 
+" Description: Vim as a powerful Web IDE!
 " License: MIT
-" ============================================================================= 
+" =============================================================================
 
 " Core settings  {{{1
 set nocompatible " Vim/Vi compatibility
@@ -25,6 +25,8 @@ set directory=~/.vim/swap " keep swap files ('swp', 'swo', 'swn', ...) in a dedi
 set clipboard=unnamedplus " allow full clipboard
 set path=.,/usr/include,,** " useful for advanced searching in a project
 set suffixesadd=.js,.php " useful to find interesting files with 'gf'
+set showtabline=2 " display tab line all the time"
+set laststatus=2 " display status line all the time
 
 " =============================================================================
 
@@ -40,25 +42,25 @@ source ~/.vim/config/plugins.vim
 
 " GUI {{{1
 set guioptions-=e " disable GUI options (like graphical tabs)
-set background=dark " dark background
+set termguicolors
 if has('gui_running')
     " GVim
-    set guifont=Hack
-    colorscheme gotham
+    set guifont=Larabiefont\ 13
 else
-    " Terminal Vim
-    colorscheme Tomorrow-Night
+    " Vim
+    set t_Co=256
 endif
+colorscheme archery
 
 " =============================================================================
 
 " Formatting {{{1
 set encoding=utf8 " text encoding
 set number " display line numbers
-set tabstop=4 " number of visual spaces per TAB
-set softtabstop=4 " number of spaces in TAB when editing
+set tabstop=2 " number of visual spaces per TAB
+set softtabstop=2 " number of spaces in TAB when editing
 set expandtab " convert TABs to spaces
-set shiftwidth=4 " number of spaces for indent operations
+set shiftwidth=2 " number of spaces for indent operations
 set autoindent " keep the current indentation
 set backspace=indent,eol,start " usual behavior for backspace in insert mode
 set foldmethod=marker " folding using markers
@@ -69,7 +71,6 @@ autocmd BufEnter * :syntax sync fromstart " syntax highlighting for the whole fi
 filetype plugin on " activate filetype plugin
 filetype indent on " load filetype=specific indent files
 let g:vim_json_syntax_conceal = 0 " display quotes in JSON files
-highlight ColorColumn ctermbg=NONE ctermfg=red " highlight the first character that exceeds the line length limit
 
 " =============================================================================
 
@@ -82,7 +83,6 @@ set cursorline " highlight the current line
 set ruler " display the cursor position in the file
 set nostartofline " do not go systematically on the first character of the line
 set confirm " get a confirmation dialog instead of an error for a command
-set mouse=a " enable mouse for all modes
 set scrolloff=3 " allow scrolling 3 lines before a window limit
 
 " =============================================================================

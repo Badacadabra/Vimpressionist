@@ -28,7 +28,7 @@
 " program.
 
 " -----------------------------
-" TEXT 
+" TEXT
 " -----------------------------
 
 " PDF
@@ -52,7 +52,7 @@ filetype *.[1-8] man ./%c
 fileviewer *.[1-8] man ./%c | col -b
 
 " -----------------------------
-" MULTIMEDIA 
+" MULTIMEDIA
 " -----------------------------
 
 " Web
@@ -71,7 +71,7 @@ fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm img2txt --format=utf8 %c
 filetype *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus
         \ {Play with ffplay}
         \ ffplay %f
-fileviewer *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus ffprobe -pretty %c 2>&1 
+fileviewer *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus ffprobe -pretty %c 2>&1
 
 " Video
 filetype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,*.fl[icv],*.m2v,*.mov,*.webm,
@@ -83,7 +83,7 @@ fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,*.fl[icv
         \ ffprobe -pretty %c 2>&1
 
 " -----------------------------
-" FILESYSTEM 
+" FILESYSTEM
 " -----------------------------
 
 " Directories
@@ -138,7 +138,7 @@ filetype *.7z
 fileviewer *.7z 7z l %c
 
 " -----------------------------
-" ENCRYPTION 
+" ENCRYPTION
 " -----------------------------
 
 " MD5
@@ -167,7 +167,7 @@ filetype *.asc
        \ !!gpg --verify %c,
 
 " -----------------------------
-" MISCELLANEOUS 
+" MISCELLANEOUS
 " -----------------------------
 
 " Office files
@@ -199,7 +199,7 @@ filetype *.o nm %f | less
 filextype *.pro qtcreator %f &
 
 " -----------------------------
-" PREVIEW 
+" PREVIEW
 " -----------------------------
 
 " Ignore 'vi[x]cmd' option for unknown file types

@@ -47,7 +47,7 @@ datetime-format "%b %d"
 goto-first-unread no
 mark-as-read-on-hover no
 display-article-progress yes
-article-sort-order date
+article-sort-order date-asc
 articlelist-format "%4i %f %D %6L %?T?;%-17T; ?%t"
 delete-read-articles-on-quit no
 

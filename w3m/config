@@ -1,18 +1,18 @@
-############################### 
+###############################
 ############# W3M #############
 ###############################
 
-# ============================= 
-# DISPLAY SETTINGS 
+# =============================
+# DISPLAY SETTINGS
 # =============================
 
-# Tab width in characters 
+# Tab width in characters
 tabstop 8
 
-# Indent for HTML rendering 
+# Indent for HTML rendering
 indent_incr 4
 
-# Number of pixels per character (4.0...32.0) 
+# Number of pixels per character (4.0...32.0)
 pixel_per_char 32
 
 # Number of pixels per line (4.0...64.0)
@@ -24,7 +24,7 @@ frame 0
 # Use _self as default target
 target_self 1
 
-# Open link on new tab if target is _blank or _new 
+# Open link on new tab if target is _blank or _new
 open_tab_blank 1
 
 # Open download list panel on new tab
@@ -45,7 +45,7 @@ display_lineinfo 0
 # Use external program for directory listing
 ext_dirlist 1
 
-# URL of directory listing command 
+# URL of directory listing command
 dirlist_cmd file:///$LIB/dirlist.cgi
 
 # Enable dictionary lookup through CGI
@@ -54,7 +54,7 @@ use_dictcommand 1
 # URL of dictionary lookup command
 dictcommand file:///$LIB/w3mdict.cgi
 
-# Display file names in multi-column format 
+# Display file names in multi-column format
 multicol 1
 
 # Use ASCII equivalents to display entities
@@ -117,7 +117,7 @@ label_topline 1
 # Move cursor to top line when moving to next page
 nextpage_topline 1
 
-# ============================= 
+# =============================
 # COLOR SETTINGS
 # =============================
 
@@ -154,7 +154,7 @@ visited_anchor 0
 # Color of visited link
 visited_color magenta
 
-# ============================= 
+# =============================
 # MISCELLANEOUS SETTINGS
 # =============================
 
@@ -224,7 +224,7 @@ preserve_timestamp 1
 # keymap file
 keymap_file keymap
 
-# ============================= 
+# =============================
 # DIRECTORY SETTINGS
 # =============================
 
@@ -240,7 +240,7 @@ cgi_bin /usr/lib/w3m/cgi-bin
 # Index file for directories
 index_file
 
-# ============================= 
+# =============================
 # EXTERNAL PROGRAM SETTINGS
 # =============================
 
@@ -295,11 +295,11 @@ bgextviewer 1
 # Use LESSOPEN
 use_lessopen 0
 
-# ============================= 
+# =============================
 # NETWORK SETTINGS
 # =============================
 
-# Password file 
+# Password file
 passwd_file ~/.w3m/passwd
 
 # Disable secret file security check
@@ -341,7 +341,7 @@ retry_http 1
 # Default value for open-URL command
 default_url 1
 
-# Number of redirections to follow 
+# Number of redirections to follow
 follow_redirection 10
 
 # Enable processing of meta-refresh tag
@@ -356,20 +356,20 @@ nntpserver
 # Mode of news server
 nntpmode
 
-# Number of news messages 
+# Number of news messages
 max_news 50
 
-# ============================= 
+# =============================
 # PROXY SETTINGS
 # =============================
 
 # Use proxy
 use_proxy 0
 
-# URL of HTTP proxy host 
+# URL of HTTP proxy host
 http_proxy
 
-# URL of HTTPS proxy host 
+# URL of HTTPS proxy host
 https_proxy
 
 # URL of FTP proxy host
@@ -384,7 +384,7 @@ noproxy_netaddr 0
 # Disable cache
 no_cache 0
 
-# ============================= 
+# =============================
 # SSL SETTINGS
 # =============================
 
@@ -406,7 +406,7 @@ ssl_ca_path
 # File consisting of PEM encoded certificates of CAs
 ssl_ca_file
 
-# ============================= 
+# =============================
 # COOKIE SETTINGS
 # =============================
 
@@ -431,7 +431,7 @@ cookie_accept_domains
 # Domains to avoid [wrong number of dots]
 cookie_avoid_wrong_number_of_dots
 
-# ============================= 
+# =============================
 # CHARSET SETTINGS
 # =============================
 
@@ -442,7 +442,7 @@ display_charset UTF-8
 document_charset UTF-8
 
 # Automatic charset detect when loading
-auto_detect 2           
+auto_detect 2
 
 # System charset
 system_charset UTF-8
@@ -477,7 +477,7 @@ search_conv 1
 # Fix character width when conversion
 fix_width_conv 1
 
-# Use GB 12345 Unicode map instead of GB 2312's 
+# Use GB 12345 Unicode map instead of GB 2312's
 use_gb12345_map 0
 
 # Use JIS X 0201 Roman for ISO-2022-JP

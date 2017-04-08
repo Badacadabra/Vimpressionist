@@ -1,5 +1,5 @@
 # =============================
-# KEY MAPPINGS 
+# KEY MAPPINGS
 # =============================
 
 # Ctrl  : C-, ^
@@ -13,7 +13,7 @@
 # Left  : LEFT, ^[[D
 
 # -----------------------------
-# Unmap default keys 
+# Unmap default keys
 # -----------------------------
 
 keymap UP NULL
@@ -172,7 +172,7 @@ keymap ^[[L NULL
 keymap ^[[Z NULL
 
 # -----------------------------
-# In-page Navigation 
+# In-page Navigation
 # -----------------------------
 
 # Move to next page
@@ -265,22 +265,22 @@ keymap C-p PREV_LINK
 # Popup link list menu and move cursor to selected link
 keymap ESC-m MOVE_LIST_MENU
 
-# Move to next right link 
+# Move to next right link
 keymap ) NEXT_RIGHT
 
-# Move to next left link 
+# Move to next left link
 keymap ( NEXT_LEFT
 
-# Move to next downward link 
+# Move to next downward link
 keymap } NEXT_DOWN
 
-# Move to next upward link 
+# Move to next upward link
 keymap { NEXT_UP
 
-# Move to next right (or downward) link 
+# Move to next right (or downward) link
 keymap ]] NEXT_RIGHT_DOWN
 
-# Move to next left (or upward) link 
+# Move to next left (or upward) link
 keymap [[ NEXT_LEFT_UP
 
 # Cancel the last cursor movement
@@ -290,7 +290,7 @@ keymap u UNDO
 keymap C-r REDO
 
 # -----------------------------
-# Hyperlink Operations 
+# Hyperlink Operations
 # -----------------------------
 
 # Go to current link
@@ -317,7 +317,7 @@ keymap p PEEK
 # Peek link URL
 keymap P PEEK_LINK
 
-# Peek image URL 
+# Peek image URL
 keymap I PEEK_IMG
 
 # View info of current document
@@ -354,7 +354,7 @@ keymap ESC-l LIST_MENU
 keymap ESC-a ACCESSKEY
 
 # -----------------------------
-# File/Stream Operations 
+# File/Stream Operations
 # -----------------------------
 
 # Go to URL
@@ -383,7 +383,7 @@ keymap !| PIPE_SHELL
 keymap | PIPE_BUF
 
 # -----------------------------
-# Buffer Operations 
+# Buffer Operations
 # -----------------------------
 
 # Back to previous buffer
@@ -432,7 +432,7 @@ keymap ESC-i DISPLAY_IMAGE
 keymap X STOP_IMAGE
 
 # -----------------------------
-# Tab Operations 
+# Tab Operations
 # -----------------------------
 
 # Open new tab
@@ -460,7 +460,7 @@ keymap C-wl TAB_RIGHT
 keymap C-wh TAB_LEFT
 
 # -----------------------------
-# Bookmark Management 
+# Bookmark Management
 # -----------------------------
 
 # Read bookmark
@@ -470,14 +470,14 @@ keymap :b BOOKMARK
 keymap a ADD_BOOKMARK
 
 # -----------------------------
-# Searches 
+# Searches
 # -----------------------------
 
 # Search forward
 keymap ESC-/ WHEREIS
 
 # Search backward
-keymap ESC-? SEARCH_BACK 
+keymap ESC-? SEARCH_BACK
 
 # Search next regexp
 keymap n SEARCH_NEXT
@@ -492,7 +492,7 @@ keymap / ISEARCH
 keymap ? ISEARCH_BACK
 
 # -----------------------------
-# Dictionary Lookup 
+# Dictionary Lookup
 # -----------------------------
 
 # Execute dictionary command (see README.dict)
@@ -502,7 +502,7 @@ keymap ESC-w DICT_WORD
 keymap ESC-W DICT_WORD_AT
 
 # -----------------------------
-# Mark Operations 
+# Mark Operations
 # -----------------------------
 
 # Set/unset mark
@@ -518,14 +518,14 @@ keymap \' PREV_MARK
 keymap C-m REG_MARK
 
 # -----------------------------
-# Miscellaneous 
+# Miscellaneous
 # -----------------------------
 
 # Popup menu
 keymap SPC MENU
 
 # View help
-keymap :h HELP 
+keymap :h HELP
 
 # Option setting panel
 keymap ESC-o OPTIONS
@@ -558,7 +558,7 @@ keymap ESC-M MSGS
 keymap C-h WRAP_TOGGLE
 
 # Execute w3m command(s)
-keymap :: COMMAND 
+keymap :: COMMAND
 
 # Set alarm
 keymap ESC-A ALARM
@@ -576,7 +576,7 @@ keymap ESC-E SETENV
 keymap :R REINIT
 
 # Execute shell command
-keymap :! SHELL	        
+keymap :! SHELL
 
 # Stop loading document
 keymap C-c SUSPEND
@@ -589,7 +589,7 @@ keymap :x EXIT
 keymap ZZ EXIT
 
 # -----------------------------
-# N/A 
+# N/A
 # -----------------------------
 
 # Popup menu at mouse cursor (for mouse action)

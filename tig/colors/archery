@@ -2,86 +2,86 @@
 # ARCHERY COLORSCHEME
 # =============================
 
-color "---"                  blue        default   
-color "diff --"              yellow      default   
-color "--- "                 yellow      default   
-color "+++ "                 yellow      default   
-color "@@"                   color12     default   
-color "+"                    green       default   
-color " +"                   green       default   
-color "-"                    red         default   
-color " -"                   red         default   
-color "index "               blue        default   
-color "old file mode "       yellow      default   
-color "new file mode "       yellow      default   
-color "deleted file mode "   yellow      default   
-color "copy from "           yellow      default   
-color "copy to "             yellow      default   
-color "rename from "         yellow      default   
-color "rename to "           yellow      default   
-color "similarity "          yellow      default   
-color "dissimilarity "       yellow      default   
-color "diff-tree "           color12     default   
-color "Author: "             color12     default   
-color "Commit: "             color12     default   
-color "Tagger: "             color12     default   
-color "Merge: "              color12     default   
-color "Date: "               color12     default   
-color "AuthorDate: "         color12     default   
-color "CommitDate: "         color12     default   
-color "TaggerDate: "         color12     default   
-color "Refs: "               color12     default   
-color "Reflog: "             color12     default   
-color "Reflog message: "     color12     default   
-color "stash@{"              color12     default   
-color "commit "              green       default   
-color "parent "              blue        default   
-color "tree "                color12     default   
-color "author "              color12     default   
-color "committer "           color12     default   
-color "    Signed-off-by"    yellow      default   
-color "    Acked-by"         yellow      default   
-color "    Tested-by"        yellow      default   
-color "    Reviewed-by"      yellow      default   
+color "---"                  blue        default
+color "diff --"              yellow      default
+color "--- "                 yellow      default
+color "+++ "                 yellow      default
+color "@@"                   color12     default
+color "+"                    green       default
+color " +"                   green       default
+color "-"                    red         default
+color " -"                   red         default
+color "index "               blue        default
+color "old file mode "       yellow      default
+color "new file mode "       yellow      default
+color "deleted file mode "   yellow      default
+color "copy from "           yellow      default
+color "copy to "             yellow      default
+color "rename from "         yellow      default
+color "rename to "           yellow      default
+color "similarity "          yellow      default
+color "dissimilarity "       yellow      default
+color "diff-tree "           color12     default
+color "Author: "             color12     default
+color "Commit: "             color12     default
+color "Tagger: "             color12     default
+color "Merge: "              color12     default
+color "Date: "               color12     default
+color "AuthorDate: "         color12     default
+color "CommitDate: "         color12     default
+color "TaggerDate: "         color12     default
+color "Refs: "               color12     default
+color "Reflog: "             color12     default
+color "Reflog message: "     color12     default
+color "stash@{"              color12     default
+color "commit "              green       default
+color "parent "              blue        default
+color "tree "                color12     default
+color "author "              color12     default
+color "committer "           color12     default
+color "    Signed-off-by"    yellow      default
+color "    Acked-by"         yellow      default
+color "    Tested-by"        yellow      default
+color "    Reviewed-by"      yellow      default
 color default                default     default    normal
 color cursor                 white       default    bold
-color status                 color12     default   
-color delimiter              color12     default   
-color date                   blue        default   
-color mode                   cyan        default   
-color id                     color12     default   
-color overflow               red         default   
-color header                 yellow      default   
+color status                 color12     default
+color delimiter              color12     default
+color date                   blue        default
+color mode                   cyan        default
+color id                     color12     default
+color overflow               red         default
+color header                 yellow      default
 color section                color12     default    bold
 color directory              cyan        default
-color file                   white       default   
-color grep.file              default     default   
-color file-size              default     default   
-color line-number            color12     default   
-color title-blur             white       blue   
+color file                   white       default
+color grep.file              default     default
+color file-size              default     default
+color line-number            color12     default
+color title-blur             white       blue
 color title-focus            white       blue       bold
-color main-commit            default     default   
+color main-commit            default     default
 color main-tag               color12     default    bold
-color main-local-tag         color12     default   
-color main-remote            yellow      default   
-color main-replace           cyan        default   
+color main-local-tag         color12     default
+color main-remote            yellow      default
+color main-replace           cyan        default
 color main-tracked           yellow      default    bold
-color main-ref               cyan        default   
+color main-ref               cyan        default
 color main-head              cyan        default    bold
-color stat-none              default     default   
-color stat-staged            color12     default   
-color stat-unstaged          color12     default   
-color stat-untracked         color12     default   
-color help-group             blue        default   
-color help-action            color12     default   
-color diff-stat              blue        default   
-color palette-0              color0      default   
-color palette-1              color1      default   
-color palette-2              color2      default   
-color palette-3              color3      default   
-color palette-4              color4      default   
-color palette-5              color5      default   
-color palette-6              color6      default   
+color stat-none              default     default
+color stat-staged            color12     default
+color stat-unstaged          color12     default
+color stat-untracked         color12     default
+color help-group             blue        default
+color help-action            color12     default
+color diff-stat              blue        default
+color palette-0              color0      default
+color palette-1              color1      default
+color palette-2              color2      default
+color palette-3              color3      default
+color palette-4              color4      default
+color palette-5              color5      default
+color palette-6              color6      default
 color palette-7              color7      default    bold
 color palette-8              color8      default    bold
 color palette-9              color9      default    bold
@@ -89,5 +89,5 @@ color palette-10             color10     default    bold
 color palette-11             color11     default    bold
 color palette-12             color12     default    bold
 color palette-13             color13     default    bold
-color graph-commit           blue        default   
+color graph-commit           blue        default
 color search-result          white       blue       bold

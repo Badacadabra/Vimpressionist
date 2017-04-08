@@ -1,0 +1,2 @@
+#!/bin/bash
+termite --name=Weechat --class=Weechat --exec weechat

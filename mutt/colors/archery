@@ -1,20 +1,20 @@
 # ==============================
-# ARCHERY COLORSCHEME 
+# ARCHERY COLORSCHEME
 # ==============================
 
 # ------------------------------
-# Main colors 
+# Main colors
 # ------------------------------
 
-color attachment     white          default 
-color bold           white          blue 
+color attachment     white          default
+color bold           white          blue
 color error          brightred      default
-color hdrdefault     brightwhite    default 
-color indicator      brightwhite    blue 
+color hdrdefault     blue           default
+color indicator      blue           color8
 color markers        white          default
-color message        default        default
-color normal         blue           default
-color prompt         brightblue     default   
+color message        color7         default
+color normal         color12        default
+color prompt         brightblue     default
 color quoted         default        default
 color search         brightwhite    blue
 color signature      brightwhite    default
@@ -24,29 +24,29 @@ color tree           default        default
 color underline      blue           default
 
 mono attachment bold
-mono bold       bold 
-mono error      bold 
-mono hdrdefault bold 
-mono indicator  none 
-mono markers    none 
-mono message    none 
-mono normal     none 
-mono prompt     none 
-mono quoted     none 
-mono search     none 
-mono signature  standout 
-mono status     bold 
-mono tilde      none 
-mono tree       none 
-mono underline  underline 
+mono bold       bold
+mono error      bold
+mono hdrdefault bold
+mono indicator  none
+mono markers    none
+mono message    none
+mono normal     none
+mono prompt     none
+mono quoted     none
+mono search     none
+mono signature  standout
+mono status     bold
+mono tilde      none
+mono tree       none
+mono underline  underline
 
 # ------------------------------
-# Sidebar 
+# Sidebar
 # ------------------------------
 
-color sidebar_divider      blue            default 
+color sidebar_divider      blue            default
 color sidebar_flagged      default         default
 color sidebar_highlight    brightwhite     blue
 color sidebar_indicator    brightwhite     default
 color sidebar_new          brightblue      default
-color sidebar_spoolfile    brightwhite     brightblue 
+color sidebar_spoolfile    brightwhite     brightblue

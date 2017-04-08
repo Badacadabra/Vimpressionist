@@ -17,7 +17,7 @@ set keymap vi-insert
 
 # Display the current mode (cmd/ins)
 # set show-mode-in-prompt on
-# set vi-cmd-mode-string "NORMAL"
+# set vi-cmd-mode-string "NORMAL"
 # set vi-ins-mode-string "INSERT"
 
 # ==============================
@@ -33,7 +33,7 @@ set completion-ignore-case on
 # hyphens = underscores
 set completion-map-case on
 
-# Improve autocomplete using short prefixes
+# Improve autocomplete using short prefixes 
 set completion-prefix-display-length 1
 
 # Avoid annoying '(y/n)' prompt in autocomplete
@@ -60,8 +60,8 @@ set mark-directories on
 # Append a slash to symlinked directories
 set mark-symlinked-directories on
 
-# Replace ~ with the appropriate value
-set expand-tilde on
+# Do not replace ~
+set expand-tilde off
 
 # Do not show hidden files (with leading ".") in autocomplete
 set match-hidden-files off
@@ -126,7 +126,7 @@ set comment-begin "#"
 # Do not output control characters
 set echo-control-characters off
 
-# Do not wrap lines
+# Wrap lines
 set horizontal-scroll-mode on
 
 # Vim users do not use arrow keys :D

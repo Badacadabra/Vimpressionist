@@ -1,5 +1,5 @@
 # =============================
-# MAIN MENU 
+# MAIN MENU
 # =============================
 
 menu Main
@@ -10,7 +10,7 @@ menu Main
   func   " Edit Source  (e) "  EDIT       "e"
   func   " Save Source  (w) "  SAVE       "w"
   func   " Reload       (r) "  RELOAD     "r"
-  nop    " -----------------"  
+  nop    " -----------------"
 
   func   " Go Link      (o) "  GOTO_LINK  "o"
   func   "   on New Tab (t) "  TAB_LINK   "t"
@@ -19,7 +19,7 @@ menu Main
   func   " Save Image   (I) "  SAVE_IMAGE "I"
   func   " View Frame   (F) "  FRAME      "F"
   nop    " ---------------- "
-  func   " Bookmark     (B) "  BOOKMARK   "B"  
+  func   " Bookmark     (B) "  BOOKMARK   "B"
   func   " Help         (h) "  HELP       "h"
   func   " Option       (O) "  OPTIONS    "O"
   nop    " ---------------- "

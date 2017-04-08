@@ -6,7 +6,7 @@ auto_view text/html application/pdf image/* audio/* video/*
 alternative_order text/plain text/enriched text/html
 
 # ------------------------------
-# Mutt files & folders 
+# Mutt files & folders
 # ------------------------------
 
 set alias_file = ~/.mutt/aliases
@@ -14,7 +14,7 @@ set header_cache = ~/.mutt/cache/headers
 set message_cachedir = ~/.mutt/cache/bodies
 set certificate_file = ~/.mutt/certificates
 set mailcap_path = ~/.mutt/mailcap
-set record = ~/.mutt/sent 
+set record = ~/.mutt/sent
 set history_file = ~/.mutt/history
 set entropy_file = ~/.mutt/entropy
 set postponed = ~/.mutt/postponed
@@ -25,10 +25,10 @@ set trash
 # set ssl_ca_certificates_file
 
 # ------------------------------
-# User eXperience (UX) 
+# User eXperience (UX)
 # ------------------------------
 
-# Global 
+# Global
 set quit = ask-yes
 set help = no
 set status_on_top = no
@@ -85,7 +85,7 @@ set sort_aux = date
 set sort_browser = alpha
 set sort_re = yes
 
-# Visibility 
+# Visibility
 set hidden_host = no
 set hide_limited = no
 set hide_missing = yes
@@ -113,8 +113,8 @@ set sidebar_width = 30
 # Formatting
 set sidebar_indent_string = "  "
 set sidebar_format = "%B (%N)"
-set locale = "C"
-set to_chars = "+TCFL" 
+#set locale = "C"
+set to_chars = "+TCFL"
 set attach_sep = "\n"
 set pipe_sep = "\n"
 set indent_string = "> "
@@ -132,7 +132,7 @@ set folder_format = "%2C %t %N %F %2l %-8.8u %-8.8g %8s %d %f"
 set pager_format = "-%Z- %C/%m: %-20.20n   %s%*  -- (%P)"
 set date_format = "%A %d %b %Y à %H:%M:%S (%Z)"
 set query_format = "%4c %t %-25.25a %-25.25n %?e?(%e)?"
-set ts_icon_format = "M%?n?AIL&ail?" 
+set ts_icon_format = "M%?n?AIL&ail?"
 set ts_status_format = "Mutt with %?m?%m messages&no messages?%?n? [%n NEW]?"
 set pgp_entry_format = "%4n %t%f %4l/0x%k %-4a %2c %u"
 set status_format = "-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---"
@@ -160,7 +160,7 @@ set mh_seq_replied = "replied"
 set mh_seq_unseen = "unseen"
 
 # Maildir
-set maildir_trash = no 
+set maildir_trash = no
 set maildir_check_cur = no
 set maildir_header_cache_verify = yes
 
@@ -188,7 +188,7 @@ set thorough_search = yes
 set rfc2047_parameters = no
 
 # ------------------------------
-# Mail management 
+# Mail management
 # ------------------------------
 
 # Network
@@ -229,7 +229,7 @@ set include = ask-yes
 set include_onlyfirst = no
 set display_filter
 set metoo = no
-set forward_edit = yes 
+set forward_edit = yes
 set forward_quote = no
 set followup_to = yes
 set honor_followup_to = yes
@@ -266,7 +266,7 @@ set hide_thread_subject = yes
 set strict_threads = no
 set thread_received = no
 
-# Performance 
+# Performance
 set net_inc = 10
 set time_inc = 0
 set read_inc = 10
@@ -313,7 +313,7 @@ set query_command = "abook --mutt-query '%s'"
 # set dotlock_program "/usr/local/bin/mutt_dotlock"
 
 # ------------------------------
-# Email protocols 
+# Email protocols
 # ------------------------------
 
 # POP
@@ -338,7 +338,7 @@ set imap_servernoise = yes
 unset imap_passive
 
 # ------------------------------
-# Encryption 
+# Encryption
 # ------------------------------
 
 # Crypt
@@ -415,7 +415,7 @@ set ssl_starttls = yes
 set ssl_force_tls = yes
 set ssl_client_cert
 set ssl_force_tls = no
-set ssl_use_sslv2 = no 
+set ssl_use_sslv2 = no
 set ssl_use_sslv3 = no
 set ssl_use_tlsv1 = yes
 set ssl_use_tlsv1_1 = yes

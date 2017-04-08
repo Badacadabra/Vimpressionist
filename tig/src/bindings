@@ -1,9 +1,9 @@
 # =============================
-# KEY BINDINGS 
+# KEY BINDINGS
 # =============================
 
 # -----------------------------
-# Unbind some default keys 
+# Unbind some default keys
 # -----------------------------
 
 # Generic bindings ............
@@ -48,7 +48,7 @@ bind generic <Left> none
 bind generic <Right> none
 bind generic | none
 
-# Option toggling 
+# Option toggling
 bind generic I none
 bind generic i none
 
@@ -61,7 +61,7 @@ bind search <C-K> none
 
 # Main bindings ...............
 
-bind main G none 
+bind main G none
 bind main G move-last-line
 bind main F none
 
@@ -85,7 +85,7 @@ bind stage [ none
 bind stage ] none
 
 # -----------------------------
-# Macros 
+# Macros
 # -----------------------------
 
 # These commands allow to run shell commands directly from within Tig.
@@ -129,7 +129,7 @@ bind refs    C  ?git checkout %(branch)
 bind refs    !  ?git branch -D %(branch)
 
 # -----------------------------
-# View switching 
+# View switching
 # -----------------------------
 
 # Home
@@ -150,7 +150,7 @@ bind generic 8 view-stash
 bind generic 9 view-blame
 
 # -----------------------------
-# View manipulation 
+# View manipulation
 # -----------------------------
 
 # Enter and open selected entry
@@ -160,7 +160,7 @@ bind generic l enter
 # Go back to the previous view state
 bind generic <C-O> back
 
-# Move 
+# Move
 bind generic J next
 bind generic K previous
 bind generic gh parent
@@ -185,7 +185,7 @@ bind generic x view-close
 bind generic ZZ quit
 
 # -----------------------------
-# View specific 
+# View specific
 # -----------------------------
 
 # Status ......................
@@ -223,7 +223,7 @@ bind stage @ :/^@@
 bind stage <C-X> :toggle diff-context -1
 
 # Increase the diff context
-bind stage <C-A> :toggle diff-context +1 
+bind stage <C-A> :toggle diff-context +1
 
 # Diff ........................
 
@@ -245,7 +245,7 @@ bind main <C-G> :toggle commit-title-graph
 bind main <C-R> :toggle commit-title-refs
 
 # -----------------------------
-# Cursor navigation 
+# Cursor navigation
 # -----------------------------
 
 bind generic j move-down
@@ -261,7 +261,7 @@ bind generic [[ move-page-up
 bind generic ]] move-page-down
 
 # -----------------------------
-# Scrolling 
+# Scrolling
 # -----------------------------
 
 # Horizontal
@@ -276,7 +276,7 @@ bind generic <C-B> scroll-page-up
 bind generic <C-F> scroll-page-down
 
 # -----------------------------
-# Searching 
+# Searching
 # -----------------------------
 
 bind generic / search
@@ -289,7 +289,7 @@ bind search <C-N> find-next
 bind search <C-P> find-prev
 
 # -----------------------------
-# Option manipulation 
+# Option manipulation
 # -----------------------------
 
 bind generic s :toggle sort-order
@@ -316,7 +316,7 @@ bind generic O :toggle commit-order
 bind generic T :toggle commit-title-overflow
 
 # -----------------------------
-# Miscellaneous 
+# Miscellaneous
 # -----------------------------
 
 # Open in editor

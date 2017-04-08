@@ -3,19 +3,19 @@
 ##############################
 
 # ============================
-# PROGRAMS AT STARTUP 
+# PROGRAMS AT STARTUP
 # ============================
 
-exec --no-startup-id sh ~/.fehbg 
+exec --no-startup-id sh ~/.fehbg
 exec --no-startup-id termite
 
-# ============================
-# WORKSPACES 
-# ============================
+# =============================
+# WORKSPACES
+# =============================
 
-# ----------------------------
+# -----------------------------
 # Available workspaces
-# ----------------------------
+# -----------------------------
 
 set $WS1 1 
 set $WS2 2 
@@ -28,9 +28,9 @@ set $WS8 8 
 set $WS9 9 
 set $WS10 10 
 
-# ----------------------------
-# Apps organization 
-# ----------------------------
+# -----------------------------
+# Apps organization
+# -----------------------------
 
 # Terminal
 assign [class="Termite"] $WS1
@@ -38,18 +38,21 @@ assign [class="Terminator"] $WS1
 assign [class="Gnome-terminal"] $WS1
 assign [class="XTerm"] $WS1
 
-# Email & Chat
+# Email/Chat/RSS
 assign [class="Mutt"] $WS2
 assign [class="Thunderbird"] $WS2
+assign [class="Weechat"] $WS2
 assign [class="Pidgin"] $WS2
 assign [class="Empathy"] $WS2
+assign [class="Newsbeuter"] $WS2
 
 # Web
-assign [class="Lynx"] $WS3
+assign [class="W3M"] $WS3
 assign [class="Firefox"] $WS3
 assign [class="Chromium"] $WS3
 
 # Desktop
+assign [class="Calcurse"] $WS4
 assign [class="Lxappearance"] $WS4
 assign [class="Keepassx"] $WS4
 assign [class="VirtualBox"] $WS4
@@ -61,6 +64,7 @@ assign [class="Filezilla"] $WS5
 
 # Code
 assign [class="Gvim"] $WS6
+assign [class="Tig"] $WS6
 assign [class="Atom"] $WS6
 assign [class="Gedit"] $WS6
 
@@ -81,14 +85,14 @@ assign [class="Vlc"] $WS9
 assign [class="Rhythmbox"] $WS9
 
 # =============================
-# KEY BINDINGS 
+# KEY BINDINGS
 # =============================
 
 # The base key is "Alt"!
 set $mod Mod1
 
 # -----------------------------
-# i3-specific 
+# i3-specific
 # -----------------------------
 
 mode "i3" {
@@ -96,44 +100,43 @@ mode "i3" {
     bindsym c reload
     bindsym r restart
 
-    # Quit i3 mode 
+    # Quit i3 mode
     bindsym Escape mode "default"
 }
 
 bindsym $mod+Shift+i mode "i3"
 
 # -----------------------------
-# System 
+# System
 # -----------------------------
 
 # New terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec termite
 
 # Open GVim (see vim-anywhere)
 bindsym $mod+v exec ~/.vim-anywhere/bin/run
 
 # Display dmenu
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec dmenu_run -fn "Boogaloo-15" -nb "#333333" -nf "#0088CC" -sb "#0088CC" -sf "#FFFFFF"
 
 # Lock screen (pause)
-bindsym $mod+Shift+p exec /usr/local/bin/lock 
+bindsym $mod+Shift+p exec $HOME/.config/i3/scripts/lock
 
 # Exit mode
 mode "exit" {
-    # Log out, Reboot, Shutdown 
-    bindsym l exec i3-msg exit 
-    bindsym r exec reboot 
-    bindsym s exec poweroff 
+    # Log out, Reboot, Shutdown
+    bindsym l exec i3-msg exit
+    bindsym r exec reboot
+    bindsym s exec poweroff
 
-    # Quit exit mode 
+    # Quit exit mode
     bindsym Escape mode "default"
 }
 
 bindsym $mod+Shift+e mode "exit"
 
 # -----------------------------
-# Windows manipulation 
+# Windows manipulation
 # -----------------------------
 
 # Kill focused window
@@ -151,7 +154,7 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# Fullscreen 
+# Fullscreen
 bindsym $mod+f fullscreen toggle
 
 # Toggle tiling/floating
@@ -166,26 +169,26 @@ bindsym $mod+t focus parent
 # Focus the child container
 bindsym $mod+c focus child
 
-# Split mode 
+# Split mode
 mode "split" {
-    # Horizontal, Vertical, Toggle 
-    bindsym h split horizontal 
+    # Horizontal, Vertical, Toggle
+    bindsym h split horizontal
     bindsym v split vertical
     bindsym t split toggle
 
-    # Quit split mode 
+    # Quit split mode
     bindsym Escape mode "default"
 }
 bindsym $mod+Shift+s mode "split"
 
-# Display mode 
+# Display mode
 mode "display" {
-    # Default (split), Stack, Tabs 
+    # Default (split), Stack, Tabs
     bindsym d layout toggle split
     bindsym s layout stacking
     bindsym t layout tabbed
 
-    # Quit display mode 
+    # Quit display mode
     bindsym Escape mode "default"
 }
 bindsym $mod+Shift+d mode "display"
@@ -198,13 +201,13 @@ mode "resize" {
     bindsym k resize shrink height 10 px or 10 ppt
     bindsym l resize grow width 10 px or 10 ppt
 
-    # Quit resize mode 
+    # Quit resize mode
     bindsym Escape mode "default"
 }
 bindsym $mod+Shift+r mode "resize"
 
 # -----------------------------
-# Workspaces 
+# Workspaces
 # -----------------------------
 
 # Switch between workspaces
@@ -240,18 +243,17 @@ bindsym $mod+Shift+0 move container to workspace $WS10
 # =============================
 
 # Main font
-font pango: Hack 12
+font pango: Boogaloo 15
 
-# Window colors 
+# Window colors
 client.focused          #0088CC #0088CC #ffffff #dddddd
 client.focused_inactive #333333 #333333 #888888 #292d2e
 client.unfocused        #333333 #333333 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 
-# System bar displaying info from conky 
+# System bar displaying info from conky
 bar {
-  # status_command i3status
-  status_command conky -c $HOME/.conkyrc 
+  status_command conky -c $HOME/.conkyrc
   colors {
     separator #666666
     background #222222

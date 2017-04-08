@@ -1,9 +1,9 @@
 # ==============================
-# GMAIL ACCOUNT 
+# GMAIL ACCOUNT
 # ==============================
 
 # ------------------------------
-# IMAP 
+# IMAP
 # ------------------------------
 
 set hostname = "gmail.com"
@@ -16,7 +16,7 @@ set trash = "+[Gmail]/{TRASH}" # e.g. "+[Gmail]/Trash"
 mailboxes "#-----------GMAIL--------------" =INBOX
 
 # ------------------------------
-# SMTP 
+# SMTP
 # ------------------------------
 
 set realname = "{FIRSTNAME} {LASTNAME}" # e.g. "John Doe"

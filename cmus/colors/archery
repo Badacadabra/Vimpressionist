@@ -1,5 +1,5 @@
 # ----------------------------
-# ARCHERY COLORSCHEME 
+# ARCHERY COLORSCHEME
 # ----------------------------
 
 # attr = attributes
@@ -19,12 +19,12 @@ set color_win_attr=default
 set color_win_bg=default
 set color_win_fg=blue
 
-# Main title 
+# Main title
 set color_win_title_attr=bold
 set color_win_title_bg=blue
 set color_win_title_fg=white
 
-# Line displaying currently playing track 
+# Line displaying currently playing track
 set color_titleline_attr=bold
 set color_titleline_bg=blue
 set color_titleline_fg=white

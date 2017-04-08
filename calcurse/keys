@@ -1,51 +1,51 @@
 # ==============================
-# KEY BINDINGS 
+# KEY BINDINGS
 # ==============================
 
-generic-cancel  ESC 
-generic-select  SPC 
-generic-credits  @ 
-generic-help  ? 
-generic-quit  q Z 
-generic-save  w 
-generic-reload  r R 
-generic-copy  y Y 
-generic-paste  p P 
-generic-change-view  ^W 
-generic-import  i I 
-generic-export  x X 
-generic-goto  g G 
-generic-other-cmd  o O 
-generic-config-menu  c C 
-generic-redraw  ^L 
-generic-add-appt  ^A 
-generic-add-todo  ^T 
-generic-prev-day  H 
-generic-next-day  L 
-generic-prev-week  K 
-generic-next-week  J 
-generic-prev-month  ( 
-generic-next-month  ) 
-generic-prev-year  { 
-generic-next-year  } 
-generic-scroll-down  ^F 
-generic-scroll-up  ^B 
-generic-goto-today  ^G 
-generic-command  : 
-move-right  l 
-move-left  h 
-move-down  j 
-move-up  k 
-start-of-week  0 
-end-of-week  $ 
-add-item  a A 
-del-item  d D 
-edit-item  e 
-view-item  v 
-pipe-item  | 
-flag-item  ! 
-repeat  . 
-edit-note  E 
-view-note  V 
-raise-priority  + 
-lower-priority  - 
+generic-cancel  ESC
+generic-select  SPC
+generic-credits  @
+generic-help  ?
+generic-quit  q Z
+generic-save  w
+generic-reload  r R
+generic-copy  y Y
+generic-paste  p P
+generic-change-view  ^W
+generic-import  i I
+generic-export  x X
+generic-goto  g G
+generic-other-cmd  o O
+generic-config-menu  c C
+generic-redraw  ^L
+generic-add-appt  ^A
+generic-add-todo  ^T
+generic-prev-day  H
+generic-next-day  L
+generic-prev-week  K
+generic-next-week  J
+generic-prev-month  (
+generic-next-month  )
+generic-prev-year  {
+generic-next-year  }
+generic-scroll-down  ^F
+generic-scroll-up  ^B
+generic-goto-today  ^G
+generic-command  :
+move-right  l
+move-left  h
+move-down  j
+move-up  k
+start-of-week  0
+end-of-week  $
+add-item  a A
+del-item  d D
+edit-item  e
+view-item  v
+pipe-item  |
+flag-item  !
+repeat  .
+edit-note  E
+view-note  V
+raise-priority  +
+lower-priority  -

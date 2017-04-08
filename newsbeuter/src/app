@@ -11,13 +11,13 @@ show-keymap-hint no
 swap-title-and-hints yes
 confirm-exit yes
 
-browser lynx
+browser w3m
 user-agent ""
-
-html-renderer internal
 http-auth-method any
-pager internal 
-external-url-viewer ""
+
+html-renderer "w3m -dump -T text/html"
+pager "w3m %f"
+external-url-viewer "w3m"
 
 # ----------------------------
 # Useful files
@@ -32,7 +32,7 @@ error-log "~/.newsbeuter/error.log"
 # Notifications
 # ----------------------------
 
-notify-format "RSS: %f unread feeds (%n unread articles total)"
+notify-format "RSS: %f unread feeds (%n unread articles)"
 notify-program notify-send
 notify-always no
 notify-screen no

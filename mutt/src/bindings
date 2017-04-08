@@ -1,9 +1,9 @@
 # ==============================
-# KEY BINDINGS 
+# KEY BINDINGS
 # ==============================
 
 # ------------------------------
-# Unbind some default keys 
+# Unbind some default keys
 # ------------------------------
 
 bind generic,index,pager,alias,query,attach,compose,postpone,browser <up> noop
@@ -40,7 +40,7 @@ bind generic,index,pager,alias,query,attach,compose,postpone,browser N noop
 bind generic,index,pager,alias,query,attach,compose,postpone,browser m noop
 
 # ------------------------------
-# Sidebar 
+# Sidebar
 # ------------------------------
 
 bind index,pager \Ct sidebar-toggle-visible
@@ -71,7 +71,7 @@ bind generic \e/ search-reverse
 bind generic n search-next
 bind generic N search-opposite
 
-# Movements 
+# Movements
 bind generic H top-page
 bind generic M middle-page
 bind generic L bottom-page
@@ -125,7 +125,7 @@ bind index Q query
 bind index A create-alias
 bind index Z quit
 
-# Navigation 
+# Navigation
 bind index c change-folder
 bind index k previous-undeleted
 bind index j next-undeleted
@@ -264,7 +264,7 @@ bind pager c change-folder
 bind pager C change-folder-readonly
 
 bind pager k previous-undeleted
-bind pager K previous-entry 
+bind pager K previous-entry
 
 bind pager j next-undeleted
 bind pager J next-entry
@@ -367,7 +367,7 @@ bind query Q query
 bind query A create-alias
 
 # ------------------------------
-# Attachment menu 
+# Attachment menu
 # ------------------------------
 
 # Attachments
@@ -375,7 +375,7 @@ bind attach t view-text
 bind attach v view-mailcap
 bind attach V view-attach
 bind attach E edit-type
- 
+
 # Replies
 bind attach r reply
 bind attach a group-reply # reply all
@@ -485,7 +485,7 @@ bind browser m enter-mask
 bind browser < sort
 bind browser > sort-reverse
 
-# IMAP mailbox 
+# IMAP mailbox
 bind browser C create-mailbox
 bind browser d delete-mailbox
 bind browser r rename-mailbox
@@ -517,7 +517,7 @@ bind smime V verify-key
 # Mixmaster menu
 # ------------------------------
 
-# If Mutt is compiled with Mixmaster support... 
+# If Mutt is compiled with Mixmaster support...
 
 # Accept the chain constructed
 # bind mix MUTT_ENTER_S accept

@@ -3,14 +3,14 @@
 # ============================
 
 # ----------------------------
-# Playback 
+# Playback
 # ----------------------------
 
 # Play tracks from the library in the tree view (1)
 set play_library=true
 set play_sorted=false
 
-# Do not play tracks in random order but use autoshuffle in playlist if shuffle option is enabled 
+# Do not play tracks in random order but use autoshuffle in playlist if shuffle option is enabled
 set shuffle=false
 set auto_reshuffle=true
 
@@ -47,7 +47,7 @@ set rewind_offset=10
 set show_current_bitrate=false
 
 # ----------------------------
-# Library organization 
+# Library organization
 # ----------------------------
 
 # Allow all tracks from all albums by all artists in library
@@ -73,7 +73,7 @@ set smart_artist_sort=true
 set display_artist_sort_name=true
 
 # ----------------------------
-# Formatting 
+# Formatting
 # ----------------------------
 
 # Base formats

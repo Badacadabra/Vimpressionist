@@ -8,5 +8,5 @@ include colors/archery
 # Settings 
 include src/settings
 
-# Key mappings 
+# Key mappings
 include src/mappings

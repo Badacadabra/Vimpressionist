@@ -3,7 +3,7 @@
 # ============================
 
 # ----------------------------
-# Unbind useless keys 
+# Unbind useless keys
 # ----------------------------
 
 unbind-key UP
@@ -106,7 +106,7 @@ bind-key F5 redraw
 bind-key | pipe-to
 
 # ----------------------------
-# Macros 
+# Macros
 # ----------------------------
 
 # macro <macro key> <command list>

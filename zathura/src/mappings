@@ -1,5 +1,5 @@
 # =============================
-# KEY MAPPINGS 
+# KEY MAPPINGS
 # =============================
 
 # -----------------------------
@@ -12,10 +12,10 @@ unmap <Down>
 unmap <Left>
 
 unmap <PageUp>
-unmap <PageDown> 
+unmap <PageDown>
 
 # -----------------------------
-# Additional mappings 
+# Additional mappings
 # -----------------------------
 
 # By default, Zathura mappings are REALLY Vim-like!

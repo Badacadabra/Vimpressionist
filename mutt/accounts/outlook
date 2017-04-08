@@ -1,9 +1,9 @@
 # ==============================
-# OUTLOOK ACCOUNT 
+# OUTLOOK ACCOUNT
 # ==============================
 
 # ------------------------------
-# IMAP 
+# IMAP
 # ------------------------------
 
 set hostname = "hotmail.com"
@@ -16,7 +16,7 @@ set trash = "+Deleted"
 mailboxes "#----------OUTLOOK---------------"
 
 # ------------------------------
-# SMTP 
+# SMTP
 # ------------------------------
 
 set realname = "{FIRSTNAME} {LASTNAME}" # e.g. "John Doe"

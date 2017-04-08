@@ -3,21 +3,21 @@
 # =============================
 
 # -----------------------------
-# App & performance 
+# App & performance
 # -----------------------------
 
 # Unload invisible pages every minute
 set page-store-threshold 60
 set page-store-interval 60
 
-# Cache management 
+# Cache management
 set page-cache-size 20
 set page-thumbnail-size 4194304
 
 # Use default clipboard for selections
 set selection-clipboard primary
 
-# Show notification when some text has been selected 
+# Show notification when some text has been selected
 set selection-notification true
 
 # Use plain database, not sqlite
@@ -45,13 +45,13 @@ set window-title-page true
 set link-hadjust true
 
 # -----------------------------
-# Page layout 
+# Page layout
 # -----------------------------
 
-# Optimal adjustment of the document when it is loaded 
+# Optimal adjustment of the document when it is loaded
 set adjust-open best-fit
 
-# Column in which the first page will be displayed 
+# Column in which the first page will be displayed
 set first-page-column 1:2
 
 # Space (in pixels) between pages
@@ -61,11 +61,11 @@ set page-padding 1
 set pages-per-row 1
 set advance-pages-per-row false
 
-# Show text loader when a document is loading 
+# Show text loader when a document is loading
 set render-loading true
 
 # -----------------------------
-# Search 
+# Search
 # -----------------------------
 
 # Show visible/relevant files and directories in autocomplete
@@ -83,7 +83,7 @@ set abort-clear-search true
 set search-hadjust true
 
 # -----------------------------
-# Scroll 
+# Scroll
 # -----------------------------
 
 # Scroll offset
@@ -92,7 +92,7 @@ set scroll-step 30
 set scroll-full-overlap 0
 
 # Consider page boundaries while scrolling 
-set scroll-page-aware true 
+set scroll-page-aware true
 
 # Avoid wrapping for the first/last page
 set scroll-wrap false
@@ -101,7 +101,7 @@ set scroll-wrap false
 set smooth-scroll false
 
 # -----------------------------
-# Zoom 
+# Zoom
 # -----------------------------
 
 # Maximum percentage
@@ -120,7 +120,7 @@ set zoom-center false
 set link-zoom true
 
 # -----------------------------
-# SyncTex 
+# SyncTex
 # -----------------------------
 
 # Useful for synchronization between TeX files and PDF output...

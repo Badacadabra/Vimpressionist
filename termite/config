@@ -20,7 +20,7 @@ cursor_shape = block
 
 fullscreen = false
 size_hints = false
-mouse_autohide = true 
+mouse_autohide = true
 
 # Search & Explore
 search_wrap = true
@@ -31,7 +31,7 @@ scroll_on_keystroke = true
 
 # URLs
 browser = firefox
-clickable_url = false 
+clickable_url = false
 filter_unmatched_urls = true
 
 # No warning
@@ -45,22 +45,24 @@ modify_other_keys = false
 icon_name = terminal
 
 # =============================
-# ARCHERY COLORSCHEME 
+# ARCHERY COLORSCHEME
 # =============================
 
 [colors]
 
 cursor = #0088CC
-foreground = #FFFFFF
+foreground = #F6F9FC
 background = #25272C
 highlight = #0088CC
 
 # Default | Dark Gray
+#color0 = #17181B
 color0 = #25272C
-color8 = #888888
+#color8 = #282D34
+color8 = #354151
 
 # Red | Light Red
-color1 = #DF0E0E
+color1 = #BA2A2A
 color9 = #C95F5F
 
 # Green | Light Green
@@ -68,7 +70,7 @@ color2 = #008542
 color10 = #73BA25
 
 # Brown | Yellow
-color3 = #FF6600
+color3 = #F07D30
 color11 = #EAC06E
 
 # Blue | Light Blue
@@ -80,20 +82,20 @@ color5 = #8D48B8
 color13 = #B589C2
 
 # Cyan | Light Cyan
-color6 = #25B8A5
-color14 = #8ABEB7
+color6 = #006596
+color14 = #25B8A5
 
 # Gray | White
-color7 = #BBBBBB
+color7 = #53586F
 color15 = #F6F9FC
 
 # =============================
-# URL HINTS 
+# URL HINTS
 # =============================
 
 [hints]
 
-font = Hack 11 
+font = Larabiefont 11
 
 border = #FFFFFF
 border_width = 1.5

@@ -1,9 +1,9 @@
 # ==============================
-# MIME TYPES & APPLICATIONS 
+# MIME TYPES & APPLICATIONS
 # ==============================
 
 # ------------------------------
-# Text 
+# Text
 # ------------------------------
 
 # HTML
@@ -23,10 +23,10 @@ application/odp; libreoffice %s;
 text/*; vim %s
 
 # ------------------------------
-# Multimedia 
+# Multimedia
 # ------------------------------
 
-# Images 
+# Images
 image/*; feh %s;
 image/*; img2txt %s; copiousoutput;
 

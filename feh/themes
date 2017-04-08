@@ -1,9 +1,9 @@
 # ============================
-# THEMES 
+# THEMES
 # ============================
 
 # ----------------------------
-# Menu 
+# Menu
 # ----------------------------
 
 aluminium --menu-bg /usr/share/feh/images/menubg_aluminium.png
@@ -14,9 +14,9 @@ default --menu-bg /usr/share/feh/images/menubg_default.png
 sky --menu-bg /usr/share/feh/images/menubg_sky.png
 
 # ----------------------------
-# Miscellaneous 
+# Miscellaneous
 # ----------------------------
 
-presentation --full-screen --hide-pointer --keep-zoom-vp 
+presentation --full-screen --hide-pointer --keep-zoom-vp
 slideshow --auto-rotate --auto-zoom --cycle-once --full-screen --hide-pointer --slideshow-delay 10
 thumbnails --thumbnails --thumb-title "Thumbnails" --thumb-width 256 --thumb-height 256 --image-bg black --sort filename --cache-thumbnails
