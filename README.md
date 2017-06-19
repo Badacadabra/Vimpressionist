@@ -45,11 +45,9 @@ Thanks to all contributors who have built these nice text-based applications ove
 
 ### calcurse
 
-> **Category:** Calendar & Scheduling application
-
-> **GitHub:** [https://github.com/lfos/calcurse](https://github.com/lfos/calcurse)
-
-> **Website:** [http://calcurse.org/](http://calcurse.org/)
+> **Category:** Calendar & Scheduling application<br>
+> **GitHub:**   [https://github.com/lfos/calcurse](https://github.com/lfos/calcurse)<br>
+> **Website:**  [http://calcurse.org/](http://calcurse.org/)
 
 ![calcurse](_screenshots/calcurse.png)
 
@@ -57,11 +55,9 @@ Thanks to all contributors who have built these nice text-based applications ove
 
 ### cmus
 
-> **Category:** Music player
-
-> **GitHub:** [https://github.com/cmus/cmus](https://github.com/cmus/cmus)
-
-> **Website:** [https://cmus.github.io/](https://cmus.github.io/)
+> **Category:** Music player<br>
+> **GitHub:**   [https://github.com/cmus/cmus](https://github.com/cmus/cmus)<br>
+> **Website:**  [https://cmus.github.io/](https://cmus.github.io/)
 
 ![cmus](_screenshots/cmus.png)
 
@@ -69,11 +65,9 @@ Thanks to all contributors who have built these nice text-based applications ove
 
 ### feh
 
-> **Category:** Image viewer
-
-> **GitHub:** [https://github.com/derf/feh](https://github.com/derf/feh)
-
-> **Website:** [https://feh.finalrewind.org/](https://feh.finalrewind.org/)
+> **Category:** Image viewer<br>
+> **GitHub:**   [https://github.com/derf/feh](https://github.com/derf/feh)<br>
+> **Website:**  [https://feh.finalrewind.org/](https://feh.finalrewind.org/)
 
 ![feh](_screenshots/feh.png)
 
@@ -81,118 +75,98 @@ Thanks to all contributors who have built these nice text-based applications ove
 
 ### i3
 
-> **Category:** Tiling window manager
-
-> **GitHub:** [https://github.com/i3/i3](https://github.com/i3/i3)
-
-> **Website:** [http://i3wm.org/](http://i3wm.org/)
+> **Category:** Tiling window manager<br>
+> **GitHub:**   [https://github.com/i3/i3](https://github.com/i3/i3)<br>
+> **Website:**  [http://i3wm.org/](http://i3wm.org/)
 
 ![i3](_screenshots/i3.png)
 
 ---
 
-### mutt
+### Mutt
 
-> **Category:** Email client
-
-> **GitHub:** [https://github.com/neomutt/neomutt](https://github.com/neomutt/neomutt)
-
+> **Category:** Email client<br>
+> **GitHub:** [https://github.com/neomutt/neomutt](https://github.com/neomutt/neomutt)<br>
 > **Website:** [http://www.mutt.org/](http://www.mutt.org/)
 
 ![mutt](_screenshots/mutt.png)
 
 ---
 
-### newsbeuter
+### Newsbeuter
 
-> **Category:** RSS/Atom feed reader
-
-> **GitHub:** [https://github.com/akrennmair/newsbeuter](https://github.com/akrennmair/newsbeuter)
-
-> **Website:** [http://newsbeuter.org/](http://newsbeuter.org/)
+> **Category:** RSS/Atom feed reader<br>
+> **GitHub:**   [https://github.com/akrennmair/newsbeuter](https://github.com/akrennmair/newsbeuter)<br>
+> **Website:**  [http://newsbeuter.org/](http://newsbeuter.org/)
 
 ![newsbeuter](_screenshots/newsbeuter.png)
 
 ---
 
-### termite
+### Termite
 
-> **Category:** Terminal emulator
-
-> **GitHub:** [https://github.com/thestinger/termite](https://github.com/thestinger/termite)
-
-> **Website:** N/A
+> **Category:** Terminal emulator<br>
+> **GitHub:**   [https://github.com/thestinger/termite](https://github.com/thestinger/termite)<br>
+> **Website:**  N/A
 
 ![termite](_screenshots/termite.png)
 
 ---
 
-### tig
+### Tig
 
-> **Category:** Git interface
-
-> **GitHub:** [https://github.com/jonas/tig](https://github.com/jonas/tig)
-
-> **Website:** [https://jonas.github.io/tig/](https://jonas.github.io/tig/)
+> **Category:** Git interface<br>
+> **GitHub:**   [https://github.com/jonas/tig](https://github.com/jonas/tig)<br>
+> **Website:**  [https://jonas.github.io/tig/](https://jonas.github.io/tig/)
 
 ![tig](_screenshots/tig.png)
 
 ---
 
-### vifm
+### Vifm
 
-> **Category:** File manager
-
-> **GitHub:** [https://github.com/vifm/vifm](https://github.com/vifm/vifm)
-
-> **Website:** [https://vifm.info/](https://vifm.info/)
+> **Category:** File manager<br>
+> **GitHub:**   [https://github.com/vifm/vifm](https://github.com/vifm/vifm)<br>
+> **Website:**  [https://vifm.info/](https://vifm.info/)
 
 ![vifm](_screenshots/vifm.png)
 
 ---
 
-### vim
+### Vim
 
-> **Category:** Text editor
-
-> **GitHub:** [https://github.com/vim/vim](https://github.com/vim/vim)
-
-> **Website:** [http://www.vim.org/](http://www.vim.org/)
+> **Category:** Text editor<br>
+> **GitHub:**   [https://github.com/vim/vim](https://github.com/vim/vim)<br>
+> **Website:**  [http://www.vim.org/](http://www.vim.org/)
 
 ![vim](_screenshots/vim.png)
 
 ---
 
-### w3m
+### W3M
 
-> **Category:** Pager & Web browser
-
-> **GitHub:** N/A
-
-> **Website:** [http://w3m.sourceforge.net/](http://w3m.sourceforge.net/)
+> **Category:** Pager & Web browser<br>
+> **GitHub:**   N/A<br>
+> **Website:**  [http://w3m.sourceforge.net/](http://w3m.sourceforge.net/)
 
 ![w3m](_screenshots/w3m.png)
 
 ---
 
-### weechat
+### WeeChat
 
-> **Category:** Chat client
-
-> **GitHub:** [https://github.com/weechat/weechat](https://github.com/weechat/weechat)
-
-> **Website:** [https://weechat.org/](https://weechat.org/)
+> **Category:** Chat client<br>
+> **GitHub:**   [https://github.com/weechat/weechat](https://github.com/weechat/weechat)<br>
+> **Website:**  [https://weechat.org/](https://weechat.org/)
 
 ![weechat](_screenshots/weechat.png)
 
 ---
 
-### zathura
+### Zathura
 
-> **Category:** Document viewer
-
-> **GitHub:** N/A
-
-> **Website:** [https://pwmt.org/projects/zathura/](https://pwmt.org/projects/zathura/)
+> **Category:** Document viewer<br>
+> **GitHub:**   N/A<br>
+> **Website:**  [https://pwmt.org/projects/zathura/](https://pwmt.org/projects/zathura/)
 
 ![zathura](_screenshots/zathura.png)
